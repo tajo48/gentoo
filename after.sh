@@ -5,7 +5,7 @@ pacman -Syy
 #programs
 pacman -S --noconfirm alsa-utils netctl mtools dialog wpa_supplicant dhcpcd git neofetch mc xclip clipmenu rtorrent openssh tmux arandr slock
 pacman -S --noconfirm obs-studio blender bashtop calc virtualbox virtualbox-host-modules-arch vlc youtube-dl htop tar p7zip xcompmgr audacity gimp cmus discord nautilus
-pacman -S --noconfirm vifm make alsa-firmware wget xorg xorg-server xorg-xinit curl libxft fakeroot binutils gvim neovim patch pkgconf base-devel python-pywal alsa
+pacman -S --noconfirm make alsa-firmware wget xorg xorg-server xorg-xinit curl libxft fakeroot binutils gvim neovim patch pkgconf base-devel python-pywal alsa
 pacman -S --noconfirm firefox zsh feh virtualbox-guest-utils python-pynvim nodejs yarn torbrowser-launcher
 pacman -S --noconfirm xf86-video-vesa xf86-video-ati xf86-video-intel xf86-video-amdgpu xf86-video-nouveau xf86-video-fbdev
 pacman -S --noconfirm grub ttf-joypixels 
@@ -15,7 +15,7 @@ pacman -S --noconfirm pulseaudio linux-headers dkms
 #remake dwm 
 #rm xcompmgr 
 #vim config
-#torrents pamac pulseaudio xone SOUNDUX 
+#torrents pamac pulseaudio xone SOUNDUX vifm
 
 
 
