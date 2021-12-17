@@ -1,5 +1,5 @@
 #!/bin/bash
-sh /home/tajo48/ARCH/files/min.sh &
+sh /home/tajo48/ARCHfiles/min.sh &
 while :
 do
 statusbat="|"
@@ -19,7 +19,10 @@ fi
 
 setxkbmap -layout 'pl'
 xset r rate 300 50
-setxkbmap -option caps:swapescape
+
+
+
+#setxkbmap -option caps:swapescape
 
 
 weather="$(cat /home/tajo48/weather  | awk '{print $2}{print $3}' | sed 's/^..//' | tr "\n" " ")"
