@@ -89,6 +89,7 @@ cp /home/tajo48/ARCH/files/init.vim /home/tajo48/.config/nvim/init.vim
 cp /home/tajo48/ARCH/files/xinitrc /home/tajo48/.xinitrc
 chsh -s /bin/zsh tajo48
 
+mkdir /home/tajo48/Downloads /home/tajo48/Desktop
 
 #yay 
 cd /home/tajo48/ARCH/builds/
