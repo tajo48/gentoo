@@ -54,7 +54,6 @@ static const Layout layouts[] = {
 /* commands */
 static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() */
 static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont, NULL };
-static const char *termcmd[]  = { "st", "-e", "tmux", NULL };
 static const char *firefoxcmd[]  = { "sh", "/home/tajo48/ARCH/files/firefox.sh", NULL };
 static const char *slockcmd[]  = { "slock", NULL };
 static const char *blendercmd[]  = { "blender", NULL };
@@ -65,7 +64,7 @@ static const char *sscmd[]  = { "sh", "/home/tajo48/ARCH/files/ss.sh", NULL };
 static const char *offcmd[]  = { "sh", "/home/tajo48/ARCH/files/off.sh", NULL };
 static const char *updatecmd[]  = { "sh", "/home/tajo48/ARCH/files/upgradefiles.sh", NULL };
 static const char scratchpadname[] = "scratchpad";
-static const char *scratchpadcmd[] = { "st", "-t", scratchpadname, "-g", "120x34", "-e", "tmux", NULL };
+static const char *scratchpadcmd[] = { "st", "-t", scratchpadname, "-g", "132x43", "-e", "tmux", NULL };
 
 #include "movestack.c"
 static Key keys[] = {
@@ -78,7 +77,6 @@ static Key keys[] = {
 	{ MODKEY,                       XK_a,      spawn,          {.v = torcmd } },
 	{ MODKEY|ShiftMask,             XK_s,      spawn,          {.v = sscmd } },
 	{ MODKEY|ShiftMask,             XK_q,      spawn,          {.v = slockcmd } },
-	{ MODKEY|ShiftMask,             XK_Return, spawn,          {.v = termcmd } },
 	{ MODKEY,                       XK_grave,  togglescratch,  {.v = scratchpadcmd } },
 	{ MODKEY,                       XK_b,      togglebar,      {0} },
 	{ MODKEY,                       XK_j,      focusstack,     {.i = +1 } },

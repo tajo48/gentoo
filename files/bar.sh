@@ -1,5 +1,5 @@
 #!/bin/bash
-sh /home/tajo48/ARCHfiles/min.sh &
+sh /home/tajo48/ARCH/files/min.sh &
 while :
 do
 statusbat="|"
