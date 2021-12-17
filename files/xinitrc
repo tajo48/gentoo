@@ -1,5 +1,5 @@
 clipmenud &
-wal -i /home/tajo48/ARCH/files/photos
+wal -i /home/tajo48/ARCH/photos
 setxkbmap -layout 'pl'
 
 
