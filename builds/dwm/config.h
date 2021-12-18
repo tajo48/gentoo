@@ -7,8 +7,8 @@ static const unsigned int snap      = 16;       /* snap pixel */
 static const int swallowfloating    = 0;        /* 1 means swallow floating windows by default */
 static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
-static const char *fonts[]          = { "monospace:size=10" };
-static const char dmenufont[]       = "monospace:size=10";
+static const char *fonts[]	    = { "JetBrainsMono:size=14:antialias=true:autohint=true" };
+static const char dmenufont[]       = "JetBrainsMono:size=14:antialias=true:autohint=true";
 #include "/home/tajo48/.cache/wal/colors-wal-dwm.h"
 
 /* tagging */
@@ -64,8 +64,7 @@ static const char *sscmd[]  = { "sh", "/home/tajo48/ARCH/files/ss.sh", NULL };
 static const char *offcmd[]  = { "sh", "/home/tajo48/ARCH/files/off.sh", NULL };
 static const char *updatecmd[]  = { "sh", "/home/tajo48/ARCH/files/upgradefiles.sh", NULL };
 static const char scratchpadname[] = "scratchpad";
-static const char *scratchpadcmd[] = { "st", "-t", scratchpadname, "-g", "132x43", "-e", "tmux", NULL };
-
+static const char *scratchpadcmd[] = { "st", "-t", scratchpadname, "-g", "80x24", "-e", "tmux", NULL };
 #include "movestack.c"
 static Key keys[] = {
 	/* modifier                     key        function        argument */
@@ -81,8 +80,8 @@ static Key keys[] = {
 	{ MODKEY,                       XK_b,      togglebar,      {0} },
 	{ MODKEY,                       XK_j,      focusstack,     {.i = +1 } },
 	{ MODKEY,                       XK_k,      focusstack,     {.i = -1 } },
-	{ MODKEY,                       XK_i,      incnmaster,     {.i = +1 } },
-	{ MODKEY,                       XK_d,      incnmaster,     {.i = -1 } },
+	// { MODKEY,                       XK_i,      incnmaster,     {.i = +1 } },
+	// { MODKEY,                       XK_d,      incnmaster,     {.i = -1 } },
 	{ MODKEY,                       XK_h,      setmfact,       {.f = -0.05} },
 	{ MODKEY,                       XK_l,      setmfact,       {.f = +0.05} },
 	{ MODKEY|ShiftMask,             XK_j,      movestack,      {.i = +1 } },
@@ -94,7 +93,7 @@ static Key keys[] = {
 	{ MODKEY,                       XK_f,      setlayout,      {.v = &layouts[1]} },
 	{ MODKEY,                       XK_m,      setlayout,      {.v = &layouts[2]} },
 	{ MODKEY|ShiftMask,             XK_u,      spawn,          {.v = updatecmd }  },
-	{ MODKEY,                       XK_u,      setlayout,      {.v = &layouts[3]} },
+	// { MODKEY,                       XK_u,      setlayout,      {.v = &layouts[3]} },
 	{ MODKEY,                       XK_space,  setlayout,      {0} },
 	{ MODKEY|ShiftMask,             XK_space,  togglefloating, {0} },
 	{ MODKEY,                       XK_0,      view,           {.ui = ~0 } },
