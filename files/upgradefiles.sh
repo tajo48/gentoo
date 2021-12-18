@@ -9,10 +9,12 @@ git clone https://github.com/tajo48/ARCH.git
 rm -rf ~/.xinitrc
 cp ~/ARCH/files/xinitrc ~/.xinitrc
 
-rm -rf ~/.config/nvim ~/.zshrc ~/.config/coc
+rm -rf  ~/.zshrc ~/.config/coc
 cp ~/ARCH/files/zshrc ~/.zshrc
-mkdir ~/.config/nvim
-cp ~/ARCH/files/init.vim ~/.config/nvim
+
+# rm -rf ~/.config/nvim
+# mkdir ~/.config/nvim
+# cp ~/ARCH/files/init.vim ~/.config/nvim
 
 
 

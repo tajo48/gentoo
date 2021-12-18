@@ -13,10 +13,9 @@ function git_branch_name()
 
 # Enable substitution in the prompt.
 setopt prompt_subst
-alias v="nvim"
+# alias v="nvim"
 alias mc="/usr/lib/jvm/java-8-openjdk/bin/java -jar Downloads/ShiginimaSE_v4400/linux_osx/Shiginima\ Launcher\ SE.v4400.jar"
 alias x="startx"
-#alias z="sudo systemctl start lightdm"
 alias p="ping google.com"
 alias u="sh ~/ARCH/files/upgradefiles.sh"
 alias suicide="poweroff"
