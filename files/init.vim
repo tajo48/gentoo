@@ -258,5 +258,13 @@ nnoremap <silent><nowait> <space>k  :<C-u>CocPrev<CR>
 nnoremap <silent><nowait> <space>p  :<C-u>CocListResume<CR>
 
 
+" Change the escape key to jk
+inoremap jk <Esc>
+tnoremap jk <C-\><C-n>
+
+" Use the system clipboard
+set clipboard=unnamedplus
+
+
 
 

@@ -3,7 +3,6 @@
 
 ping -q -w 1 -c 1 google.com > /dev/null && echo "internet ok" || exit
 
-cd /home/tajo48
 sudo rm -r ~/ARCH
 git clone https://github.com/tajo48/ARCH.git
 
