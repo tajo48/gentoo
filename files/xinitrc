@@ -1,6 +1,5 @@
 clipmenud &
 wal -i /home/tajo48/ARCH/photos
-setxkbmap -layout 'pl'
 
 
 for profile in ~/.mozilla/firefox/?*.default-release
