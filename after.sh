@@ -9,7 +9,7 @@ pacman -S --noconfirm make alsa-firmware wget xorg xorg-server xorg-xinit curl l
 pacman -S --noconfirm firefox zsh feh virtualbox-guest-utils python-pynvim nodejs yarn torbrowser-launcher
 pacman -S --noconfirm xf86-video-vesa xf86-video-ati xf86-video-intel xf86-video-amdgpu xf86-video-nouveau xf86-video-fbdev
 pacman -S --noconfirm grub ttf-joypixels ttf-jetbrains-mono tty-liberation
-pacman -S --noconfirm pulseaudio linux-headers dkms ranger
+pacman -S --noconfirm pulseaudio linux-headers dkms ranger lm_sensors
 
 
 #remake dwm 
