@@ -16,7 +16,7 @@ pacman -S --noconfirm pulseaudio linux-headers dkms ranger lm_sensors
 #rm xcompmgr 
 #vim config
 #torrents pamac pulseaudio xone SOUNDUX vifm
-
+#wwda
 
 
 
