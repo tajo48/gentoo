@@ -19,6 +19,20 @@ pacman -S --noconfirm pulseaudio linux-headers dkms ranger lm_sensors
 #wwda
 
 
+#remake dwm st dmenu
+#remove xcompmgr
+#networkmanager wifi gui and systemd enable
+#wacom script
+#ranger config
+#pulseaudio gui
+#check if git clone wihtout fingerprint 
+#check internet connection on install.sh start
+#pamac gui???
+#xone and soundux
+#wwda
+#torrent client
+#portable arch and arch install media
+
 
 # Set date time
 ln -sf /usr/share/zoneinfo/Europe/Warsaw /etc/localtime
