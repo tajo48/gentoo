@@ -12,13 +12,6 @@ pacman -S --noconfirm grub ttf-joypixels ttf-jetbrains-mono ttf-liberation
 pacman -S --noconfirm pulseaudio linux-headers dkms ranger lm_sensors
 
 
-#remake dwm 
-#rm xcompmgr 
-#vim config
-#torrents pamac pulseaudio xone SOUNDUX vifm
-#wwda
-
-
 #remake dwm st dmenu
 #remove xcompmgr
 #networkmanager wifi gui and systemd enable
