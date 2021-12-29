@@ -15,17 +15,19 @@ pacman -S --noconfirm pulseaudio linux-headers dkms ranger lm_sensors
 #remake dwm st dmenu
 #remove xcompmgr
 #networkmanager wifi gui and systemd enable
-#wacom script
 #ranger config
 #pulseaudio gui
-#check if git clone wihtout fingerprint 
+#check if git clone wihtout fingerprint works
 #check internet connection on install.sh start
 #pamac gui???
 #xone and soundux
-#wwda
 #torrent client
 #portable arch and arch install media
-
+#better zsh config 
+#better nvim config
+#split updatefiles.sh to updatefiles.sh and setup.sh
+#ue5 works on dwm?
+#wacom script
 
 # Set date time
 ln -sf /usr/share/zoneinfo/Europe/Warsaw /etc/localtime
