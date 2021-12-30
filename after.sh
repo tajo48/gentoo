@@ -28,6 +28,8 @@ pacman -S --noconfirm pulseaudio linux-headers dkms ranger lm_sensors
 #split updatefiles.sh to updatefiles.sh and setup.sh
 #ue5 works on dwm?
 #wacom script
+#wifi dmenu
+
 
 # Set date time
 ln -sf /usr/share/zoneinfo/Europe/Warsaw /etc/localtime
