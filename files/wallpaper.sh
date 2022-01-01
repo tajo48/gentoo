@@ -1,5 +1,5 @@
 #!/bin/bash
-
+[ "$(ls -A ~/Wallpapers)" ] && echo "OK" || exit
 moviename=$(ls ~/Wallpapers | shuf -n 1)
 moviedir=$(pwd)"/Wallpapers/"$moviename
 movietime=$(ffprobe -i $moviedir -show_format -v quiet | sed -n 's/duration=//p' | sed 's/\..*$//')
