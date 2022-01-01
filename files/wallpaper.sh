@@ -1,4 +1,5 @@
 #!/bin/bash
+
 [ "$(ls -A ~/Wallpapers)" ] && echo "OK" || exit
 moviename=$(ls ~/Wallpapers | shuf -n 1)
 moviedir=$(pwd)"/Wallpapers/"$moviename
