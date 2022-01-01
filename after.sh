@@ -29,7 +29,7 @@ pacman -S --noconfirm pulseaudio linux-headers dkms ranger lm_sensors
 #ue5 works on dwm?
 #wacom script
 #wifi dmenu
-
+#sudo pacman -S pavucontrol
 
 # Set date time
 ln -sf /usr/share/zoneinfo/Europe/Warsaw /etc/localtime
