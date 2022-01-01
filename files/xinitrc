@@ -1,4 +1,5 @@
 clipmenud &
+rm -rf ~/.cache/wal/schemes/
 wal -i /home/tajo48/ARCH/photos
 
 
