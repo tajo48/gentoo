@@ -93,7 +93,7 @@ cd /home/tajo48
 cp /home/tajo48/ARCH/files/zshrc /home/tajo48/.zshrc
 cp /home/tajo48/ARCH/files/xinitrc /home/tajo48/.xinitrc
 chsh -s /bin/zsh tajo48
-mkdir /home/tajo48/Downloads /home/tajo48/Desktop /home/tajo48/Pictures /home/tajo48/Git /home/tajo48/Videos
+mkdir /home/tajo48/Downloads /home/tajo48/Desktop /home/tajo48/Pictures /home/tajo48/Git /home/tajo48/Videos /home/tajo48/Wallpapers
 
 #nvim
 # mkdir /home/tajo48/.config/nvim
