@@ -12,6 +12,6 @@ movierandom=$(shuf -i 1-$movietime -n 1)
 ffmpeg -y -ss $movierandom -i $moviedir -vframes 1 -q:v 2 ~/ARCH/photos/wallpaper.jpg
 
 else
-	echo $(pwd)"Wallpapers/ dir is empty" 
+	echo $(pwd)"/Wallpapers/ dir is empty" 
 fi
 
