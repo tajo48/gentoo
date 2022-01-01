@@ -15,7 +15,7 @@ function git_branch_name()
 setopt prompt_subst
 # alias v="nvim"
 alias mc="/usr/lib/jvm/java-8-openjdk/bin/java -jar Downloads/ShiginimaSE_v4400/linux_osx/Shiginima\ Launcher\ SE.v4400.jar"
-alias x="startx"
+alias x="sh ~/ARCH/files/wallpaper.sh && startx"
 alias p="ping google.com"
 alias u="sh ~/ARCH/files/upgradefiles.sh"
 alias suicide="poweroff"
