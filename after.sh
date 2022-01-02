@@ -101,11 +101,15 @@ mkdir /home/tajo48/Downloads /home/tajo48/Desktop /home/tajo48/Pictures /home/ta
 
 
 #yay 
-cd /home/tajo48/ARCH/builds/
+cd /home/tajo48/Git/
 git clone https://aur.archlinux.org/yay-git.git
-cd /home/tajo48/ARCH/builds/yay-git
+cd /home/tajo48/Git/yay-git
 makepkg -s -i -c --noconfirm
 
+cd /home/tajo48/Git/
+git clone https://aur.archlinux.org/webtorrent-cli.git
+cd /home/tajo48/Git/webtorrent-cli
+makepkg -sri --noconfirm
 
 
 chown tajo48 -R /home/tajo48/

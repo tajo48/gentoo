@@ -24,7 +24,7 @@ alias gita="git add -A && git commit -m 'update' && git push"
 alias pacre="sudo rm /var/lib/pacman/db.lck"
 alias BTW="neofetch"
 alias btw="neofetch"
-
+alias notflix="sh ~/ARCH/files/notflix.sh"
 alias wifi="sudo wifi-menu"
 # Config for prompt. PS1 synonym.
 prompt='%2/ $(git_branch_name) > '
