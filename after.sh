@@ -74,6 +74,7 @@ curl -k -o /usr/bin/makepkg https://raw.githubusercontent.com/tajo48/ARCH/master
 chmod +x /usr/bin/makepkg
 
 cd /home/tajo48
+ssh-keyscan github.com >> /home/tajo48/.ssh/known_hosts
 git clone git@github.com:tajo48/ARCH.git
 su tajo48 << 'NO'
 wal -i /home/tajo48/ARCH/photos
