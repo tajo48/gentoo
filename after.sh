@@ -74,9 +74,10 @@ curl -k -o /usr/bin/makepkg https://raw.githubusercontent.com/tajo48/ARCH/master
 chmod +x /usr/bin/makepkg
 
 cd /home/tajo48
-ssh-keyscan github.com >> /home/tajo48/.ssh/known_hosts
-git clone git@github.com:tajo48/ARCH.git
+
 su tajo48 << 'NO'
+ssh-keygen -F github.com || ssh-keyscan github.com >> /home/tajo48/.ssh/known_hosts
+git clone git@github.com:tajo48/ARCH.git
 wal -i /home/tajo48/ARCH/photos
 sh -c "$(curl -k -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 NO
