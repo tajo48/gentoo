@@ -38,5 +38,5 @@ prompt='%2/ $(git_branch_name) > '
 
 
 
-alias ARCH-INSTALL="sh ARCH/install.sh"
+alias ARCH-INSTALL="cd ~/ && sh ~/ARCH/install.sh"
 

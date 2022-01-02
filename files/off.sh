@@ -2,7 +2,7 @@
 #[ $(echo -e "No\nYes" | dmenu -i) == "Yes" ] && echo "xd
 
 options="Poweroff\nXstop\nVirtualBox" 
-chosen=$(echo -e "$options" | dmenu -i);;
+chosen=$(echo -e "$options" | dmenu -i)
 
 
 case "$chosen" in
