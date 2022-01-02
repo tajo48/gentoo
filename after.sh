@@ -75,10 +75,10 @@ chmod +x /usr/bin/makepkg
 
 cd /home/tajo48
 
-ssh-keyscan -t rsa github.com >> /root/.ssh/known_hosts
 
 su tajo48 << 'NO'
-ssh-keyscan -t rsa github.com >> /home/tajo48/.ssh/known_hosts
+ssh-keyscan github.com >> githubKey
+ssh-keygen -lf githubKey
 git clone git@github.com:tajo48/ARCH.git
 wal -i /home/tajo48/ARCH/photos
 sh -c "$(curl -k -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
