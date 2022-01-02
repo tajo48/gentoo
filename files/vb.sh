@@ -5,4 +5,4 @@ VBoxClient --seamless
 VBoxClient --vmsvga
 xrandr --output Virtual1 --mode 1680x1050
 sleep 5s
-wal -i /home/tajo48/ARCH/files/photos
+wal -i /home/tajo48/ARCH/photos/wallpaper.jpg
