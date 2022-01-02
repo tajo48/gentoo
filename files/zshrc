@@ -31,12 +31,12 @@ alias BTW="neofetch"
 alias btw="neofetch"
 alias notflix="sh ~/ARCH/files/notflix.sh"
 alias wifi="sudo wifi-menu"
-alias ARCH="git clone https://github.com/tajo48/ARCH.git"
+
 
 # Config for prompt. PS1 synonym.
 prompt='%2/ $(git_branch_name) > '
 
 
 
-alias ARCH-INSTALL="cd ~/ && sh ~/ARCH/install.sh"
+alias arch-install="cd ~/ && sh ~/ARCH/install.sh"
 
