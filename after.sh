@@ -101,7 +101,7 @@ cp /home/tajo48/ARCH/files/zshrc /home/tajo48/.zshrc
 cp /home/tajo48/ARCH/files/xinitrc /home/tajo48/.xinitrc
 chsh -s /bin/zsh tajo48
 mkdir /home/tajo48/Downloads /home/tajo48/Desktop /home/tajo48/Pictures /home/tajo48/Git /home/tajo48/Videos /home/tajo48/Wallpapers
-
+touch /home/tajo48/weather
 #nvim
 # mkdir /home/tajo48/.config/nvim
 # cp /home/tajo48/ARCH/files/init.vim /home/tajo48/.config/nvim/init.vim
@@ -112,7 +112,6 @@ cd /home/tajo48/Git/
 git clone https://aur.archlinux.org/yay-git.git
 cd /home/tajo48/Git/yay-git
 makepkg -s -i -c --noconfirm
-
 cd /home/tajo48/Git/
 git clone https://aur.archlinux.org/webtorrent-cli.git
 cd /home/tajo48/Git/webtorrent-cli
