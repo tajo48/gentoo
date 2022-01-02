@@ -15,10 +15,10 @@ curl -s $baseurl/search/$query/1/ > $cachedir/tmp.html
 curl -s $baseurl/search/$query/2/ >> $cachedir/tmp.html
 curl -s $baseurl/search/$query/3/ >> $cachedir/tmp.html
 curl -s $baseurl/search/$query/4/ >> $cachedir/tmp.html
-curl -s $baseurl/search/$query/5/ >> $cachedir/tmp.html
-curl -s $baseurl/search/$query/6/ >> $cachedir/tmp.html
-curl -s $baseurl/search/$query/7/ >> $cachedir/tmp.html
-curl -s $baseurl/search/$query/8/ >> $cachedir/tmp.html
+#curl -s $baseurl/search/$query/5/ >> $cachedir/tmp.html
+#curl -s $baseurl/search/$query/6/ >> $cachedir/tmp.html
+#curl -s $baseurl/search/$query/7/ >> $cachedir/tmp.html
+#curl -s $baseurl/search/$query/8/ >> $cachedir/tmp.html
 
 # Get Titles
 grep -o '<a href="/torrent/.*</a>' $cachedir/tmp.html |
