@@ -35,6 +35,7 @@ pacman -S --noconfirm pulseaudio linux-headers dkms ranger lm_sensors npm mpv
 #Cut WiFi menu 
 #Make arch usb 
 #Delete dmenu notify
+#Delete all terminal pref script from ctrl+win+p 
 
 # Set date time
 ln -sf /usr/share/zoneinfo/Europe/Warsaw /etc/localtime
