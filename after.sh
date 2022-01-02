@@ -30,6 +30,11 @@ pacman -S --noconfirm pulseaudio linux-headers dkms ranger lm_sensors npm mpv
 #wacom script
 #wifi dmenu
 #sudo pacman -S pavucontrol
+#Xclip notflix 
+#Notflix download or stream 
+#Cut WiFi menu 
+#Make arch usb 
+#Delete dmenu notify
 
 # Set date time
 ln -sf /usr/share/zoneinfo/Europe/Warsaw /etc/localtime
