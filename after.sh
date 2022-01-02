@@ -9,7 +9,7 @@ pacman -S --noconfirm make alsa-firmware wget xorg xorg-server xorg-xinit curl l
 pacman -S --noconfirm firefox zsh feh virtualbox-guest-utils python-pynvim nodejs yarn torbrowser-launcher
 pacman -S --noconfirm xf86-video-vesa xf86-video-ati xf86-video-intel xf86-video-amdgpu xf86-video-nouveau xf86-video-fbdev
 pacman -S --noconfirm grub ttf-joypixels ttf-jetbrains-mono ttf-liberation
-pacman -S --noconfirm pulseaudio linux-headers dkms ranger lm_sensors npm mpv
+pacman -S --noconfirm pulseaudio linux-headers dkms ranger lm_sensors npm mpv qbittorrent
 
 
 #remake dwm st dmenu
@@ -35,10 +35,13 @@ pacman -S --noconfirm pulseaudio linux-headers dkms ranger lm_sensors npm mpv
 #Cut WiFi menu 
 #Make arch usb 
 #Delete dmenu notify
-#Delete all terminal pref script from ctrl+win+p 
+#Delete all terminal pref script from ctrl+win+p
+#ssh loockup (saftey measure)
+
 
 # Set date time
 ln -sf /usr/share/zoneinfo/Europe/Warsaw /etc/localtime
+ln -s /dev/null /etc/udev/rules.d/80-net-setup-link.rules
 hwclock --systohc
 
 # Set locale to en_US.UTF-8 UTF-8

@@ -9,4 +9,4 @@ fi
 
 ssh-keygen -t rsa -f ~/.ssh/id_rsa -b 4096 -C “tajo161626@gmail.com” -q -N "" -P ""
 cat /home/tajo48/.ssh/id_rsa.pub | xclip
-echo "paste ssh key to github" | dmenu
+cat /home/tajo48/.ssh/id_rsa.pub

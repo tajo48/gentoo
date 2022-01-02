@@ -7,8 +7,17 @@ mkdir -p $HOME/.cache/notflix
 menu="dmenu"
 baseurl="https://1337x.wtf"
 cachedir="$HOME/.cache/notflix"
-query=$@
-query="$(sed 's/ /+/g' <<<$query)"
+
+
+if [ -z $1 ]; then
+  query=$(xclip -o)
+else
+  query=$@
+fi
+
+
+
+query="$(echo $query | sed 's/ /+/g')"
 
 #curl -s https://1337x.to/category-search/$query/Movies/1/ > $cachedir/tmp.html
 curl -s $baseurl/search/$query/1/ > $cachedir/tmp.html
@@ -64,5 +73,12 @@ fullURL="${baseurl}${url}/"
 curl -s $fullURL > $cachedir/tmp.html
 magnet=$(grep -Po "magnet:\?xt=urn:btih:[a-zA-Z0-9]*" $cachedir/tmp.html | head -n 1) 
 
-webtorrent "$magnet" --mpv
+
+chosen=$(echo -e "Stream\nGetmagnet" | dmenu -i)
+
+case "$chosen" in
+  Stream) webtorrent "$magnet" --mpv;;
+  Getmagnet) echo $magnet | xclip ;;
+  Download) echo "work in progress" ;;
+esac
 

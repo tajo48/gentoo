@@ -19,7 +19,11 @@ setopt prompt_subst
 alias x="sh ~/ARCH/files/wallpaper.sh && startx"
 alias rmwal="rm -rf ~/.cache/wal/schemes/"
 alias p="ping google.com"
+
+
 alias u="sh ~/ARCH/files/upgradefiles.sh"
+
+
 alias suicide="poweroff"
 alias gita="git add -A && git commit -m 'update' && git push"
 alias pacre="sudo rm /var/lib/pacman/db.lck"
@@ -27,12 +31,12 @@ alias BTW="neofetch"
 alias btw="neofetch"
 alias notflix="sh ~/ARCH/files/notflix.sh"
 alias wifi="sudo wifi-menu"
-alias gitclonearch = "git clone https://github.com/tajo48/ARCH.git"
+alias ARCH="git clone https://github.com/tajo48/ARCH.git"
 
 # Config for prompt. PS1 synonym.
 prompt='%2/ $(git_branch_name) > '
 
 
 
-alias arch-install="sh ARCH/install.sh"
+alias ARCH-INSTALL="sh ARCH/install.sh"
 

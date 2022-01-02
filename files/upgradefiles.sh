@@ -7,7 +7,7 @@ touch ~/.ssh/known_hosts
 ssh-keygen -F github.com || ssh-keyscan github.com > ~/.ssh/known_hosts
 
 sudo rm -r ~/ARCH
-git clone git@github.com:tajo48/ARCH.git | dmenu
+git clone git@github.com:tajo48/ARCH.git
 
 rm -rf ~/.xinitrc
 cp ~/ARCH/files/xinitrc ~/.xinitrc
