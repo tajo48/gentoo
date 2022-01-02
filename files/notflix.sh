@@ -7,7 +7,7 @@ mkdir -p $HOME/.cache/notflix
 menu="dmenu"
 baseurl="https://1337x.wtf"
 cachedir="$HOME/.cache/notflix"
-query=$1
+query=$@
 query="$(sed 's/ /+/g' <<<$query)"
 
 #curl -s https://1337x.to/category-search/$query/Movies/1/ > $cachedir/tmp.html
