@@ -79,10 +79,6 @@ git clone https://github.com/tajo48/ARCH.git
 
 su tajo48 << 'NO'
 
-ssh-keyscan github.com >> githubKey
-ssh-keygen -lf githubKey
-cat githubKey >> ~/.ssh/known_hosts
-
 wal -i /home/tajo48/ARCH/photos
 sh -c "$(curl -k -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 NO
