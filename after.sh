@@ -8,7 +8,7 @@ pacman -S --noconfirm obs-studio blender bashtop calc virtualbox virtualbox-host
 pacman -S --noconfirm make alsa-firmware wget xorg xorg-server xorg-xinit curl libxft fakeroot binutils patch pkgconf base-devel python-pywal alsa
 pacman -S --noconfirm firefox zsh feh virtualbox-guest-utils python-pynvim nodejs yarn torbrowser-launcher
 pacman -S --noconfirm xf86-video-vesa xf86-video-ati xf86-video-intel xf86-video-amdgpu xf86-video-nouveau xf86-video-fbdev
-pacman -S --noconfirm grub ttf-joypixels ttf-jetbrains-mono ttf-liberation
+pacman -S --noconfirm ttf-joypixels ttf-jetbrains-mono ttf-liberation grub efibootmgr
 pacman -S --noconfirm pulseaudio linux-headers dkms ranger lm_sensors npm mpv qbittorrent
 
 
