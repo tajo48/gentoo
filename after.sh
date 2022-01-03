@@ -106,10 +106,7 @@ then
     grub-install --target=i386-pc --boot-directory /boot --removable ${1}
     grub-install --target=x86_64-efi --efi-directory /boot --boot-directory /boot --removable
 else 
-    echo "not usb"
-    sleep 5s
     grub-install --target=i386-pc ${1} 
-    sleep 5s
 fi
 grub-mkconfig -o /boot/grub/grub.cfg
 
