@@ -43,7 +43,10 @@ then
 	sleep 3s
     #wipe
     blkdiscard -f ${disk}
-    
+    #################################NOTSUPPORTED###############################################
+
+
+
     #partition
     sgdisk -o -n 1:0:+10M -t 1:EF02 -n 2:0:+500M -t 2:EF00 -n 3:0:0 -t 3:8300 ${disk}
     
@@ -52,10 +55,10 @@ then
     mkfs.ext4 ${disk}3
     
     #mount
-    mkdir -p /mnt/usb
-    mount ${disk}3 /mnt/usb
-    mkdir /mnt/usb/boot
-    mount ${disk}2 /mnt/usb/boot
+    mkdir -p /mnt
+    mount ${disk}3 /mnt
+    mkdir /mnt/boot
+    mount ${disk}2 /mnt/boot
 
 	#set up time
     timedatectl set-ntp true
@@ -66,13 +69,11 @@ then
     #pacman-key --refresh-keys
     
     #pacstrap
-    pacstrap /mnt/usb base linux pacman sudo linux-firmware dosfstools wget
+    pacstrap /mnt base linux pacman sudo linux-firmware dosfstools wget
     
     #fstab
-    genfstab -U /mnt/usb > /mnt/usb/etc/fstab
+    genfstab -U /mnt > /mnt/usb/etc/fstab
     
-    #generate fstab
-    genfstab -U /mnt >> /mnt/etc/fstab
     
     #copy post-install system cinfiguration script to new /root
     curl -k --create-dirs -o /mnt/root/after.sh https://raw.githubusercontent.com/tajo48/ARCH/master/after.sh
