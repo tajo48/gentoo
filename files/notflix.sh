@@ -24,7 +24,7 @@ curl -s $baseurl/search/$query/1/ > $cachedir/tmp.html
 curl -s $baseurl/search/$query/2/ >> $cachedir/tmp.html
 curl -s $baseurl/search/$query/3/ >> $cachedir/tmp.html
 curl -s $baseurl/search/$query/4/ >> $cachedir/tmp.html
-#curl -s $baseurl/search/$query/5/ >> $cachedir/tmp.html
+curl -s $baseurl/search/$query/5/ >> $cachedir/tmp.html
 #curl -s $baseurl/search/$query/6/ >> $cachedir/tmp.html
 #curl -s $baseurl/search/$query/7/ >> $cachedir/tmp.html
 #curl -s $baseurl/search/$query/8/ >> $cachedir/tmp.html
@@ -74,11 +74,13 @@ curl -s $fullURL > $cachedir/tmp.html
 magnet=$(grep -Po "magnet:\?xt=urn:btih:[a-zA-Z0-9]*" $cachedir/tmp.html | head -n 1) 
 
 
-chosen=$(echo -e "Stream\nGetmagnet" | dmenu -i)
+# chosen=$(echo -e "Stream\nGetmagnet" | dmenu -i)
 
-case "$chosen" in
-  Stream) webtorrent "$magnet" --mpv;;
-  Getmagnet) echo $magnet | xclip ;;
-  Download) echo "work in progress" ;;
-esac
+# case "$chosen" in
+#   Stream) webtorrent "$magnet" --mpv;;
+#   Getmagnet) echo $magnet | xclip ;;
+#   Download) echo "work in progress" ;;
+# esac
 
+echo $magnet | xclip
+webtorrent "$magnet" --mpv
