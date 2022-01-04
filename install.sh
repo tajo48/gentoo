@@ -43,6 +43,11 @@ then
 	sleep 3s
     #wipe
     sfdisk --delete ${disk}
+    sfdisk --delete ${disk}
+    sfdisk --delete ${disk}
+    sfdisk --delete ${disk}
+    sfdisk --delete ${disk}
+    sfdisk --delete ${disk}
     ##################################temporary###############################################
 
     #partition
