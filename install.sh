@@ -79,7 +79,7 @@ then
     chmod +x /mnt/root/after.sh
     
     #chroot into new system
-    arch-chroot /mnt /root/after.sh ${disk} usb
+    arch-chroot /mnt /root/after.sh ${disk}
 else
 	#this is hard drive
 	echo "install arch on hard drive"
@@ -126,5 +126,5 @@ else
     chmod +x /mnt/root/after.sh
     
     #chroot into new system
-    arch-chroot /mnt /root/after.sh ${disk} hard
+    arch-chroot /mnt /root/after.sh ${disk}
 fi

@@ -40,6 +40,24 @@ pacman -Syy
 #pacman install from programs variable
 pacman -S --noconfirm $programs
 
+usbdrive="..."
+for device in /sys/block/*
+do
+    if udevadm info --query=property --path=$device | grep -q ^ID_BUS=usb
+    then
+        usb=$(echo $device | sed -n 's/^.*\/block\/\(.*\)/\1/p')
+        
+        if [ ${1} = "/dev/${usb}" ]
+        then
+            #this is usb drive
+            usbdrive=${1}
+        fi
+        
+    fi
+done
+
+
+
 #set date time
 ln -sf /usr/share/zoneinfo/Europe/Warsaw /etc/localtime
 ln -s /dev/null /etc/udev/rules.d/80-net-setup-link.rules
@@ -93,21 +111,24 @@ sed -i '/Port/ s/22/2137/' /etc/ssh/sshd_config
 systemctl enable sshd
 
 #journal setup
-mkdir -p /etc/systemd/journald.conf.d
-echo -e "[Journal]\nStorage=volatile\nSystemMaxUse=16M\nRuntimeMaxUse=32M\n" > /etc/systemd/journald.conf.d/10-volatile.conf
+#mkdir -p /etc/systemd/journald.conf.d
+#echo -e "[Journal]\nStorage=volatile\nSystemMaxUse=16M\nRuntimeMaxUse=32M\n" > /etc/systemd/journald.conf.d/10-volatile.conf
 
 #sed change realtime to noatime and atime in etc/fstab
-sudo sed -i 's/realtime/noatime/g' /etc/fstab
-sudo sed -i 's/atime/noatime/g' /etc/fstab
+#sudo sed -i 's/realtime/noatime/g' /etc/fstab
+#sudo sed -i 's/atime/noatime/g' /etc/fstab
 
 #install grub and make config
-if  [ "${2}" = "usb" ]
+if [ ${usbdrive} = ${1} ]
 then
+    echo "pendrive"
     grub-install --target=i386-pc --boot-directory /boot --removable ${1}
     grub-install --target=x86_64-efi --efi-directory /boot --boot-directory /boot --removable
-elif [ "${2}" = "hard" ]
-then
-    grub-install --target=i386-pc ${1} 
+    sleep 10s
+else
+    echo "hard drive"
+    grub-install --target=i386-pc ${1}
+    sleep 10s 
 fi
 grub-mkconfig -o /boot/grub/grub.cfg
 
