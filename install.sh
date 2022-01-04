@@ -42,7 +42,7 @@ then
     echo "install arch on usb drive"
 	sleep 3s
     #wipe
-    sfdisk --delete /dev/sda
+    sfdisk --delete ${disk}
 
 
     #partition
