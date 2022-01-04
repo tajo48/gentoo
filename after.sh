@@ -101,11 +101,11 @@ sudo sed -i 's/realtime/noatime/g' /etc/fstab
 sudo sed -i 's/atime/noatime/g' /etc/fstab
 
 #install grub and make config
-if  [ ${2} = "usb" ]
+if  [ "${2}" = "usb" ]
 then
     grub-install --target=i386-pc --boot-directory /boot --removable ${1}
     grub-install --target=x86_64-efi --efi-directory /boot --boot-directory /boot --removable
-elif [ ${2} = "hard" ]
+elif [ "${2}" = "hard" ]
 then
     grub-install --target=i386-pc ${1} 
 fi
