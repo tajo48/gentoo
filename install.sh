@@ -42,9 +42,7 @@ then
     echo "install arch on usb drive"
 	sleep 3s
     #wipe
-    blkdiscard -f ${disk}
-    #################################NOTSUPPORTED###############################################
-
+    sfdisk --delete /dev/sda
 
 
     #partition
