@@ -44,10 +44,6 @@ then
     #wipe
     sfdisk --delete ${disk}
     sfdisk --delete ${disk}
-    sfdisk --delete ${disk}
-    sfdisk --delete ${disk}
-    sfdisk --delete ${disk}
-    sfdisk --delete ${disk}
     ##################################temporary###############################################
 
     #partition
