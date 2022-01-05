@@ -71,7 +71,7 @@ then
     pacstrap /mnt base linux pacman sudo linux-firmware dosfstools wget
     
     #fstab
-    genfstab -U /mnt > /mnt/usb/etc/fstab
+    genfstab -U /mnt > /mnt/etc/fstab
     
     
     #copy post-install system cinfiguration script to new /root
