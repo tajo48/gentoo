@@ -22,7 +22,6 @@ programs="pulseaudio nvidia libnewt arch-install-scripts linux-headers dkms iwd 
 #wifi dmenu
 #sudo pacman -S pavucontrol
 #Xclip notflix
-#Notflix download or stream
 #Cut WiFi menu
 #Make arch usb
 #Delete dmenu notify
