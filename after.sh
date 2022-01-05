@@ -180,6 +180,12 @@ git clone https://aur.archlinux.org/webtorrent-cli.git
 cd /home/tajo48/Git/webtorrent-cli
 makepkg -sri --noconfirm
 
+#install vscode-bin
+cd /home/tajo48/Git/
+git clone https://aur.archlinux.org/visual-studio-code-bin.git
+cd /home/tajo48/Git/visual-studio-code-bin.git
+makepkg -sri --noconfirm
+
 #chown
 chown tajo48 -R /home/tajo48/
 
