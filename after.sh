@@ -26,7 +26,6 @@ programs="pulseaudio nvidia libnewt arch-install-scripts linux-headers dkms iwd 
 #Cut WiFi menu
 #Make arch usb
 #Delete dmenu notify
-#Delete all terminal pref script from ctrl+win+p
 #ssh loockup (saftey measure)
 #gparted
 #unmount before install ??? can fix wipe error???
