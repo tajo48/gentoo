@@ -161,7 +161,7 @@ cp /home/tajo48/ARCH/files/xinitrc /home/tajo48/.xinitrc
 chsh -s /bin/zsh tajo48
 
 #mkdir and touch
-mkdir /home/tajo48/Downloads /home/tajo48/Desktop /home/tajo48/Pictures /home/tajo48/Git /home/tajo48/Videos /home/tajo48/Wallpapers
+mkdir /home/tajo48/Downloads /home/tajo48/Desktop /home/tajo48/Pictures /home/tajo48/Git /home/tajo48/Videos /home/tajo48/Wallpapers /home/tajo48/Documents /home/tajo48/Music
 touch /home/tajo48/weather
 
 #nvim
