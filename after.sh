@@ -38,6 +38,9 @@ pacman -Syy
 
 #pacman install from programs variable
 pacman -S --noconfirm $programs
+pacman -S --noconfirm gnome-keyring libsecret libgnome-keyring 
+
+
 
 usbdrive="..."
 for device in /sys/block/*
