@@ -30,7 +30,8 @@ alias pacre="sudo rm /var/lib/pacman/db.lck"
 alias BTW="neofetch"
 alias btw="neofetch"
 alias notflix="sh ~/ARCH/files/notflix.sh"
-alias wifi="sudo wifi-menu"
+#alias wifi="sudo wifi-menu"
+alias wifi="echo 'iwctl → wlan0 get-networklist → station wlan0 connect <network name>'"
 
 
 # Config for prompt. PS1 synonym.
