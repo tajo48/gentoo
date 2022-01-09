@@ -41,7 +41,9 @@ then
     #this is usb drive
     echo "install arch on usb drive"
 	sleep 3s
+    
     #wipe
+    sfdisk --delete ${disk}
     sgdisk --zap-all ${disk} 
     ##################################temporary###############################################
 
