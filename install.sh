@@ -44,6 +44,7 @@ then
     
     #wipe
     sfdisk --delete ${disk}
+    sudo dd if=/dev/zero of=${disk} bs=1M 
 
     #partition
     sgdisk -Z -o -n 1:0:+10M -t 1:EF02 -n 2:0:+500M -t 2:EF00 -n 3:0:0 -t 3:8300 ${disk}
