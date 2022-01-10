@@ -113,9 +113,9 @@ systemctl enable sshd
 #mkdir -p /etc/systemd/journald.conf.d
 #echo -e "[Journal]\nStorage=volatile\nSystemMaxUse=16M\nRuntimeMaxUse=32M\n" > /etc/systemd/journald.conf.d/10-volatile.conf
 
-#sed change realtime to noatime and atime in etc/fstab
-sudo sed -i 's/relatime/noatime/g' /etc/fstab
-sudo sed -i 's/atime/noatime/g' /etc/fstab
+#sed change realtime to noatime and atime in etc/fstab NOT WORKING
+#sudo sed -i 's/relatime/noatime/g' /etc/fstab
+#sudo sed -i 's/atime/noatime/g' /etc/fstab
 
 #install grub and make config
 if [ ${usbdrive} = ${1} ]
