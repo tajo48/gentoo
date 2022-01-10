@@ -92,9 +92,6 @@ echo -e"\n127.0.0.1	localhost\n::1		localhost\n127.0.1.1	ARCH\n" >> /etc/hosts
 #set root passwd
 echo -en "root\nroot" | passwd
 
-#internet deamon
-####################systemctl enable dhcpcd
-
 #add user
 useradd -m tajo48
 
@@ -117,7 +114,7 @@ systemctl enable sshd
 #echo -e "[Journal]\nStorage=volatile\nSystemMaxUse=16M\nRuntimeMaxUse=32M\n" > /etc/systemd/journald.conf.d/10-volatile.conf
 
 #sed change realtime to noatime and atime in etc/fstab
-sudo sed -i 's/realtime/noatime/g' /etc/fstab
+sudo sed -i 's/relatime/noatime/g' /etc/fstab
 sudo sed -i 's/atime/noatime/g' /etc/fstab
 
 #install grub and make config
@@ -181,13 +178,13 @@ makepkg -s -i -c --noconfirm
 cd /home/tajo48/Git/
 git clone https://aur.archlinux.org/webtorrent-cli.git
 cd /home/tajo48/Git/webtorrent-cli
-makepkg -sri --noconfirm
+makepkg -s -i -c --noconfirm
 
 #install vscode-bin
 cd /home/tajo48/Git/
 git clone https://aur.archlinux.org/visual-studio-code-bin.git
 cd /home/tajo48/Git/visual-studio-code-bin.git
-makepkg -sri --noconfirm
+makepkg -s -i -c --noconfirm
 
 #chown
 chown tajo48 -R /home/tajo48/
