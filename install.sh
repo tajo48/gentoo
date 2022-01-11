@@ -46,7 +46,7 @@ else
 fi
 sleep 3s
 
-#wipe for this to work you need to have a usb drive that supports uasp and trim
+#wipe for this to work you need to have a drive that supports uasp and trim
 blkdiscard -f ${disk}
 
 #partition
