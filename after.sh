@@ -38,7 +38,7 @@ pacman -Syy
 
 #pacman install from programs variable
 pacman -S --noconfirm $programs
-pacman -S --noconfirm gnome-keyring libsecret libgnome-keyring 
+pacman -S --noconfirm gnome-keyring libsecret libgnome-keyring
 
 
 
@@ -126,8 +126,9 @@ then
     sleep 10s
 else
     echo "hard drive"
-    grub-install --target=i386-pc ${1}
-    sleep 10s 
+    grub-install --target=i386-pc --boot-directory /boot ${1}
+    grub-install --target=x86_64-efi --efi-directory /boot --boot-directory /boot
+    sleep 10s
 fi
 grub-mkconfig -o /boot/grub/grub.cfg
 
@@ -172,19 +173,19 @@ touch /home/tajo48/weather
 cd /home/tajo48/Git/
 git clone https://aur.archlinux.org/yay-git.git
 cd /home/tajo48/Git/yay-git
-makepkg -s -i -c --noconfirm
+makepkg -sic --noconfirm
 
 #install webtorrent
 cd /home/tajo48/Git/
 git clone https://aur.archlinux.org/webtorrent-cli.git
 cd /home/tajo48/Git/webtorrent-cli
-makepkg -s -i -c --noconfirm
+makepkg -sic --noconfirm
 
 #install vscode-bin
 cd /home/tajo48/Git/
 git clone https://aur.archlinux.org/visual-studio-code-bin.git
-cd /home/tajo48/Git/visual-studio-code-bin.git
-makepkg -s -i -c --noconfirm
+cd /home/tajo48/Git/visual-studio-code-bin
+makepkg -sic --noconfirm
 
 #chown
 chown tajo48 -R /home/tajo48/
