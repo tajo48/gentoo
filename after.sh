@@ -190,3 +190,4 @@ makepkg -sic --noconfirm
 chown tajo48 -R /home/tajo48/
 
 #end of script
+neofetch
