@@ -62,7 +62,6 @@ done
 
 #set date time
 ln -sf /usr/share/zoneinfo/Europe/Warsaw /etc/localtime
-ln -s /dev/null /etc/udev/rules.d/80-net-setup-link.rules
 hwclock --systohc
 
 #set locale to en_US.UTF-8 UTF-8
