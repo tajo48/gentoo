@@ -16,7 +16,7 @@ setopt prompt_subst
 
 
 # alias v="nvim"
-alias x="sh ~/ARCH/files/wallpaper.sh && startx"
+alias x="startx"
 alias rmwal="rm -rf ~/.cache/wal/schemes/"
 alias p="ping google.com"
 
