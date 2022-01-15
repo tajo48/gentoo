@@ -4,7 +4,6 @@ cd ~/
 
 if [ "$(ls -A ~/Wallpapers)" ]
 then
-rm -rf ~/.cache/wal/schemes/
 moviename=$(ls ~/Wallpapers | shuf -n 1)
 moviedir=$(pwd)"/Wallpapers/"$moviename
 movietime=$(ffprobe -i $moviedir -show_format -v quiet | sed -n 's/duration=//p' | sed 's/\..*$//')
