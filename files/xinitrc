@@ -1,12 +1,11 @@
-clipmenud &
 sh ~/ARCH/files/wallpaper.sh
 rm -rf ~/.cache/wal/schemes/
 wal -i /home/tajo48/ARCH/photos
 
 
 for profile in ~/.mozilla/firefox/?*.default-release
-do 
-cp /home/tajo48/.cache/wal/colors.css $profile/chrome/colors.css
+do
+    cp /home/tajo48/.cache/wal/colors.css $profile/chrome/colors.css
 done
 
 # see https://unix.stackexchange.com/a/295652/332452

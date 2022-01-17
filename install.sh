@@ -1,4 +1,5 @@
 #! /bin/bash
+ping -q -w 1 -c 1 google.com > /dev/null && echo "internet ok" || exit
 selectdisk(){
     items=$(lsblk -d -p -n -l -o NAME,SIZE -e 7,11)
     options=()

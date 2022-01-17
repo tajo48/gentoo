@@ -2,6 +2,7 @@
 
 # Dependencies - webtorrent, mpv, qbittorrent
 
+ping -q -w 1 -c 1 google.com > /dev/null && echo "internet ok" || exit
 mkdir -p $HOME/.cache/notflix
 
 menu="dmenu"
@@ -74,10 +75,11 @@ curl -s $fullURL > $cachedir/tmp.html
 magnet=$(grep -Po "magnet:\?xt=urn:btih:[a-zA-Z0-9]*" $cachedir/tmp.html | head -n 1)
 
 
-chosen=$(echo -e "Stream\nGetmagnet\nDownload" | dmenu -i)
 
+echo $magnet | xclip
+
+chosen=$(echo -e "Stream\nDownload" | dmenu -i)
 case "$chosen" in
     Stream) webtorrent "$magnet" --mpv;;
-    Getmagnet) echo $magnet | xclip ;;
-    Download) qbittorrent add url "$magnet" ;;
+    Download) webtorrent download -o ~/Videos "$magnet";;
 esac
