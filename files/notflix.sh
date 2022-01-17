@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# Dependencies - webtorrent, mpv, qbittorrent
+# Dependencies - webtorrent, mpv
 
 ping -q -w 1 -c 1 google.com > /dev/null && echo "internet ok" || exit
 mkdir -p $HOME/.cache/notflix

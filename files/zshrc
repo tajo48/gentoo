@@ -2,13 +2,13 @@
 # Find and set branch name var if in git repository.
 function git_branch_name()
 {
-  branch=$(git symbolic-ref HEAD 2> /dev/null | awk 'BEGIN{FS="/"} {print $NF}')
-  if [[ $branch == "" ]];
-  then
-    :
-  else
-    echo '- ('$branch')'
-  fi
+    branch=$(git symbolic-ref HEAD 2> /dev/null | awk 'BEGIN{FS="/"} {print $NF}')
+    if [[ $branch == "" ]];
+    then
+        :
+    else
+        echo '- ('$branch')'
+    fi
 }
 
 # Enable substitution in the prompt.
@@ -17,20 +17,14 @@ setopt prompt_subst
 
 # alias v="nvim"
 alias x="startx"
-alias rmwal="rm -rf ~/.cache/wal/schemes/"
 alias p="ping google.com"
-
-
 alias u="sh ~/ARCH/files/upgradefiles.sh"
-
-
 alias suicide="poweroff"
 alias gita="git add -A && git commit -m 'update' && git push"
 alias pacre="sudo rm /var/lib/pacman/db.lck"
 alias BTW="neofetch"
 alias btw="neofetch"
-alias notflix="sh ~/ARCH/files/notflix.sh"
-#alias wifi="sudo wifi-menu"
+alias notflix="sh /home/tajo48/ARCH/files/notflix.sh"
 alias wifi="echo 'iwctl → device list → station <device> get-networks → station <device> connect <network name>'"
 
 
@@ -39,5 +33,5 @@ prompt='%2/ $(git_branch_name) > '
 
 
 
-alias arch-install="cd ~/ && sudo sh ~/ARCH/install.sh"
+alias arch-install="cd ~/ && sudo sh /home/tajo48/ARCH/install.sh"
 
