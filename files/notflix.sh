@@ -5,7 +5,7 @@
 ping -q -w 1 -c 1 google.com > /dev/null && echo "internet ok" || exit
 mkdir -p $HOME/.cache/notflix
 
-menu="dmenu"
+menu="fzf"
 baseurl="https://1337x.wtf"
 cachedir="$HOME/.cache/notflix"
 
@@ -78,7 +78,7 @@ magnet=$(grep -Po "magnet:\?xt=urn:btih:[a-zA-Z0-9]*" $cachedir/tmp.html | head 
 
 echo $magnet | xclip
 
-chosen=$(echo -e "Stream\nDownload" | dmenu -i)
+chosen=$(echo -e "Stream\nDownload" | $menu)
 case "$chosen" in
     Stream) webtorrent "$magnet" --mpv;;
     Download) webtorrent download -o ~/Downloads "$magnet";;
