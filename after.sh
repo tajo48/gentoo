@@ -168,6 +168,12 @@ git clone https://aur.archlinux.org/visual-studio-code-bin.git
 cd /home/tajo48/Git/visual-studio-code-bin
 makepkg -sic --noconfirm
 
+su tajo48 << 'NO'
+mkdir /home/tajo48/.npm-global
+npm config set prefix '/home/tajo48/.npm-global'
+echo "export PATH=~/.npm-global/bin:$PATH" > ~/.profile
+NO
+
 #chown
 chown tajo48 -R /home/tajo48/
 

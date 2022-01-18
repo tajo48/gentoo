@@ -1,5 +1,8 @@
 # ~/.zshrc
 # Find and set branch name var if in git repository.
+source ~/.profile
+
+
 function git_branch_name()
 {
     branch=$(git symbolic-ref HEAD 2> /dev/null | awk 'BEGIN{FS="/"} {print $NF}')
@@ -30,7 +33,6 @@ alias wifi="echo 'iwctl → device list → station <device> get-networks → st
 
 # Config for prompt. PS1 synonym.
 prompt='%2/ $(git_branch_name) > '
-
 
 
 alias arch-install="cd ~/ && sudo sh /home/tajo48/ARCH/install.sh"
