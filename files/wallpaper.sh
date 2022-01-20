@@ -1,6 +1,5 @@
 #!/bin/bash
 cd ~/
-rm -rf ~/.cache/wal/schemes/
 
 if [ "$(ls -A ~/Wallpapers)" ]
 then
