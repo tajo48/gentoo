@@ -1,6 +1,6 @@
 #!/bin/bash
 cd ~/
-
+rm -rf ~/.cache/wal/schemes/
 if [ "$(ls -A ~/Wallpapers)" ]
 then
     moviename=$(ls ~/Wallpapers | shuf -n 1)
