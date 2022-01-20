@@ -19,8 +19,8 @@ setopt prompt_subst
 
 
 # alias v="nvim"
-alias x="startx"
 alias p="ping google.com"
+alias x="sh ~/ARCH/files/wallpaper.sh && startx"
 alias u="sh ~/ARCH/files/upgradefiles.sh"
 alias suicide="poweroff"
 alias gita="git add -A && git commit -m 'update' && git push"
