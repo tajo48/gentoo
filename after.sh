@@ -90,6 +90,10 @@ sed -i '/Port/s/^#//g' /etc/ssh/sshd_config
 sed -i '/Port/ s/22/2137/' /etc/ssh/sshd_config
 systemctl enable sshd
 
+#mkdir and touch
+mkdir /home/tajo48/Downloads /home/tajo48/Desktop /home/tajo48/Pictures /home/tajo48/Git /home/tajo48/Videos /home/tajo48/Wallpapers /home/tajo48/Documents /home/tajo48/Music
+touch /home/tajo48/weather
+
 #journal setup
 #mkdir -p /etc/systemd/journald.conf.d
 #echo -e "[Journal]\nStorage=volatile\nSystemMaxUse=16M\nRuntimeMaxUse=32M\n" > /etc/systemd/journald.conf.d/10-volatile.conf
@@ -120,8 +124,10 @@ curl -k -o /usr/bin/makepkg https://raw.githubusercontent.com/tajo48/ARCH/master
 chmod +x /usr/bin/makepkg
 
 #install my config repo
-cd /home/tajo48
+cd /home/tajo48/Git
 git clone https://github.com/tajo48/ARCH.git
+cp -r /home/tajo48/Git/ARCH /home/tajo48/
+rm -rf /home/tajo48/ARCH/.git
 
 #wal for dwm,st and dmenu with zsh install
 su tajo48 << 'NO'
@@ -141,10 +147,6 @@ cp /home/tajo48/ARCH/files/xinitrc /home/tajo48/.xinitrc
 
 #set zsh as default shell
 chsh -s /bin/zsh tajo48
-
-#mkdir and touch
-mkdir /home/tajo48/Downloads /home/tajo48/Desktop /home/tajo48/Pictures /home/tajo48/Git /home/tajo48/Videos /home/tajo48/Wallpapers /home/tajo48/Documents /home/tajo48/Music
-touch /home/tajo48/weather
 
 #nvim
 # mkdir /home/tajo48/.config/nvim
