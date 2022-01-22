@@ -19,21 +19,22 @@ setopt prompt_subst
 
 
 # alias v="nvim"
+alias hosts="sh ~/ARCH/files/hosts.sh"
 alias p="ping google.com"
 alias x="sh ~/ARCH/files/wallpaper.sh && startx"
 alias u="sh ~/ARCH/files/upgradefiles.sh"
 alias suicide="poweroff"
 alias gita="git add -A && git commit -m 'update' && git push"
-alias github="sh /home/tajo48/ARCH/files/github.sh"
+alias github="sh ~/ARCH/files/github.sh"
 alias pacre="sudo rm /var/lib/pacman/db.lck"
 alias BTW="neofetch"
 alias btw="neofetch"
-alias notflix="sh /home/tajo48/ARCH/files/notflix.sh"
+alias notflix="sh ~/ARCH/files/notflix.sh"
 alias wifi="echo 'iwctl → device list → station <device> get-networks → station <device> connect <network name>'"
 
 # Config for prompt. PS1 synonym.
 prompt='%2/ $(git_branch_name) > '
 
 
-alias arch-install="cd ~/ && sudo sh /home/tajo48/ARCH/install.sh"
+alias arch-install="cd ~/ && sudo sh ~/ARCH/install.sh"
 
