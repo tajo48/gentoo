@@ -68,7 +68,7 @@ systemctl enable systemd-timesyncd.service
 echo "ARCH" >> /etc/hostname
 
 #set localhost
-echo -e"\n127.0.0.1	localhost\n::1		localhost\n127.0.1.1	ARCH\n" >> /etc/hosts
+echo -e "\n127.0.0.1	localhost\n::1		localhost\n127.0.1.1	ARCH\n" >> /etc/hosts
 
 #set root passwd
 echo -en "root\nroot" | passwd
