@@ -16,4 +16,3 @@ then
 else
     echo $(pwd)"/Wallpapers/ dir is empty"
 fi
-

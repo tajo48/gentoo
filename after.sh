@@ -170,6 +170,12 @@ git clone https://aur.archlinux.org/visual-studio-code-bin.git
 cd /home/tajo48/Git/visual-studio-code-bin
 makepkg -sic --noconfirm
 
+#install ani-cli
+cd /home/tajo48/Git
+git clone https://aur.archlinux.org/ani-cli-git.git
+cd /home/tajo48/Git/ani-cli-git
+makepkg -sic --noconfirm
+
 su tajo48 << 'NO'
 mkdir /home/tajo48/.npm-global
 npm config set prefix '/home/tajo48/.npm-global'
