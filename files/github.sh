@@ -1,5 +1,5 @@
 #! /bin/bash
-pread -p 'Device name: ' device
+read -p 'Device name: ' device
 device=$(echo $device | sed 's/[^[:alpha:]]//g' | tr '[:upper:]' '[:lower:]' | sed 's/\([a-z]\)\([a-zA-Z0-9]*\)/\u\1\2/g')
 echo "ARCH-"$device"-$(date +"%F")" | xclip
 
