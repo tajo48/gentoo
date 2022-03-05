@@ -2,6 +2,10 @@
 # Find and set branch name var if in git repository.
 source ~/.profile
 
+if [ -d "$HOME/.local/bin" ] ; then
+    PATH="$HOME/.local/bin:$PATH"
+fi
+
 
 function git_branch_name()
 {
