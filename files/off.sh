@@ -9,17 +9,11 @@ case "$chosen" in
     Virtualbox) sh ~/ARCH/files/vb.sh ;;
 esac
 
-#update
-#sudo rm -rf /var/lib/pacman/db.lck && sudo pacman -S archlinux-keyring --noconfirm && sudo pacman -Suy --noconfirm
 
-#install
+
 #update=" "$(pacman -Qu | awk '{print $1}') && update=$(echo -e "\n*"$update |  sed 's/ /\n*/g') && install=$(sudo pacman -Ss | grep "^[A-Za-z]" | tr "/" " " | awk '{ print $2}' ) && chosen=$(echo -e $install$update | tr " " "\n" | dmenu -i ) && chosen=$(echo $chosen | tr "\n*" " ") && sudo pacman -S --noconfirm $chosen | dmenu
-
-#uninstall
 #chosen=$(sudo pacman -Q | awk '{print $1}' | dmenu -i) && sudo pacman -R --noconfirm $chosen
 
-#Upgradefiles
-#sh ARCH/files/upgradefiles.sh
 
 # Killssh) sudo systemctl stop sshd;;
 # Startssh) sudo systemctl start sshd;;
