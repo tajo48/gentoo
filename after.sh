@@ -83,7 +83,7 @@ echo -en "root\nroot" | passwd tajo48
 usermod -aG wheel,audio,video,optical,storage,users tajo48
 
 #set sudo password to no require
-sed -i '/%wheel ALL=(ALL) NOPASSWD: ALL/s/^#//g' /etc/sudoers
+sed -i '/%wheel ALL=(ALL:ALL) NOPASSWD: ALL/s/^#//g' /etc/sudoers
 
 #set ssh and ssh-deamon
 sed -i '/Port/s/^#//g' /etc/ssh/sshd_config
