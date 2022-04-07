@@ -2,7 +2,6 @@
 cd ~/
 ping -q -w 1 -c 1 google.com > /dev/null && echo "internet ok" || exit
 curl https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/fakenews-gambling-porn-social/hosts > ~/hosts
-#curl https://raw.githubusercontent.com/kboghdady/youTube_ads_4_pi-hole/master/black.list | sed 's/^/0.0.0.0 /' >> ~/hosts
 echo -e "0.0.0.0 www.youtube.com\n0.0.0.0 music.youtube.com" >> ~/hosts
 sudo rm -rf /etc/hosts
 sudo mv ~/hosts /etc/hosts

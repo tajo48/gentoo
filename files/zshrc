@@ -26,6 +26,8 @@ setopt prompt_subst
 alias hosts="sh ~/ARCH/files/hosts.sh"
 alias p="ping google.com"
 alias x="sh ~/ARCH/files/wallpaper.sh && startx"
+#NOTE TO FUTURE ME check if wallpaper is set on gnome because im not sure if it works and im too lazy to check
+alias w="sh ~/ARCH/files/wallpaper.sh && gsettings set org.gnome.desktop.background picture-uri ARCH/photos/wallpaper.jpg && sudo systemctl start gdm"
 alias u="sh ~/ARCH/files/upgradefiles.sh"
 alias suicide="poweroff"
 alias gita="git add -A && git commit -m 'update' && git push"
