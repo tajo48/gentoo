@@ -54,7 +54,7 @@ static const Layout layouts[] = {
 /* commands */
 static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() */
 static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont, NULL };
-static const char *firefoxcmd[]  = { "sh", "/home/tajo48/ARCH/files/firefox.sh", NULL };
+static const char *firefoxcmd[]  = { "firefox", NULL };
 static const char *slockcmd[]  = { "slock", NULL };
 static const char *discordcmd[]  = { "discord", NULL };
 static const char *blendercmd[]  = { "blender", NULL };

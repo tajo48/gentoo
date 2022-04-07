@@ -26,9 +26,6 @@ do
         mkdir $profile/chrome
     fi
     rm -rf $profile/chrome/userChrome.css
-    rm -rf $profile/chrome/colors.css
-    cp /home/tajo48/.cache/wal/colors.css $profile/chrome/colors.css
     cp /home/tajo48/ARCH/files/userChrome.css $profile/chrome/userChrome.css
 done
 
-firefox
