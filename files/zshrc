@@ -25,6 +25,7 @@ setopt prompt_subst
 # alias v="nvim"
 alias hosts="sh ~/ARCH/files/hosts.sh"
 alias p="ping google.com"
+alias proton="sh ~/ARCH/files/proton.sh"
 alias x="sh ~/ARCH/files/wallpaper.sh && startx"
 #NOTE TO FUTURE ME check if wallpaper is set on gnome because im not sure if it works and im too lazy to check
 alias w="sh ~/ARCH/files/wallpaper.sh && gsettings set org.gnome.desktop.background picture-uri ARCH/photos/wallpaper.jpg && sudo systemctl start gdm"
