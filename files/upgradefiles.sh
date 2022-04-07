@@ -17,8 +17,8 @@ cp ~/ARCH/files/xinitrc ~/.xinitrc
 rm -rf  ~/.zshrc ~/.config/coc
 cp ~/ARCH/files/zshrc ~/.zshrc
 
-rm -rf /usr/bin/makepkg
-cp ~/ARCH/files/makepkg /usr/bin/
+sudo rm -rf /usr/bin/makepkg
+sudo cp ~/ARCH/files/makepkg /usr/bin/
 # rm -rf ~/.config/nvim
 # mkdir ~/.config/nvim
 # cp ~/ARCH/files/init.vim ~/.config/nvim
