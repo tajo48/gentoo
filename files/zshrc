@@ -24,7 +24,7 @@ setopt prompt_subst
 
 # alias v="nvim"
 alias hosts="sh ~/ARCH/files/hosts.sh"
-alias p="ping google.com"
+alias p="ping -q -w 1 -c 1 google.com > /dev/null && echo "ok" || echo "no""
 alias proton="sh ~/ARCH/files/proton.sh"
 alias x="sh ~/ARCH/files/firefox.sh  && sh ~/ARCH/files/wallpaper.sh && startx"
 alias w=" sh ~/ARCH/files/firefox.sh && sh ~/ARCH/files/wallpaper.sh && wal -i /home/tajo48/ARCH/photos && gsettings set org.gnome.desktop.background picture-uri ARCH/photos/wallpaper.jpg && sudo systemctl start gdm"
