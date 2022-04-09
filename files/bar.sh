@@ -2,7 +2,7 @@
 sh /home/tajo48/ARCH/files/min.sh &
 while :
 do
-    statusbat="/"
+    statusbat="|"
     if test -r /sys/class/power_supply/BAT0/capacity;
     then
         for battery in /sys/class/power_supply/BAT?
