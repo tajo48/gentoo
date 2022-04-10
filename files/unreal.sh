@@ -5,7 +5,6 @@ cd UnrealEngine
 git pull
 sudo sh Setup.sh
 sudo sh GenerateProjectFiles.sh
-sudo sh Build.sh
 while true
 do
     read -r -p "Are You Sure? [Y/n] " input
