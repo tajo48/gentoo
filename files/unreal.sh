@@ -1,28 +1,12 @@
 #!/bin/bash
-cd ~/Git
-git clone -b release git@github.com:EpicGames/UnrealEngine.git
-cd UnrealEngine
+cd ~/
+time git clone -b release git@github.com:EpicGames/UnrealEngine.git
+cd ~/UnrealEngine
 git pull
-sudo sh Setup.sh
-sudo sh GenerateProjectFiles.sh
-while true
-do
-    read -r -p "Are You Sure? [Y/n] " input
-    
-    case $input in
-        [yY][eE][sS]|[yY])
-            echo "Yes"
-            time sudo make
-            break
-        ;;
-        [nN][oO]|[nN])
-            echo "No"
-            exit 1
-        ;;
-        *)
-            echo "Invalid input..."
-        ;;
-    esac
-done
+time sudo sh Setup.sh
+time sudo sh GenerateProjectFiles.sh
+time sudo make
+time sudo chown tajo48 -R /home/tajo48/UnrealEngine
+sudo ln -s ~/UnrealEngine/Engine/Binaries/Linux/UnrealEditor /usr/local/bin/UnrealEditor
 
 echo "Done"
