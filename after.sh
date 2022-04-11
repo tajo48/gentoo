@@ -182,6 +182,10 @@ npm config set prefix '/home/tajo48/.npm-global'
 echo "export PATH=~/.npm-global/bin:$PATH" > ~/.profile
 NO
 
+#obs with buffer
+echo "obs --startreplaybuffer" > /usr/local/bin/obsqq
+chmod +x /usr/local/bin/obsqq
+
 #chown
 chown tajo48 -R /home/tajo48/
 

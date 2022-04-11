@@ -28,4 +28,3 @@ do
     rm -rf $profile/chrome/userChrome.css
     cp /home/tajo48/ARCH/files/userChrome.css $profile/chrome/userChrome.css
 done
-
