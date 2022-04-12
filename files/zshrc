@@ -42,6 +42,6 @@ prompt='%2/ $(git_branch_name) > '
 
 
 alias github-install="sh ~/ARCH/files/github.sh"
-alias mc-install = "sh ~/ARCH/files/mc.sh"
+alias mc-install="sh ~/ARCH/files/mc.sh"
 alias arch-install="cd ~/ && sudo sh ~/ARCH/install.sh"
 alias unreal-install="sh ~/ARCH/files/unreal.sh"
