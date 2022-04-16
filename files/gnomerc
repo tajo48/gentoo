@@ -1,3 +1,4 @@
+#! /bin/bash
 gsettings set org.gnome.desktop.input-sources sources "[('xkb', 'pl')]"
 gsettings set org.gnome.desktop.background picture-uri ARCH/photos/wallpaper.jpg 
 

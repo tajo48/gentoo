@@ -1,3 +1,4 @@
+#! /bin/bash
 VBoxClient --clipboard
 VBoxClient --draganddrop
 VBoxClient --checkhostversion
