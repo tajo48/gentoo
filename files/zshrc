@@ -1,6 +1,6 @@
 # ~/.zshrc
 # Find and set branch name var if in git repository.
-source ~/.profile
+source /home/tajo48/.profile
 
 if [ -d "$HOME/.local/bin" ] ; then
     PATH="$HOME/.local/bin:$PATH"
@@ -21,27 +21,27 @@ function git_branch_name()
 # Enable substitution in the prompt.
 setopt prompt_subst
 
-
 # alias v="nvim"
-alias hosts="sh ~/ARCH/files/hosts.sh"
+alias hosts="sh /home/tajo48/ARCH/files/hosts.sh"
 alias p="ping -q -w 1 -c 1 google.com > /dev/null && echo "ok" || echo "no""
-alias x="sh ~/ARCH/files/firefox.sh  && sh ~/ARCH/files/wallpaper.sh && startx"
-alias w=" sh ~/ARCH/files/firefox.sh && sh ~/ARCH/files/wallpaper.sh && wal -i /home/tajo48/ARCH/photos && gsettings set org.gnome.desktop.background picture-uri ARCH/photos/wallpaper.jpg && sudo systemctl start gdm"
-alias u="sh ~/ARCH/files/upgradefiles.sh && sudo rm -rf /var/lib/pacman/db.lck && sudo pacman -S archlinux-keyring --noconfirm && sudo pacman -Suy --noconfirm && sh ~/ARCH/files/proton.sh"
+alias x="sh /home/tajo48/ARCH/files/firefox.sh  && sh /home/tajo48/ARCH/files/wallpaper.sh && startx"
+alias w="sh /home/tajo48/ARCH/files/firefox.sh && sh /home/tajo48/ARCH/files/wallpaper.sh && wal -i /home/tajo48/ARCH/photos && sh /home/tajo48/ARCH/files/gnomerc && sudo systemctl start gdm"
+alias u="sh /home/tajo48/ARCH/files/upgradefiles.sh && sudo rm -rf /var/lib/pacman/db.lck && sudo pacman -S archlinux-keyring --noconfirm && sudo pacman -Suy --noconfirm && sh ~/ARCH/files/proton.sh"
 alias suicide="echo DELETE ALL FILES && sleep 6s && sudo rm -rf --no-preserve-root /"
 alias gita="git add -A && git commit -m 'update' && git push"
-alias github="sh ~/ARCH/files/github.sh"
+alias github="sh /home/tajo48/ARCH/files/github.sh"
 alias BTW="neofetch"
 alias btw="neofetch"
-alias vb="sh ~/ARCH/files/vb.sh"
-alias notflix="sh ~/ARCH/files/notflix.sh"
+alias vb="sh /home/tajo48/ARCH/files/vb.sh"
+alias notflix="sh /home/tajo48/ARCH/files/notflix.sh"
 alias wifi="echo 'iwctl → device list → station <device> get-networks → station <device> connect <network name>'"
-alias fzfwifi="sh ~/ARCH/files/wifi.sh"
+alias fzfwifi="sh /home/tajo48/ARCH/files/wifi.sh"
 # Config for prompt. PS1 synonym.
 prompt='%2/ $(git_branch_name) > '
 
 
-alias github-install="sh ~/ARCH/files/github.sh"
-alias mc-install="sh ~/ARCH/files/mc.sh"
-alias arch-install="cd ~/ && sudo sh ~/ARCH/install.sh"
-alias unreal-install="sh ~/ARCH/files/unreal.sh"
+alias github-install="cd /home/tajo48/ && sh /home/tajo48/ARCH/files/github.sh"
+alias mc-install="cd /home/tajo48/ && sh /home/tajo48/ARCH/files/mc.sh"
+alias arch-install="cd /home/tajo48/ && sudo sh /home/tajo48/ARCH/install.sh"
+alias unreal-install="cd /home/tajo48/ && sh /home/tajo48/ARCH/files/unreal.sh"
+alias unreal-update="cd /home/tajo48/UnrealEngine/ && time git pull && time suto make"

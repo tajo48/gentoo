@@ -2,7 +2,6 @@
 cd ~/
 time git clone -b release git@github.com:EpicGames/UnrealEngine.git
 cd ~/UnrealEngine
-git pull
 time sudo sh Setup.sh
 time sudo sh GenerateProjectFiles.sh
 time sudo make
