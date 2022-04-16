@@ -9,4 +9,3 @@ echo "java -jar ~/TLauncher-*.jar" > ~/Minecraft
 sudo chmod +x Minecraft
 sudo rm  /usr/local/bin/Minecraft
 sudo mv ~/Minecraft /usr/local/bin/Minecraft
-

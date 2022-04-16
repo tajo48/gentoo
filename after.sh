@@ -118,11 +118,6 @@ fi
 grub-mkconfig -o /boot/grub/grub.cfg
 
 
-#makepkg in root
-rm /usr/bin/makepkg
-curl -k -o /usr/bin/makepkg https://raw.githubusercontent.com/tajo48/ARCH/master/files/makepkg
-chmod +x /usr/bin/makepkg
-
 #install my config repo
 cd /home/tajo48/Git
 git clone https://github.com/tajo48/ARCH.git
@@ -152,29 +147,13 @@ chsh -s /bin/zsh tajo48
 # mkdir /home/tajo48/.config/nvim
 # cp /home/tajo48/ARCH/files/init.vim /home/tajo48/.config/nvim/init.vim
 
-#install yay
-cd /home/tajo48/Git/
-git clone https://aur.archlinux.org/yay-git.git
-cd /home/tajo48/Git/yay-git
-makepkg -sic --noconfirm
-
-#install webtorrent
-cd /home/tajo48/Git/
-git clone https://aur.archlinux.org/webtorrent-cli.git
-cd /home/tajo48/Git/webtorrent-cli
-makepkg -sic --noconfirm
-
-#install vscode-bin
 cd /home/tajo48/Git/
 git clone https://aur.archlinux.org/visual-studio-code-bin.git
-cd /home/tajo48/Git/visual-studio-code-bin
-makepkg -sic --noconfirm
+cd /home/tajo48/Git/
+git clone https://aur.archlinux.org/webtorrent-cli.git
+cd /home/tajo48/Git/
+git clone https://aur.archlinux.org/minecraft-launcher.git
 
-#install ani-cli
-cd /home/tajo48/Git
-git clone https://aur.archlinux.org/ani-cli-git.git
-cd /home/tajo48/Git/ani-cli-git
-makepkg -sic --noconfirm
 
 su tajo48 << 'NO'
 mkdir /home/tajo48/.npm-global
@@ -191,3 +170,4 @@ chown tajo48 -R /home/tajo48/
 
 #end of script
 neofetch
+

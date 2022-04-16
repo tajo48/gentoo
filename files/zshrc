@@ -39,9 +39,12 @@ alias fzfwifi="sh /home/tajo48/ARCH/files/wifi.sh"
 # Config for prompt. PS1 synonym.
 prompt='%2/ $(git_branch_name) > '
 
+alias get-github="echo 'NAME:' && cat /home/tajo48/.ssh/name && echo 'KEY:' && cat /home/tajo48/.ssh/id_rsa.pub"
 
 alias github-install="cd /home/tajo48/ && sh /home/tajo48/ARCH/files/github.sh"
 alias mc-install="cd /home/tajo48/ && sh /home/tajo48/ARCH/files/mc.sh"
 alias arch-install="cd /home/tajo48/ && sudo sh /home/tajo48/ARCH/install.sh"
 alias unreal-install="cd /home/tajo48/ && sh /home/tajo48/ARCH/files/unreal.sh"
-alias unreal-update="cd /home/tajo48/UnrealEngine/ && time git pull && time sudo make && time sudo chown tajo48 -R /home/tajo48/UnrealEngine  && cd /home/tajo48/"
+
+alias aur-update="git pull && makepkg -sic --noconfirm"
+alias unreal-update="cd /home/tajo48/UnrealEngine/ && time git pull && time sudo chown tajo48 -R /home/tajo48/UnrealEngine && time sudo make && time sudo chown tajo48 -R /home/tajo48/UnrealEngine  && cd /home/tajo48/ && sudo rm /usr/local/bin/UnrealEditor && sudo ln -s /home/tajo48/UnrealEngine/Engine/Binaries/Linux/UnrealEditor /usr/local/bin/UnrealEditor"

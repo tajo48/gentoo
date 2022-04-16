@@ -6,6 +6,6 @@ time sudo sh Setup.sh
 time sudo sh GenerateProjectFiles.sh
 time sudo make
 time sudo chown tajo48 -R /home/tajo48/UnrealEngine
-sudo ln -s ~/UnrealEngine/Engine/Binaries/Linux/UnrealEditor /usr/local/bin/UnrealEditor
-
+sudo rm /usr/local/bin/UnrealEditor
+sudo ln -s /home/tajo48/UnrealEngine/Engine/Binaries/Linux/UnrealEditor /usr/local/bin/UnrealEditor
 echo "Done"

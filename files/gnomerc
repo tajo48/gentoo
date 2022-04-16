@@ -1,6 +1,7 @@
 gsettings set org.gnome.desktop.input-sources sources "[('xkb', 'pl')]"
 gsettings set org.gnome.desktop.background picture-uri ARCH/photos/wallpaper.jpg 
 
+gsettings set org.gnome.desktop.interface gtk-theme 'Adwaita-dark'
 
 gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-1 "['<Super>1']"
 gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-2 "['<Super>2']"
