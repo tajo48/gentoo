@@ -23,6 +23,7 @@ setopt prompt_subst
 
 # alias v="nvim"
 alias hosts="sh /home/tajo48/ARCH/files/hosts.sh"
+alias spacesniffer="ncdu"
 alias p="ping -q -w 1 -c 1 google.com > /dev/null && echo "ok" || echo "no""
 alias x="sh /home/tajo48/ARCH/files/firefox.sh  && sh /home/tajo48/ARCH/files/wallpaper.sh && startx"
 alias w="sh /home/tajo48/ARCH/files/firefox.sh && sh /home/tajo48/ARCH/files/wallpaper.sh && wal -i /home/tajo48/ARCH/photos && sh /home/tajo48/ARCH/files/gnomerc && sudo systemctl start gdm"
