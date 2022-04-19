@@ -36,7 +36,7 @@ alias btw="neofetch"
 alias vb="sh /home/tajo48/ARCH/files/vb.sh"
 alias notflix="sh /home/tajo48/ARCH/files/notflix.sh"
 alias wifi="echo 'iwctl → device list → station <device> get-networks → station <device> connect <network name>'"
-alias fzfwifi="sh /home/tajo48/ARCH/files/wifi.sh"
+alias status="curl -o /home/tajo48/weather 'https://wttr.in/?format=2' && sudo pacman -Sy"
 # Config for prompt. PS1 synonym.
 prompt='%2/ $(git_branch_name) > '
 
@@ -47,5 +47,5 @@ alias mc-install="cd /home/tajo48/ && sh /home/tajo48/ARCH/files/mc.sh"
 alias arch-install="cd /home/tajo48/ && sudo sh /home/tajo48/ARCH/install.sh"
 alias unreal-install="cd /home/tajo48/ && sh /home/tajo48/ARCH/files/unreal.sh"
 
-alias aur-update="git pull && makepkg -sic --noconfirm"
+alias aur-make="git pull && makepkg -sic --noconfirm"
 alias unreal-update="cd /home/tajo48/UnrealEngine/ && time git pull && time sudo chown tajo48 -R /home/tajo48/UnrealEngine && time sudo make && time sudo chown tajo48 -R /home/tajo48/UnrealEngine  && cd /home/tajo48/ && sudo rm /usr/local/bin/UnrealEditor && sudo ln -s /home/tajo48/UnrealEngine/Engine/Binaries/Linux/UnrealEditor /usr/local/bin/UnrealEditor"

@@ -1,5 +1,4 @@
 #!/bin/bash
-sh /home/tajo48/ARCH/files/min.sh &
 while :
 do
     statusbat="|"
@@ -30,5 +29,5 @@ do
     #cp="$(echo countdown to cp2077:$[$[$(date +%s)-$(date -d "2020-12-10 00:00:00" +%s)]/60] | tr "-" " ")"" |"
     
     xsetroot -name "$(echo $weather$status)"
-    sleep 10s
+    sleep 15s
 done
