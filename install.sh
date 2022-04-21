@@ -56,7 +56,6 @@ sgdisk -Z -o -n 1:0:+10M -t 1:EF02 -n 2:0:+500M -t 2:EF00 -n 3:0:0 -t 3:8300 ${d
 if [[ ${disk} == "/dev/"nvme* ]]
 then
     echo "nvme"
-    exit 1
     #format
     mkfs.fat -F32 ${disk}p2
     mkfs.ext4 ${disk}p3
@@ -68,7 +67,6 @@ then
     mount ${disk}p2 /mnt/boot
 else
     echo "sd"
-    exit 1
     #format
     mkfs.fat -F32 ${disk}2
     mkfs.ext4 ${disk}3
