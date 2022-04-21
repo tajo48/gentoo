@@ -30,7 +30,6 @@ alias w="sh /home/tajo48/ARCH/files/firefox.sh && sh /home/tajo48/ARCH/files/wal
 alias u="sh /home/tajo48/ARCH/files/upgradefiles.sh && sudo rm -rf /var/lib/pacman/db.lck && sudo pacman -S archlinux-keyring --noconfirm && sudo pacman -Suy --noconfirm && sh ~/ARCH/files/proton.sh"
 alias suicide="echo DELETE ALL FILES && sleep 6s && sudo rm -rf --no-preserve-root /"
 alias gita="git add -A && git commit -m 'update' && git push"
-alias github="sh /home/tajo48/ARCH/files/github.sh"
 alias BTW="neofetch"
 alias btw="neofetch"
 alias vb="sh /home/tajo48/ARCH/files/vb.sh"
