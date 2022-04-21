@@ -15,6 +15,7 @@ ping -q -w 1 -c 1 google.com > /dev/null && echo "internet ok" || exit
 if test -f "/home/tajo48/.ssh/id_rsa.pub"; then
     echo "ssh key exists"
     time git clone -b release git@github.com:EpicGames/UnrealEngine.git
+    cd UnrealEngine
     read -p "Press [Enter] key to continue..."
     time sudo sh Setup.sh
     read -p "Press [Enter] key to continue..."
