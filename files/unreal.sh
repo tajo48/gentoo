@@ -1,7 +1,7 @@
 #!/bin/bash
 
 if [ "$(basename $(pwd))" == "UnrealEngine" ]; then
-    sudo make
+    make
     sudo rm /usr/local/bin/UnrealEditor
     sudo ln -s Engine/Binaries/Linux/UnrealEditor /usr/local/bin/UnrealEditor
     echo "All done :)"
@@ -17,9 +17,9 @@ if test -f "/home/tajo48/.ssh/id_rsa.pub"; then
     time git clone -b release git@github.com:EpicGames/UnrealEngine.git
     cd UnrealEngine
     read -p "Press [Enter] key to continue..."
-    time sudo sh Setup.sh
+    sh Setup.sh
     read -p "Press [Enter] key to continue..."
-    time sudo sh GenerateProjectFiles.sh
+    sh GenerateProjectFiles.sh
     echo "Run this script again to build"
 else
     echo "ssh key not found"
