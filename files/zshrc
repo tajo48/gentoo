@@ -1,6 +1,7 @@
 # ~/.zshrc
 # Find and set branch name var if in git repository.
 source /home/tajo48/.profile
+export DOTNET_SYSTEM_GLOBALIZATION_INVARIANT=1
 
 if [ -d "$HOME/.local/bin" ] ; then
     PATH="$HOME/.local/bin:$PATH"
