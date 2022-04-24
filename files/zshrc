@@ -48,4 +48,3 @@ alias arch-install="sudo sh /home/tajo48/ARCH/install.sh"
 alias unreal-install="sh /home/tajo48/ARCH/files/unreal.sh"
 
 alias aur-make="git pull && makepkg -sic --noconfirm"
-alias unreal-update="cd /home/tajo48/UnrealEngine/ && time git pull && time sudo chown tajo48 -R /home/tajo48/UnrealEngine && time sudo make && time sudo chown tajo48 -R /home/tajo48/UnrealEngine  && cd /home/tajo48/ && sudo rm /usr/local/bin/UnrealEditor && sudo ln -s /home/tajo48/UnrealEngine/Engine/Binaries/Linux/UnrealEditor /usr/local/bin/UnrealEditor"
