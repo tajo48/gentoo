@@ -3,11 +3,19 @@ gsettings set org.gnome.desktop.input-sources sources "[('xkb', 'pl')]"
 gsettings set org.gnome.desktop.background picture-uri ARCH/photos/wallpaper.jpg
 gsettings set org.gnome.desktop.background picture-uri-dark ARCH/photos/wallpaper.jpg
 gsettings set org.gnome.desktop.interface color-scheme prefer-dark
-# gsettings set org.gnome.desktop.interface gtk-theme 'Adwaita-dark'
+gsettings set org.gnome.desktop.interface enable-animations false
+gsettings set org.gnome.shell.app-switcher current-workspace-only true
 
-gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-1 "['<Super>q']"
-gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-2 "['<Super>w']"
-gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-3 "['<Super>e']"
-gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-4 "['<Super>r']"
-gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-5 "['<Super>t']"
-gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-6 "['<Super>y']"
+gsettings set org.gnome.shell favorite-apps "[ 'firefox.desktop', 'visual-studio-code.desktop', 'discord.desktop', 'blender.desktop']"
+
+
+for i in $(seq 1 9); do gsettings set org.gnome.shell.keybindings switch-to-application-${i} '[]'; done
+gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-1 "['<Super>1']"
+gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-2 "['<Super>2']"
+gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-3 "['<Super>3']"
+gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-4 "['<Super>4']"
+gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-5 "['<Super>5']"
+gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-6 "['<Super>6']"
+gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-6 "['<Super>7']"
+gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-6 "['<Super>8']"
+gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-6 "['<Super>9']"

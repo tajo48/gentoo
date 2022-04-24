@@ -1,27 +1,52 @@
 #!/bin/bash
 
-if [ "$(basename $(pwd))" == "UnrealEngine" ]; then
-    make
-    sudo rm /usr/local/bin/UnrealEditor
-    sudo ln -s Engine/Binaries/Linux/UnrealEditor /usr/local/bin/UnrealEditor
-    echo "All done :)"
-else
-    echo "outside"
-fi
-
-
-ping -q -w 1 -c 1 google.com > /dev/null && echo "internet ok" || exit
-
-if test -f "/home/tajo48/.ssh/id_rsa.pub"; then
-    echo "ssh key exists"
-    time git clone -b release git@github.com:EpicGames/UnrealEngine.git
+if [ -d UnrealEngine ]; then
+    echo "cd into UnrealEngine"
     cd UnrealEngine
-    read -p "Press [Enter] key to continue..."
-    sh Setup.sh
-    read -p "Press [Enter] key to continue..."
-    sh GenerateProjectFiles.sh
-    echo "Run this script again to build"
-else
-    echo "ssh key not found"
-    exit 1
 fi
+
+if [ -f "/usr/local/bin/UnrealEditor" ]; then
+    if [ "$(basename $(pwd))" == "UnrealEngine" ]; then
+        echo "Update UnrealEngine"
+        git pull
+        sh GenerateProjectFiles.sh
+        make
+        sudo chown tajo48 -R $(pwd)
+        echo "Update complete"
+        exit 1
+    fi
+fi
+
+if [ "$(basename $(pwd))" == "UnrealEngine" ];
+then
+    if [ -f "Makefile" ];
+    then
+        make
+        sudo chown tajo48 -R $(pwd)
+        sudo ln -s $(pwd)/Engine/Binaries/Linux/UnrealEditor /usr/local/bin/UnrealEditor
+        echo "make done (4/4 steps completed)"
+    else
+        if [ ! -f .ue4dependencies ]; then
+            sh Setup.sh
+            echo "Setup done (2/4 steps completed)"
+        else
+            sh GenerateProjectFiles.sh
+            echo "GenerateProjectFiles done (3/4 steps completed)"
+        fi
+    fi
+    
+else
+    echo "Downloading UnrealEngine"
+    sleep 3s
+    ping -q -w 1 -c 1 google.com > /dev/null && echo "internet ok" || exit
+    if test -f "/home/tajo48/.ssh/id_rsa.pub"; then
+        echo "ssh key exists"
+        time git clone -b release git@github.com:EpicGames/UnrealEngine.git
+        echo "git clone done (1/4 steps completed)"
+    else
+        echo "ssh key not found"
+    fi
+fi
+
+
+
