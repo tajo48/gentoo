@@ -36,15 +36,22 @@ then
     fi
     
 else
-    echo "Downloading UnrealEngine"
-    sleep 3s
+    echo "UnrealEngine Install Script"
+    echo "This process is cut into 4 sections"
+    echo "1. Download UnrealEngine"
+    echo "2. Setup UnrealEngine"
+    echo "3. GenerateProjectFiles"
+    echo "4. make"
+    echo "Each step requires running unreal-install"
+    echo "press enter to continue"
+    read
     ping -q -w 1 -c 1 google.com > /dev/null && echo "internet ok" || exit
     if test -f "/home/tajo48/.ssh/id_rsa.pub"; then
         echo "ssh key exists"
         time git clone -b release git@github.com:EpicGames/UnrealEngine.git
         echo "git clone done (1/4 steps completed)"
     else
-        echo "ssh key not found"
+        echo "ssh key not found run github-install"
     fi
 fi
 
