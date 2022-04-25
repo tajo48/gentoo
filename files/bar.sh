@@ -16,18 +16,12 @@ do
     setxkbmap -layout 'pl'
     xset r rate 300 50
     
-    weather="$(cat /home/tajo48/weather  | awk '{print $2}{print $3}' | sed 's/^..//' | tr "\n" " ")"
     
     
-    usedmem="$(vmstat -s | grep "used memory" | awk '{print $1}' )"
-    allmem="$(vmstat -s | grep "total memory" | awk '{print $1}' )"
-    mem="$( calc "$(echo $usedmem)" / "$(echo $allmem)" *100 | tr "~" " " | tr "." " " | awk '{print $1}' )"
-    
-    
-    status="|"$mem"%"$statusbat"$(date +"%F %R" )""|""$(pacman -Qu | wc -l)"" of ""$(pacman -Q | wc -l)"
+    status=$statusbat"$(date +"%F %R" )"
     status="$(echo $status | tr "/n" " ")"
     #cp="$(echo countdown to cp2077:$[$[$(date +%s)-$(date -d "2020-12-10 00:00:00" +%s)]/60] | tr "-" " ")"" |"
     
-    xsetroot -name "$(echo $weather$status)"
+    xsetroot -name "$(echo $status)"
     sleep 15s
 done
