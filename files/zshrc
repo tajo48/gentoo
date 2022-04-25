@@ -47,4 +47,6 @@ alias mc-install="cd /home/tajo48/ && sh /home/tajo48/ARCH/files/mc.sh"
 alias arch-install="sudo sh /home/tajo48/ARCH/install.sh"
 alias unreal-install="sh /home/tajo48/ARCH/files/unreal.sh"
 
+#alias shadowplay-install="cd /home/tajo48/Git/ && git clone https://github.com/keylase/nvidia-patch.git && cd /home/tajo48/Git/ && git clone https://gitlab.com/fzwoch/obs-nvfbc.git && cd ~/Git/nvidia-patch && sudo ./patch-fbc.sh && cd ~/Git/obs-nvfbc && meson build && ninja -C build && mkdir -p ~/.config/obs-studio/plugins/nvfbc/bin/64bit && cp ~/Git/obs-nvfbc/build/nvfbc.so ~/.config/obs-studio/plugins/nvfbc/bin/64bit/nvfbc.so"
+
 alias aur-make="git pull && makepkg -sic --noconfirm"
