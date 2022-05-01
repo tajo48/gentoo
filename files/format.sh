@@ -28,4 +28,4 @@ fi
 echo "disk: $disk"
 echo "Formatting disk..."
 sleep 6s
-sudo dd if=/dev/zero of=${disk} statuss=progress bs=1M count=1
+sudo dd if=/dev/zero of=${disk} status=progress bs=1M count=1
