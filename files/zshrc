@@ -41,6 +41,7 @@ alias status="curl -o /home/tajo48/weather 'https://wttr.in/?format=2' && sudo p
 prompt='%2/ $(git_branch_name) > '
 
 alias get-github="echo 'NAME:' && cat /home/tajo48/.ssh/name && echo 'KEY:' && cat /home/tajo48/.ssh/id_rsa.pub"
+alias get-format="sh /home/tajo48/ARCH/files/format.sh"
 
 alias github-install="cd /home/tajo48/ && sh /home/tajo48/ARCH/files/github.sh"
 alias mc-install="cd /home/tajo48/ && sh /home/tajo48/ARCH/files/mc.sh"
