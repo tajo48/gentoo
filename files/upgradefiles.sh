@@ -9,7 +9,7 @@ if test -f "/home/tajo48/.ssh/id_rsa.pub"; then
     ssh-keygen -F github.com || ssh-keyscan github.com > ~/.ssh/known_hosts
 else
     echo "ssh key not found"
-    exit 1
+    exit
 fi
 
 cd ~/Git/ARCH
@@ -18,7 +18,7 @@ if git diff --quiet; then
     echo "no changes"
 else
     echo "changes found"
-    exit 1
+    exit
 fi
 
 sudo rm -r ~/ARCH ~/Git/ARCH
@@ -33,7 +33,3 @@ cp ~/ARCH/files/xinitrc ~/.xinitrc
 rm -rf  ~/.zshrc ~/.config/coc
 cp ~/ARCH/files/zshrc ~/.zshrc
 
-
-# rm -rf ~/.config/nvim
-# mkdir ~/.config/nvim
-# cp ~/ARCH/files/init.vim ~/.config/nvim
