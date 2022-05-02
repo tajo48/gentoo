@@ -33,7 +33,6 @@ else
     exit
 fi
 
-exit
 
 if (whiptail --title "Turn off when completed" --yesno "Do you want to turn off the computer when the installation is completed $disk?" 8 78) then
     sudo sh /home/tajo48/ARCH/files/format.sh $disk
