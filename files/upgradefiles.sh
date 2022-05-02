@@ -7,24 +7,31 @@ if test -f "/home/tajo48/.ssh/id_rsa.pub"; then
     echo "ssh key exists"
     touch ~/.ssh/known_hosts
     ssh-keygen -F github.com || ssh-keyscan github.com > ~/.ssh/known_hosts
-    
-    sudo rm -r ~/ARCH ~/Git/ARCH
-    cd ~/Git
-    git clone git@github.com:tajo48/ARCH.git
-    cp -r ~/Git/ARCH ~/
-    rm -rf ~/ARCH/.git
-    
-    rm -rf ~/.xinitrc
-    cp ~/ARCH/files/xinitrc ~/.xinitrc
-    
-    rm -rf  ~/.zshrc ~/.config/coc
-    cp ~/ARCH/files/zshrc ~/.zshrc
 else
     echo "ssh key not found"
     exit 1
 fi
 
+cd ~/Git/ARCH
+# if git diff | w is not empty, then exit
+if git diff --quiet; then
+    echo "no changes"
+else
+    echo "changes found"
+    exit 1
+fi
 
+sudo rm -r ~/ARCH ~/Git/ARCH
+cd ~/Git
+git clone git@github.com:tajo48/ARCH.git
+cp -r ~/Git/ARCH ~/
+rm -rf ~/ARCH/.git
+
+rm -rf ~/.xinitrc
+cp ~/ARCH/files/xinitrc ~/.xinitrc
+
+rm -rf  ~/.zshrc ~/.config/coc
+cp ~/ARCH/files/zshrc ~/.zshrc
 
 
 # rm -rf ~/.config/nvim
