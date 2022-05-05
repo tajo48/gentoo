@@ -22,6 +22,9 @@ function git_branch_name()
 # Enable substitution in the prompt.
 setopt prompt_subst
 
+#gnome fix
+dbus-update-activation-environment --systemd DBUS_SESSION_BUS_ADDRESS DISPLAY XAUTHORITY
+
 # alias v="nvim"
 alias hosts="sh /home/tajo48/ARCH/files/hosts.sh"
 alias spacesniffer="ncdu"
