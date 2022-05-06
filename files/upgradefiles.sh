@@ -10,7 +10,7 @@ if test -f "/home/tajo48/.ssh/id_rsa.pub"; then
     echo "ssh key exists"
     touch /home/tajo48/.ssh/known_hosts
     ssh-keygen -F github.com || ssh-keyscan github.com > /home/tajo48/.ssh/known_hosts
-    git clone git clone git@github.com:tajo48/ARCH.git
+    git clone git@github.com:tajo48/ARCH.git
 else
     echo "ssh key not found"
     git clone https://github.com/tajo48/ARCH.git
