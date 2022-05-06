@@ -92,7 +92,6 @@ systemctl enable sshd
 
 #mkdir and touch
 mkdir /home/tajo48/Downloads /home/tajo48/Desktop /home/tajo48/Pictures /home/tajo48/Git /home/tajo48/Videos /home/tajo48/Wallpapers /home/tajo48/Documents /home/tajo48/Music
-touch /home/tajo48/weather
 
 #journal setup
 #mkdir -p /etc/systemd/journald.conf.d
