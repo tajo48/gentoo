@@ -40,6 +40,7 @@ alias vb="sh /home/tajo48/ARCH/files/vb.sh"
 alias notflix="sh /home/tajo48/ARCH/files/notflix.sh"
 alias wifi="echo 'iwctl → device list → station <device> get-networks → station <device> connect <network name>'"
 alias status="curl -o /home/tajo48/weather 'https://wttr.in/?format=2' && sudo pacman -Sy"
+alias listgnome="sh /home/tajo48/ARCH/files/listgnome.sh"
 # Config for prompt. PS1 synonym.
 prompt='%2/ $(git_branch_name) > '
 
