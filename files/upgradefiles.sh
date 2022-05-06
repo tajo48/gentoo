@@ -27,7 +27,6 @@ if git diff --quiet; then
     echo "no changes"
     sudo rm -r /home/tajo48/Git/ARCH
     cp -r /home/tajo48/ARCH /home/tajo48/Git/ARCH
-    rm -rf /home/tajo48/ARCH/.git
 else
     echo "changes found"
 fi
