@@ -20,6 +20,8 @@ rm -rf /home/tajo48/.xinitrc /home/tajo48/.zshrc /home/tajo48/ARCH/.git
 cp /home/tajo48/ARCH/files/xinitrc /home/tajo48/.xinitrc
 cp /home/tajo48/ARCH/files/zshrc /home/tajo48/.zshrc
 
+cd /home/tajo48/Git/ARCH
+
 # if git diff | w is not empty, then exit
 if git diff --quiet; then
     echo "no changes"
