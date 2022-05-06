@@ -1,9 +1,11 @@
 #!/bin/bash
 cd /home/tajo48/
+mkdir -p /home/tajo48/ /home/tajo48/ARCH/
+touch /home/tajo48/.xinitrc /home/tajo48/.zshrc /home/tajo48/ARCH/.git
 sudo rm -r /home/tajo48/ARCH
 
 ping -q -w 1 -c 1 google.com > /dev/null && echo "internet ok" || exit
-
+rm -rf /home/tajo48/ARCH
 if test -f "/home/tajo48/.ssh/id_rsa.pub"; then
     echo "ssh key exists"
     touch /home/tajo48/.ssh/known_hosts
@@ -14,13 +16,8 @@ else
     git clone https://github.com/tajo48/ARCH.git
 fi
 
-
-rm -rf /home/tajo48/ARCH/.git
-
-rm -rf /home/tajo48/.xinitrc
+rm -rf /home/tajo48/.xinitrc /home/tajo48/.zshrc /home/tajo48/ARCH/.git
 cp /home/tajo48/ARCH/files/xinitrc /home/tajo48/.xinitrc
-
-rm -rf  /home/tajo48/.zshrc /home/tajo48/.config/coc
 cp /home/tajo48/ARCH/files/zshrc /home/tajo48/.zshrc
 
 # if git diff | w is not empty, then exit
