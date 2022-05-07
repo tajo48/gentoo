@@ -32,9 +32,14 @@ gsettings set org.gnome.desktop.wm.keybindings move-to-workspace-8 "['<Shift><Su
 gsettings set org.gnome.desktop.wm.keybindings move-to-workspace-9 "['<Shift><Super>9']"
 
 
-gsettings set org.gnome.desktop.wm.keybindings show-screenshot-ui "['<Shift><Super>s']"
+gsettings set org.gnome.shell.keybindings show-screenshot-ui "['<Shift><Super>s']"
 
 gsettings set org.gnome.desktop.wm.keybindings toggle-fullscreen "['<Super>f']"
 gsettings set org.gnome.desktop.wm.keybindings close "['<Shift><Super>c']"
 gsettings set org.gnome.settings-daemon.plugins.media-keys screensaver "['<Shift><Super>q']"
 gsettings set org.gnome.shell.keybindings show-screen-recording-ui "['<Shift><Super>r']"
+
+gsettings set org.gnome.desktop.session idle-delay 0
+gsettings set org.gnome.FileRoller.Listing show-path false
+gsettings set org.gnome.settings-daemon.plugins.power power-button-action 'interactive'
+gsettings set org.gnome.settings-daemon.plugins.power sleep-inactive-ac-type 'nothing'
