@@ -27,13 +27,16 @@ else
 fi
 
 if (whiptail --title "Confirm" --yesno "Are you sure you want to HARD format $disk?" 8 78) then
-    echo "You chose to HARD format $disk"
     if (whiptail --title "Turn off when completed" --yesno "Do you want to turn off the computer when the installation is completed $disk?" 8 78) then
+        echo "You chose to HARD format $disk"
+        echo "And you chose to turn off the computer when the installation is completed"
         sleep 6s
         sudo sh /home/tajo48/ARCH/files/format.sh $disk
         sudo sh /home/tajo48/ARCH/install.sh $disk
         sudo shutdown now
     else
+        echo "You chose to HARD format $disk"
+        echo "And you chose to not turn off the computer"
         sleep 6s
         sudo sh /home/tajo48/ARCH/files/format.sh $disk
         sudo sh /home/tajo48/ARCH/install.sh $disk
@@ -41,10 +44,14 @@ if (whiptail --title "Confirm" --yesno "Are you sure you want to HARD format $di
 else
     echo "You chose to not format $disk"
     if (whiptail --title "Turn off when completed" --yesno "Do you want to turn off the computer when the installation is completed $disk?" 8 78) then
+        echo "You chose to HARD format $disk"
+        echo "And you chose to turn off the computer when the installation is completed"
         sleep 6s
         sudo sh /home/tajo48/ARCH/install.sh $disk
         sudo shutdown now
     else
+        echo "You chose to HARD format $disk"
+        echo "And you chose to not turn off the computer"
         sleep 6s
         sudo sh /home/tajo48/ARCH/install.sh $disk
     fi
