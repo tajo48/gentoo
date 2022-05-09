@@ -152,6 +152,8 @@ cd /home/tajo48/Git/
 git clone https://aur.archlinux.org/webtorrent-cli.git
 cd /home/tajo48/Git/
 git clone https://aur.archlinux.org/minecraft-launcher.git
+cd /home/tajo48/Git/
+git clone https://aur.archlinux.org/chrome-gnome-shell.git
 
 
 su tajo48 << 'NO'
