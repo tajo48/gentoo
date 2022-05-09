@@ -6,7 +6,7 @@ gsettings set org.gnome.desktop.interface color-scheme prefer-dark
 gsettings set org.gnome.desktop.interface enable-animations false
 gsettings set org.gnome.shell.app-switcher current-workspace-only true
 
-gsettings set org.gnome.shell favorite-apps "[ 'firefox.desktop', 'visual-studio-code.desktop', 'discord.desktop', 'blender.desktop']"
+gsettings set org.gnome.shell favorite-apps "[ 'firefox.desktop', 'visual-studio-code.desktop', 'discord.desktop', 'blender.desktop', 'org.gnome.Nautilus.desktop', 'org.gnome.Terminal.desktop']"
 
 
 
