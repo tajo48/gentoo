@@ -21,6 +21,13 @@ then
             echo 'user_pref("ui.systemUsesDarkTheme", 1);' >> $profile/prefs.js
         fi
         
+        if grep 'browser.gnome-search-provider.enabled' $profile/prefs.js
+        then
+            sed -i -e 's/^user_pref("browser.gnome-search-provider.enabled", \(0\|1\));$/user_pref("browser.gnome-search-provider.enabled", 1);/' $profile/prefs.js
+        else
+            echo 'user_pref("browser.gnome-search-provider.enabled", 1);' >> $profile/prefs.js
+        fi
+        
         
         
         if [ -f $profile/chrome ]; then
