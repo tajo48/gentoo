@@ -43,3 +43,5 @@ gsettings set org.gnome.desktop.session idle-delay 0
 gsettings set org.gnome.FileRoller.Listing show-path false
 gsettings set org.gnome.settings-daemon.plugins.power power-button-action 'interactive'
 gsettings set org.gnome.settings-daemon.plugins.power sleep-inactive-ac-type 'nothing'
+
+gsettings set org.gnome.desktop.search-providers disabled "['org.gnome.Epiphany.desktop']"
