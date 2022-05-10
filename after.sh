@@ -146,6 +146,10 @@ chsh -s /bin/zsh tajo48
 # mkdir /home/tajo48/.config/nvim
 # cp /home/tajo48/ARCH/files/init.vim /home/tajo48/.config/nvim/init.vim
 
+#firefox shell integration in gnome
+mkdir -p /usr/share/gnome-shell/search-providers/
+echo -e "[Shell Search Provider]\nDesktopId=firefox.desktop\nBusName=org.mozilla.Firefox.SearchProvider\nObjectPath=/org/mozilla/Firefox/SearchProvider\nVersion=2" > /usr/share/gnome-shell/search-providers/firefox-search-provider.ini
+
 cd /home/tajo48/Git/
 git clone https://aur.archlinux.org/visual-studio-code-bin.git
 cd /home/tajo48/Git/
