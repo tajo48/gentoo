@@ -23,9 +23,9 @@ then
         
         if grep 'browser.gnome-search-provider.enabled' $profile/prefs.js
         then
-            sed -i -e 's/^user_pref("browser.gnome-search-provider.enabled", \(0\|1\));$/user_pref("browser.gnome-search-provider.enabled", 1);/' $profile/prefs.js
+            sed -i -e 's/^user_pref("browser.gnome-search-provider.enabled", \(true\|false\));$/user_pref("browser.gnome-search-provider.enabled", true);/' $profile/prefs.js
         else
-            echo 'user_pref("browser.gnome-search-provider.enabled", 1);' >> $profile/prefs.js
+            echo 'user_pref("browser.gnome-search-provider.enabled", true);' >> $profile/prefs.js
         fi
         
         
