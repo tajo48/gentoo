@@ -23,14 +23,26 @@ cp /home/tajo48/ARCH/files/zshrc /home/tajo48/.zshrc
 if [ -f "/home/tajo48/Git/ARCH" ]; then
     cd /home/tajo48/Git/ARCH
     
-    # if git diff | w is not empty, then exit
-    if git diff --quiet; then
-        echo "no changes"
-        sudo rm -r /home/tajo48/Git/ARCH
-        cp -r /home/tajo48/ARCH /home/tajo48/Git/ARCHc
+    if test -f "/home/tajo48/.ssh/id_rsa.pub"; then
+        echo "ssh key exists"
+        if git diff --quiet; then
+            echo "no changes"
+            cd /home/tajo48/Git/
+            rm -rf /home/tajo48/Git/ARCH
+            git clone git@github.com:tajo48/ARCH.git
+        else
+            echo "changes found"
+        fi
     else
-        echo "changes found"
+        echo "ssh key not found"
+        cd /home/tajo48/Git/
+        rm -rf /home/tajo48/Git/ARCH
+        git clone git@github.com:tajo48/ARCH.git
+        git clone https://github.com/tajo48/ARCH.git
     fi
+    
+    # if git diff | w is not empty, then exit
+    
 else
     cd /home/tajo48/Git
     if test -f "/home/tajo48/.ssh/id_rsa.pub"; then
