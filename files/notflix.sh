@@ -76,6 +76,6 @@ echo $magnet | xclip
 
 chosen=$(echo -e "Stream\nDownload" | $menu)
 case "$chosen" in
-    Stream) webtorrent "$magnet" --mpv;;
+    Stream) webtorrent "$magnet" --vlc --playlist;;
     Download) webtorrent download -o ~/Downloads "$magnet";;
 esac
