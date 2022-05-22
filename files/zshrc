@@ -40,13 +40,13 @@ alias notflix="sh /home/tajo48/ARCH/files/notflix.sh"
 alias wifi="echo 'iwctl → device list → station <device> get-networks → station <device> connect <network name>'"
 # Config for prompt. PS1 synonym.
 prompt='%2/ $(git_branch_name) > '
+alias youtube="sh /home/tajo48/ARCH/files/youtube.sh"
 
 alias get-gnome="sh /home/tajo48/ARCH/files/listgnome.sh"
 alias get-vb="sh /home/tajo48/ARCH/files/vb.sh"
 alias get-github="echo 'NAME:' && cat /home/tajo48/.ssh/name && echo 'KEY:' && cat /home/tajo48/.ssh/id_rsa.pub"
 alias get-format="sh /home/tajo48/ARCH/files/format.sh"
 alias get-tmp="sudo mount -o remount,size=10G,noexec,nosuid,nodev,noatime /tmp"
-
 
 alias install-yt="sudo curl -L https://github.com/yt-dlp/yt-dlp/releases/latest/download/yt-dlp -o /usr/local/bin/yt-dlp && sudo chmod a+rx /usr/local/bin/yt-dlp"
 alias install-github="cd /home/tajo48/ && sh /home/tajo48/ARCH/files/github.sh"
