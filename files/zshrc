@@ -53,6 +53,7 @@ alias install-github="cd /home/tajo48/ && sh /home/tajo48/ARCH/files/github.sh"
 alias install-mc="cd /home/tajo48/ && sh /home/tajo48/ARCH/files/mc.sh"
 alias install-arch="sh /home/tajo48/ARCH/files/arch.sh"
 alias install-unreal="sh /home/tajo48/ARCH/files/unreal.sh"
+alias install-proton="sh /home/tajo48/ARCH/files/proton.sh"
 
 #alias install-shadowplay="cd /home/tajo48/Git/ && git clone https://github.com/keylase/nvidia-patch.git && cd /home/tajo48/Git/ && git clone https://gitlab.com/fzwoch/obs-nvfbc.git && cd ~/Git/nvidia-patch && sudo ./patch-fbc.sh && cd ~/Git/obs-nvfbc && meson build && ninja -C build && mkdir -p ~/.config/obs-studio/plugins/nvfbc/bin/64bit && cp ~/Git/obs-nvfbc/build/nvfbc.so ~/.config/obs-studio/plugins/nvfbc/bin/64bit/nvfbc.so"
 #wait till fix comes out or migrate → https://youtu.be/CD9t2bszg_Y
