@@ -1,7 +1,7 @@
 #! /bin/bash
 
 #programs variable
-programs="jq flatpak xf86-input-wacom gnome ncdu gnome-keyring libsecret libgnome-keyring lib32-nvidia-utils lib32-amdvlk pulseaudio pulseaudio-alsa fzf dunst streamlink nvidia-settings pavucontrol nvidia libnewt arch-install-scripts linux-headers dkms iwd ranger lm_sensors npm mpv qbittorrent ttf-joypixels ttf-jetbrains-mono ttf-liberation grub efibootmgr xf86-video-vesa xf86-video-ati xf86-video-intel xf86-video-amdgpu xf86-video-nouveau xf86-video-fbdev firefox zsh feh virtualbox-guest-utils python-pynvim nodejs yarn torbrowser-launcher alsa-utils netctl mtools dialog wpa_supplicant dhcpcd git neofetch mc xclip clipmenu rtorrent openssh tmux arandr obs-studio blender btop calc virtualbox virtualbox-host-modules-arch vlc htop tar p7zip xcompmgr audacity gimp cmus discord nautilus slock make alsa-firmware wget xorg xorg-server xorg-xinit curl libxft fakeroot binutils patch pkgconf base-devel python-pywal alsa"
+programs="jq flatpak xf86-input-wacom gnome ncdu gnome-keyring libsecret libgnome-keyring networkmanager lib32-nvidia-utils pulseaudio pulseaudio-alsa fzf dunst streamlink nvidia-settings pavucontrol nvidia libnewt arch-install-scripts linux-headers dkms iwd ranger lm_sensors npm mpv qbittorrent ttf-joypixels ttf-jetbrains-mono ttf-liberation grub efibootmgr xf86-video-vesa xf86-video-ati xf86-video-intel xf86-video-amdgpu xf86-video-nouveau xf86-video-fbdev firefox zsh feh virtualbox-guest-utils python-pynvim nodejs yarn torbrowser-launcher alsa-utils netctl mtools dialog wpa_supplicant dhcpcd git neofetch mc xclip clipmenu rtorrent openssh tmux arandr obs-studio blender btop calc virtualbox virtualbox-host-modules-arch vlc htop tar p7zip xcompmgr audacity gimp cmus discord nautilus slock make alsa-firmware wget xorg xorg-server xorg-xinit curl libxft fakeroot binutils patch pkgconf base-devel python-pywal alsa"
 
 #script that downloads and installs programs from /git
 #update makepkg
@@ -51,8 +51,8 @@ echo -e "en_US.UTF-8 UTF-8\npl_PL.UTF-8 UTF-8" >> /etc/locale.gen
 echo "LANG=en_US.UTF-8" >> /etc/locale.conf
 locale-gen
 
-#enable networkd and resolved
-systemctl enable systemd-networkd.service
+#enable NetworkManager and resolved
+systemctl enable NetworkManager.service
 systemctl enable systemd-resolved.service
 systemctl enable iwd.service
 
