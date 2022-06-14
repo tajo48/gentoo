@@ -42,6 +42,7 @@ alias wifi="echo 'iwctl → device list → station <device> get-networks → st
 prompt='%2/ $(git_branch_name) > '
 alias youtube="sh /home/tajo48/ARCH/files/youtube.sh"
 
+alias get-pass="sh /home/tajo48/ARCH/files/pass.sh"
 alias get-gnome="sh /home/tajo48/ARCH/files/listgnome.sh"
 alias get-vb="sh /home/tajo48/ARCH/files/vb.sh"
 alias get-github="echo 'NAME:' && cat /home/tajo48/.ssh/name && echo 'KEY:' && cat /home/tajo48/.ssh/id_rsa.pub"
