@@ -162,8 +162,6 @@ cd /home/tajo48/Git/
 git clone https://aur.archlinux.org/minecraft-launcher.git
 cd /home/tajo48/Git/
 git clone https://aur.archlinux.org/chrome-gnome-shell.git
-cd /home/tajo48/Git/
-git clone https://aur.archlinux.org/mprocs.git
 
 su tajo48 << 'NO'
 mkdir /home/tajo48/.npm-global
