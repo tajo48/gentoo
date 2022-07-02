@@ -1,7 +1,7 @@
 #! /bin/bash
 
 #programs variable
-programs="gocryptfs cryfs exfat-utils gvim neovim steam-native-runtime steam jq pacman-contrib flatpak xf86-input-wacom gnome ncdu gnome-keyring libsecret libgnome-keyring networkmanager lib32-nvidia-utils pulseaudio pulseaudio-alsa fzf dunst streamlink nvidia-settings pavucontrol nvidia libnewt arch-install-scripts linux-headers dkms iwd ranger lm_sensors npm mpv qbittorrent ttf-joypixels ttf-jetbrains-mono ttf-liberation grub efibootmgr xf86-video-vesa xf86-video-ati xf86-video-intel xf86-video-amdgpu xf86-video-nouveau xf86-video-fbdev firefox zsh feh virtualbox-guest-utils python-pynvim nodejs yarn torbrowser-launcher alsa-utils netctl mtools dialog wpa_supplicant dhcpcd git neofetch mc xclip clipmenu rtorrent openssh tmux arandr obs-studio blender btop calc virtualbox virtualbox-host-modules-arch vlc htop tar p7zip xcompmgr audacity gimp cmus discord nautilus slock make alsa-firmware wget xorg xorg-server xorg-xinit curl libxft fakeroot binutils patch pkgconf base-devel python-pywal alsa"
+programs="gnome-bluetooth gocryptfs cryfs exfat-utils gvim neovim steam-native-runtime steam jq pacman-contrib flatpak xf86-input-wacom gnome ncdu gnome-keyring libsecret libgnome-keyring networkmanager lib32-nvidia-utils pulseaudio pulseaudio-alsa fzf dunst streamlink nvidia-settings pavucontrol nvidia libnewt arch-install-scripts linux-headers dkms iwd ranger lm_sensors npm mpv qbittorrent ttf-joypixels ttf-jetbrains-mono ttf-liberation grub efibootmgr xf86-video-vesa xf86-video-ati xf86-video-intel xf86-video-amdgpu xf86-video-nouveau xf86-video-fbdev firefox zsh feh virtualbox-guest-utils python-pynvim nodejs yarn torbrowser-launcher alsa-utils netctl mtools dialog wpa_supplicant dhcpcd git neofetch mc xclip clipmenu rtorrent openssh tmux arandr obs-studio blender btop calc virtualbox virtualbox-host-modules-arch vlc htop tar p7zip xcompmgr audacity gimp cmus discord nautilus slock make alsa-firmware wget xorg xorg-server xorg-xinit curl libxft fakeroot binutils patch pkgconf base-devel python-pywal alsa"
 
 #script that downloads and installs programs from /git
 #update makepkg
@@ -93,6 +93,9 @@ sed -i '/%wheel ALL=(ALL:ALL) NOPASSWD: ALL/s/^#//g' /etc/sudoers
 sed -i '/Port/s/^#//g' /etc/ssh/sshd_config
 sed -i '/Port/ s/22/2137/' /etc/ssh/sshd_config
 systemctl enable sshd
+
+#set bluetooth.service
+systemctl enable bluetooth.service
 
 #mkdir and touch
 mkdir /home/tajo48/Downloads /home/tajo48/Desktop /home/tajo48/Pictures /home/tajo48/Git /home/tajo48/Videos /home/tajo48/Wallpapers /home/tajo48/Documents /home/tajo48/Music
