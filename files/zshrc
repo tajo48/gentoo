@@ -41,6 +41,7 @@ alias wifi="echo 'iwctl → device list → station <device> get-networks → st
 # Config for prompt. PS1 synonym.
 prompt='%2/ $(git_branch_name) > '
 alias youtube="sh /home/tajo48/ARCH/files/youtube.sh"
+alias offline="kill $(pgrep -f discord) $(pgrep -f steam)"
 
 alias get-pass="sh /home/tajo48/ARCH/files/pass.sh"
 alias get-gnome="sh /home/tajo48/ARCH/files/listgnome.sh"
