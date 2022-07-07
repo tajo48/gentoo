@@ -50,6 +50,7 @@ alias get-github="echo 'NAME:' && cat /home/tajo48/.ssh/name && echo 'KEY:' && c
 alias get-format="sh /home/tajo48/ARCH/files/format.sh"
 alias get-tmp="sudo mount -o remount,size=10G,noexec,nosuid,nodev,noatime /tmp"
 
+alias install-flatpak="sh /home/tajo48/ARCH/files/flatpak.sh"
 alias install-swap="sh /home/tajo48/ARCH/files/createswap.sh"
 alias install-yt="sudo curl -L https://github.com/yt-dlp/yt-dlp/releases/latest/download/yt-dlp -o /usr/local/bin/yt-dlp && sudo chmod a+rx /usr/local/bin/yt-dlp"
 alias install-github="cd /home/tajo48/ && sh /home/tajo48/ARCH/files/github.sh"
