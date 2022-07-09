@@ -2,6 +2,7 @@
 # Find and set branch name var if in git repository.
 source /home/tajo48/.profile
 export DOTNET_SYSTEM_GLOBALIZATION_INVARIANT=1
+export VK_ICD_FILENAMES=/usr/share/vulkan/icd.d/nvidia_icd.json
 
 if [ -d "$HOME/.local/bin" ] ; then
     PATH="$HOME/.local/bin:$PATH"
