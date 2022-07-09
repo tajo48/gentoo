@@ -29,6 +29,7 @@ pacman -Syy
 
 #pacman install from programs variable
 pacman -S --noconfirm $programs
+pacman -R --noconfirm amdvlk
 
 
 usbdrive="..."
