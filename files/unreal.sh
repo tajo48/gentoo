@@ -1,5 +1,5 @@
 #!/bin/bash
-
+export DOTNET_SYSTEM_NET_HTTP_USESOCKETSHTTPHANDLER=0
 if [ -d UnrealEngine ]; then
     echo "cd into UnrealEngine"
     cd UnrealEngine
