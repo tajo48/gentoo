@@ -16,3 +16,4 @@ flatpak install --assumeyes --noninteractive flathub sh.ppy.osu
 flatpak install --assumeyes --noninteractive flathub com.github.johnfactotum.QuickLookup
 flatpak install --assumeyes --noninteractive flathub org.gnome.World.PikaBackup
 flatpak install --assumeyes --noninteractive flathub com.mattjakeman.ExtensionManager
+flatpak install --assumeyes --noninteractive flathub com.github.qarmin.czkawka
