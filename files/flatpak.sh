@@ -17,5 +17,5 @@ flatpak install --assumeyes --noninteractive flathub com.github.johnfactotum.Qui
 flatpak install --assumeyes --noninteractive flathub org.gnome.World.PikaBackup
 flatpak install --assumeyes --noninteractive flathub com.mattjakeman.ExtensionManager
 flatpak install --assumeyes --noninteractive flathub app.drey.Warp
-#flatpak install --assumeyes --noninteractive flathub
+flatpak install --assumeyes --noninteractive flathub org.gabmus.gfeeds
 #flatpak install --assumeyes --noninteractive flathub
