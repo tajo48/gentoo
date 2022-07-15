@@ -20,7 +20,7 @@ flatpak install --assumeyes --noninteractive flathub app.drey.Warp
 flatpak install --assumeyes --noninteractive flathub org.gabmus.gfeeds
 flatpak install --assumeyes --noninteractive flathub org.onlyoffice.desktopeditors
 flatpak install --assumeyes --noninteractive flathub app.drey.Dialect
-#flatpak install --assumeyes --noninteractive flathub
+flatpak install --assumeyes --noninteractive flathub org.gnome.Firmware
 #flatpak install --assumeyes --noninteractive flathub
 #flatpak install --assumeyes --noninteractive flathub
 #flatpak install --assumeyes --noninteractive flathub
