@@ -174,6 +174,7 @@ su tajo48 << 'NO'
 mkdir /home/tajo48/.npm-global
 npm config set prefix '/home/tajo48/.npm-global'
 echo "export PATH=~/.npm-global/bin:$PATH" > ~/.profile
+npm install -g nativefier
 NO
 
 #obs with buffer
