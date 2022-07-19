@@ -53,7 +53,7 @@ alias get-tmp="sudo mount -o remount,size=10G,noexec,nosuid,nodev,noatime /tmp"
 
 alias install-flatpak="sh /home/tajo48/ARCH/files/flatpak.sh"
 alias install-swap="sh /home/tajo48/ARCH/files/createswap.sh"
-alias install-yt="sudo curl -L https://github.com/yt-dlp/yt-dlp/releases/latest/download/yt-dlp -o /usr/local/bin/yt-dlp && sudo chmod a+rx /usr/local/bin/yt-dlp"
+alias install-yt="sudo curl -L https://github.com/yt-dlp/yt-dlp/releases/latest/download/yt-dlp -o /usr/local/bin/yt-dlp && sudo chmod a+rx /usr/local/bin/yt-dlp && python -m pip install mutagen"
 alias install-github="cd /home/tajo48/ && sh /home/tajo48/ARCH/files/github.sh"
 alias install-arch="sh /home/tajo48/ARCH/files/arch.sh"
 alias install-unreal="sh /home/tajo48/ARCH/files/unreal.sh"
