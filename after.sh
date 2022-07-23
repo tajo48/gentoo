@@ -24,8 +24,9 @@ sed -i "/#ParallelDownloads = 5/"'s/^#//' /etc/pacman.conf
 sed -i "/\[multilib\]/,/Include/"'s/^#//' /etc/pacman.conf
 
 
-#update list of packages
-pacman -Syy
+#update archlinux-keyring and list of packages
+pacman -Sy archlinux-keyring
+pacman -Syyu
 
 #pacman install from programs variable
 pacman -S --noconfirm $programs
