@@ -22,11 +22,11 @@ sed -i "/Color/"'s/^#//' /etc/pacman.conf
 sed -i "/VerbosePkgLists/"'s/^#//' /etc/pacman.conf
 sed -i "/#ParallelDownloads = 5/"'s/^#//' /etc/pacman.conf
 sed -i "/\[multilib\]/,/Include/"'s/^#//' /etc/pacman.conf
+echo "SigLevel = Never" >> /etc/pacman.conf
 
 
-#update archlinux-keyring and list of packages
-pacman -S archlinux-keyring --noconfirm
-pacman -Syu --noconfirm
+#update list of packages
+pacman -Syy --noconfirm
 
 #pacman install from programs variable
 pacman -S --noconfirm $programs
