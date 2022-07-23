@@ -16,5 +16,5 @@ fi
 cat $@ | while read line || [[ -n $line ]];
 do
     echo $line
-    yt-dlp  $line -x --embed-thumbnail --embed-metadata --restrict-filenames
+    yt-dlp  $line -x --embed-thumbnail --embed-metadata --restrict-filenames --convert-thumbnails png
 done
