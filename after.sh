@@ -22,7 +22,7 @@ sed -i "/Color/"'s/^#//' /etc/pacman.conf
 sed -i "/VerbosePkgLists/"'s/^#//' /etc/pacman.conf
 sed -i "/#ParallelDownloads = 5/"'s/^#//' /etc/pacman.conf
 sed -i "/\[multilib\]/,/Include/"'s/^#//' /etc/pacman.conf
-echo "SigLevel = Never" >> /etc/pacman.conf
+
 
 
 #update list of packages
