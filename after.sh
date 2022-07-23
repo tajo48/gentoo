@@ -14,7 +14,13 @@ programs="sysprof fwupd gnome-bluetooth-3.0 gocryptfs cryfs python-pip exfat-uti
 #split updatefiles.sh to updatefiles.sh and setup.sh
 #drivers check
 #delete dwm
-#apply sway
+#apply sway\
+
+
+#initate pacman keyring
+pacman-key --init
+pacman-key --populate archlinux
+pacman-key --refresh-keys
 
 
 #enable multilib
