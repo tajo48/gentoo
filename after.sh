@@ -25,8 +25,8 @@ sed -i "/\[multilib\]/,/Include/"'s/^#//' /etc/pacman.conf
 
 
 #update archlinux-keyring and list of packages
-pacman -Sy archlinux-keyring
-pacman -Syyu
+pacman -S archlinux-keyring --noconfirm
+pacman -Syu --noconfirm
 
 #pacman install from programs variable
 pacman -S --noconfirm $programs
