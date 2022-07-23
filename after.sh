@@ -66,7 +66,8 @@ echo -e "en_US.UTF-8 UTF-8\npl_PL.UTF-8 UTF-8" >> /etc/locale.gen
 echo "LANG=en_US.UTF-8" >> /etc/locale.conf
 locale-gen
 
-#enable NetworkManager and resolved
+#enable NetworkManager, fstrim.timer and resolved
+sudo systemctl enable fstrim.timer
 systemctl enable NetworkManager.service
 systemctl enable systemd-resolved.service
 systemctl enable iwd.service
