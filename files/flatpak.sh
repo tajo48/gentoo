@@ -24,5 +24,5 @@ flatpak install --assumeyes --noninteractive flathub org.gnome.Firmware
 flatpak install --assumeyes --noninteractive flathub com.lakoliu.Furtherance
 flatpak install --assumeyes --noninteractive flathub com.belmoussaoui.Decoder
 flatpak install --assumeyes --noninteractive flathub com.github.tchx84.Flatseal
-#flatpak install --assumeyes --noninteractive flathub
+flatpak install --assumeyes --noninteractive flathub com.github.tenderowl.frog
 #flatpak install --assumeyes --noninteractive flathub
