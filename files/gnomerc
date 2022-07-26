@@ -2,7 +2,12 @@
 gsettings set org.gnome.desktop.input-sources sources "[('xkb', 'pl')]"
 gsettings set org.gnome.desktop.background picture-uri ARCH/photos/wallpaper.jpg
 gsettings set org.gnome.desktop.background picture-uri-dark ARCH/photos/wallpaper.jpg
+
+#reset theme so wallpaper will update
+gsettings set org.gnome.desktop.interface color-scheme default
 gsettings set org.gnome.desktop.interface color-scheme prefer-dark
+
+
 gsettings set org.gnome.desktop.interface enable-animations false
 gsettings set org.gnome.shell.app-switcher current-workspace-only true
 
