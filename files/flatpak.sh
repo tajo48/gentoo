@@ -1,5 +1,6 @@
 #!/bin/bash
 sudo flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+sudo flatpak remote-add --if-not-exists launcher.moe https://gol.launcher.moe/gol.launcher.moe.flatpakrepo
 flatpak install --assumeyes --noninteractive flathub flathub org.gimp.GIMP
 flatpak install --assumeyes --noninteractive flathub com.discordapp.Discord
 flatpak install --assumeyes --noninteractive flathub org.blender.Blender
