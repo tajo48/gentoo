@@ -27,3 +27,4 @@ flatpak install --assumeyes --noninteractive flathub com.belmoussaoui.Decoder
 flatpak install --assumeyes --noninteractive flathub com.github.tchx84.Flatseal
 flatpak install --assumeyes --noninteractive flathub com.github.tenderowl.frog
 flatpak install --assumeyes --noninteractive flathub io.posidon.paper
+flatpak install --assumeyes --noninteractive flathub com.usebottles.bottles
