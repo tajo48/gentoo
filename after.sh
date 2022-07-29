@@ -14,7 +14,12 @@ programs="bluez-utils sysprof fwupd gnome-bluetooth-3.0 gocryptfs cryfs python-p
 #split updatefiles.sh to updatefiles.sh and setup.sh
 #drivers check
 #delete dwm
-#apply sway\
+#apply sway
+
+#FINALY
+#https://github.com/avanishsubbiah/adwaita-materialu
+#https://github.com/ArtyIF/AdwCustomizer
+#(wait to AdwCustomizer flathub release)
 
 
 #initate pacman keyring
