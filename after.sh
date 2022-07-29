@@ -16,7 +16,7 @@ programs="bluez-utils sysprof fwupd gnome-bluetooth-3.0 gocryptfs cryfs python-p
 #delete dwm
 #apply sway
 
-#FINALY
+#FINALLY
 #https://github.com/avanishsubbiah/adwaita-materialu
 #https://github.com/ArtyIF/AdwCustomizer
 #(wait to AdwCustomizer flathub release)
