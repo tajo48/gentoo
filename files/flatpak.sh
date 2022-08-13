@@ -31,3 +31,5 @@ flatpak install --assumeyes --noninteractive flathub com.usebottles.bottles
 
 
 sudo flatpak override com.usebottles.bottles --filesystem=xdg-data/applications
+sudo flatpak override com.usebottles.bottles --filesystem=~/.local/share/Steam
+sudo flatpak override com.usebottles.bottles --filesystem=~/.var/app/com.valvesoftware.Steam/data/Steam
