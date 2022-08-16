@@ -30,7 +30,7 @@ flatpak install --assumeyes --noninteractive flathub io.posidon.paper
 flatpak install --assumeyes --noninteractive flathub com.usebottles.bottles
 flatpak install --assumeyes --noninteractive flathub com.github.ADBeveridge.Raider
 #flatpak install --assumeyes --noninteractive flathub dev.Cogitri.Health
-
+flatpak install --assumeyes --noninteractive flathub org.gnome.SoundRecorder
 
 
 #config
