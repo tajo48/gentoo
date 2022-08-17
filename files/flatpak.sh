@@ -18,7 +18,7 @@ flatpak install --assumeyes --noninteractive flathub com.github.johnfactotum.Qui
 flatpak install --assumeyes --noninteractive flathub org.gnome.World.PikaBackup
 flatpak install --assumeyes --noninteractive flathub com.mattjakeman.ExtensionManager
 flatpak install --assumeyes --noninteractive flathub app.drey.Warp
-#flatpak install --assumeyes --noninteractive flathub org.gabmus.gfeeds
+#flatpak install --assumeyes --noninteractive flathub org.gabmus.gfeeds <-dont work 100%
 flatpak install --assumeyes --noninteractive flathub org.onlyoffice.desktopeditors
 flatpak install --assumeyes --noninteractive flathub app.drey.Dialect
 flatpak install --assumeyes --noninteractive flathub org.gnome.Firmware
@@ -29,8 +29,9 @@ flatpak install --assumeyes --noninteractive flathub com.github.tenderowl.frog
 flatpak install --assumeyes --noninteractive flathub io.posidon.paper
 flatpak install --assumeyes --noninteractive flathub com.usebottles.bottles
 flatpak install --assumeyes --noninteractive flathub com.github.ADBeveridge.Raider
-#flatpak install --assumeyes --noninteractive flathub dev.Cogitri.Health
+#flatpak install --assumeyes --noninteractive flathub dev.Cogitri.Health <-crash table flip
 flatpak install --assumeyes --noninteractive flathub org.gnome.SoundRecorder
+#flatpak install --assumeyes --noninteractive flathub io.github.achetagames.epic_asset_manager <-crash table flip 
 
 
 #config
