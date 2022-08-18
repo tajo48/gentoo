@@ -9,6 +9,8 @@ if [ -f "/usr/local/bin/UnrealEditor" ]; then
     if [ "$(basename $(pwd))" == "UnrealEngine" ]; then
         echo "Update UnrealEngine"
         git pull
+        sh Setup.sh
+        read -p "OK now see for unreal prompt and press enter to continue"
         sh GenerateProjectFiles.sh
         make
         sudo chown tajo48 -R $(pwd)
