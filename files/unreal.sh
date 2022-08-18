@@ -10,7 +10,8 @@ if [ -f "/usr/local/bin/UnrealEditor" ]; then
         echo "Update UnrealEngine"
         git pull
         sh Setup.sh
-        read -p "OK now see for unreal prompt and press enter to continue"
+        echo -e "\n"
+        read -p "OK now click YES in --Register Unreal Engine file types?-- prompt and press enter to continue"
         sh GenerateProjectFiles.sh
         make
         sudo chown tajo48 -R $(pwd)
