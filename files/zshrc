@@ -53,7 +53,7 @@ alias btw="neofetch"
 alias notflix="sh /home/tajo48/ARCH/files/notflix.sh"
 alias wifi="echo 'iwctl → device list → station <device> get-networks → station <device> connect <network name>'"
 alias youtube="sh /home/tajo48/ARCH/files/youtube.sh"
-alias offline='kill $(pgrep -f discord) && kill $(pgrep -f steam)'
+alias offline='kill $(pgrep -f discord) & kill $(pgrep -f steam)'
 
 alias get-pass="sh /home/tajo48/ARCH/files/pass.sh"
 alias get-gnome="sh /home/tajo48/ARCH/files/listgnome.sh"
