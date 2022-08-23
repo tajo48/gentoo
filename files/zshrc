@@ -4,10 +4,11 @@ source /home/tajo48/.profile
 export DOTNET_SYSTEM_GLOBALIZATION_INVARIANT=1
 export VK_ICD_FILENAMES=/usr/share/vulkan/icd.d/nvidia_icd.json
 wal -i ARCH/photos >> /dev/null
-
 if [ -d "$HOME/.local/bin" ] ; then
     PATH="$HOME/.local/bin:$PATH"
 fi
+
+source /home/tajo48/.cache/wal/colors.sh
 
 function git_branch_name()
 {
@@ -17,12 +18,14 @@ function git_branch_name()
         :
     else
         #echo '('$branch')' 
-	echo '%F{237}[%F{30}'$branch'%F{237}]─'
+	echo "%F{$foreground}[%F{$color4}$branch%F{$foreground}]─"
     fi
 }
 
-PROMPT='%B%F{237}╒═[%F{30}%*%F{237}]─$(git_branch_name)[%F{1}%n@%M%F{237}]─[%F{53}%/%F{237}]
-╘═%F{75}$ '
+
+
+PROMPT='%B%F{$foreground}╒═[%F{$color1}%*%F{$foreground}]─$(git_branch_name)[%F{$color2}%n@%M%F{$foreground}]─[%F{$color5}%/%F{$foreground}]
+╘═%F{$color6}$ '
 
 #plugins
 export ZSH="$HOME/.oh-my-zsh"
