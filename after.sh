@@ -151,6 +151,10 @@ rm -rf /home/tajo48/ARCH/.git
 su tajo48 << 'NO'
 wal -i /home/tajo48/ARCH/photos
 sh -c "$(curl -k -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+git clone https://github.com/zsh-users/zsh-autosuggestions /home/tajo48/.oh-my-zsh/custom/plugins/zsh-autosuggestions
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git /home/tajo48/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
+
+
 NO
 
 # curl -k -fLo ~/.vim/autoload/plug.vim --create-dirs \
