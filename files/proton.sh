@@ -1,5 +1,4 @@
 #!/bin/bash
-#Xar55 script to update the protonGE
 
 latestGE=$(curl --silent "https://api.github.com/repos/GloriousEggroll/proton-ge-custom/releases/latest" | jq -r .tag_name)
 if  [ -d "/home/tajo48/.local/share/Steam/compatibilitytools.d/$latestGE" ]
