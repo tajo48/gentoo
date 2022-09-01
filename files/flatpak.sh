@@ -32,6 +32,7 @@ flatpak install --assumeyes --noninteractive flathub com.github.ADBeveridge.Raid
 #flatpak install --assumeyes --noninteractive flathub dev.Cogitri.Health <-crash table flip
 flatpak install --assumeyes --noninteractive flathub org.gnome.SoundRecorder
 #flatpak install --assumeyes --noninteractive flathub io.github.achetagames.epic_asset_manager <-crash table flip 
+#flatpak install --assumeyes --noninteractive flathub com.github.GradienceTeam.Gradience
 
 
 #config
