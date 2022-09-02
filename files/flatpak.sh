@@ -33,7 +33,8 @@ flatpak install --assumeyes --noninteractive --user flathub com.github.ADBeverid
 flatpak install --assumeyes --noninteractive --user flathub org.gnome.SoundRecorder
 #flatpak install --assumeyes --noninteractive --user flathub io.github.achetagames.epic_asset_manager <-crash table flip
 #flatpak install --assumeyes --noninteractive --user flathub com.github.GradienceTeam.Gradience
-
+#flatpak install --assumeyes --noninteractive --user flathub com.heroicgameslauncher.hgl <- games
+#flatpak install --assumeyes --noninteractive --user launcher.moe com.gitlab.KRypt0n_.an-anime-game-launcher  <- game
 
 #config
 sudo flatpak override com.usebottles.bottles --filesystem=xdg-data/applications
