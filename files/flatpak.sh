@@ -26,7 +26,7 @@ flatpak install --assumeyes --noninteractive --user flathub com.lakoliu.Furthera
 flatpak install --assumeyes --noninteractive --user flathub com.belmoussaoui.Decoder
 flatpak install --assumeyes --noninteractive --user flathub com.github.tchx84.Flatseal
 flatpak install --assumeyes --noninteractive --user flathub com.github.tenderowl.frog
-flatpak install --assumeyes --noninteractive --user flathub io.posidon.paper
+flatpak install --assumeyes --noninteractive --user flathub io.posidon.Paper
 flatpak install --assumeyes --noninteractive --user flathub com.usebottles.bottles
 flatpak install --assumeyes --noninteractive --user flathub com.github.ADBeveridge.Raider
 #flatpak install --assumeyes --noninteractive --user flathub dev.Cogitri.Health <-crash table flip
