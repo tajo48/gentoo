@@ -4,7 +4,6 @@ sudo flatpak remote-add --if-not-exists launcher.moe https://gol.launcher.moe/go
 flatpak install --assumeyes --noninteractive --user flathub flathub org.gimp.GIMP
 flatpak install --assumeyes --noninteractive --user flathub com.discordapp.Discord
 flatpak install --assumeyes --noninteractive --user flathub org.blender.Blender
-flatpak install --assumeyes --noninteractive --user flathub com.github.Anuken.Mindustry
 flatpak install --assumeyes --noninteractive --user flathub io.bassi.Amberol
 flatpak install --assumeyes --noninteractive --user flathub com.belmoussaoui.Authenticator
 flatpak install --assumeyes --noninteractive --user flathub com.obsproject.Studio
@@ -13,7 +12,6 @@ flatpak install --assumeyes --noninteractive --user flathub info.febvre.Komikku
 flatpak install --assumeyes --noninteractive --user flathub io.github.mpobaschnig.Vaults
 flatpak install --assumeyes --noninteractive --user flathub org.gabmus.whatip
 flatpak install --assumeyes --noninteractive --user flathub org.gnome.Solanum
-flatpak install --assumeyes --noninteractive --user flathub sh.ppy.osu
 flatpak install --assumeyes --noninteractive --user flathub com.github.johnfactotum.QuickLookup
 flatpak install --assumeyes --noninteractive --user flathub org.gnome.World.PikaBackup
 flatpak install --assumeyes --noninteractive --user flathub com.mattjakeman.ExtensionManager
@@ -31,10 +29,18 @@ flatpak install --assumeyes --noninteractive --user flathub com.usebottles.bottl
 flatpak install --assumeyes --noninteractive --user flathub com.github.ADBeveridge.Raider
 #flatpak install --assumeyes --noninteractive --user flathub dev.Cogitri.Health <-crash table flip
 flatpak install --assumeyes --noninteractive --user flathub org.gnome.SoundRecorder
+flatpak install --assumeyes --noninteractive --user flathub com.github.GradienceTeam.Gradience
+flatpak install --assumeyes --noninteractive --user flathub pm.mirko.Atoms
+#flatpak install --assumeyes --noninteractive --user flathub app.drey.EarTag <- does not open opus???
+
+
+#games
+flatpak install --assumeyes --noninteractive --user flathub sh.ppy.osu
+flatpak install --assumeyes --noninteractive launcher.moe com.gitlab.KRypt0n_.an-anime-game-launcher
+flatpak install --assumeyes --noninteractive --user flathub com.heroicgameslauncher.hgl
 #flatpak install --assumeyes --noninteractive --user flathub io.github.achetagames.epic_asset_manager <-crash table flip
-#flatpak install --assumeyes --noninteractive --user flathub com.github.GradienceTeam.Gradience
-#flatpak install --assumeyes --noninteractive --user flathub com.heroicgameslauncher.hgl <- games
-#flatpak install --assumeyes --noninteractive --user launcher.moe com.gitlab.KRypt0n_.an-anime-game-launcher  <- game
+flatpak install --assumeyes --noninteractive --user flathub com.github.Anuken.Mindustry
+
 
 #config
 sudo flatpak override com.usebottles.bottles --filesystem=xdg-data/applications
