@@ -1,6 +1,8 @@
 #!/bin/bash
 sudo flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 sudo flatpak remote-add --if-not-exists launcher.moe https://gol.launcher.moe/gol.launcher.moe.flatpakrepo
+sudo flatpak remote-add --if-not-exists flathub-beta https://flathub.org/beta-repo/flathub-beta.flatpakrepo
+
 flatpak install --assumeyes --noninteractive --user flathub flathub org.gimp.GIMP
 flatpak install --assumeyes --noninteractive --user flathub com.discordapp.Discord
 flatpak install --assumeyes --noninteractive --user flathub org.blender.Blender
@@ -32,6 +34,10 @@ flatpak install --assumeyes --noninteractive --user flathub org.gnome.SoundRecor
 flatpak install --assumeyes --noninteractive --user flathub com.github.GradienceTeam.Gradience
 flatpak install --assumeyes --noninteractive --user flathub pm.mirko.Atoms
 #flatpak install --assumeyes --noninteractive --user flathub app.drey.EarTag <- does not open opus???
+#flatpak install --assumeyes --noninteractive --user flathub de.haeckerfelix.Fragments <- give it second chance
+#flatpak install --assumeyes --noninteractive --user flathub-beta com.github.marhkb.Pods
+
+
 
 
 #games
