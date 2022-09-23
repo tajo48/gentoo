@@ -35,10 +35,9 @@ flatpak install --assumeyes --noninteractive --user flathub com.github.Gradience
 flatpak install --assumeyes --noninteractive --user flathub pm.mirko.Atoms
 #flatpak install --assumeyes --noninteractive --user flathub app.drey.EarTag <- does not open opus???
 #flatpak install --assumeyes --noninteractive --user flathub de.haeckerfelix.Fragments <- give it second chance
-#flatpak install --assumeyes --noninteractive --user flathub-beta com.github.marhkb.Pods
-
-
-
+#flatpak install --assumeyes --noninteractive --user flathub-beta com.github.marhkb.Pods <- dockermoment
+flatpak install --assumeyes --noninteractive --user flathub com.github.alexhuntley.Plots
+flatpak install --assumeyes --noninteractive --user flathub com.github.finefindus.eyedropper
 
 #games
 flatpak install --assumeyes --noninteractive --user flathub sh.ppy.osu
