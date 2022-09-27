@@ -38,7 +38,7 @@ flatpak install --assumeyes --noninteractive --user flathub pm.mirko.Atoms
 #flatpak install --assumeyes --noninteractive --user flathub-beta com.github.marhkb.Pods <- dockermoment
 flatpak install --assumeyes --noninteractive --user flathub com.github.alexhuntley.Plots
 flatpak install --assumeyes --noninteractive --user flathub com.github.finefindus.eyedropper
-flatpak install --assumeyes --noninteractive --user flathub org.gnome.Glade
+#flatpak install --assumeyes --noninteractive --user flathub org.gnome.Glade <- wait
 #https://gitlab.gnome.org/sophie-h/key-rack <- wait for flathub release
 
 #games
