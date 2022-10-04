@@ -15,6 +15,7 @@ programs="geoclue nautilus-terminal unrar nautilus-image-converter sushi perl-im
 #drivers check
 #delete dwm
 #apply sway
+#https://fedoramagazine.org/randomize-mac-address-nm/
 
 #FINALLY
 #https://github.com/avanishsubbiah/adwaita-materialu
