@@ -41,6 +41,7 @@ flatpak install --assumeyes --noninteractive --user flathub com.github.finefindu
 #flatpak install --assumeyes --noninteractive --user flathub org.gnome.Glade <- wait
 #https://gitlab.gnome.org/sophie-h/key-rack <- wait for flathub release
 #https://github.com/fushinari/Wordbook
+#https://gitlab.com/rmnvgr/zap
 #games
 flatpak install --assumeyes --noninteractive --user flathub sh.ppy.osu
 flatpak install --assumeyes --noninteractive launcher.moe com.gitlab.KRypt0n_.an-anime-game-launcher
