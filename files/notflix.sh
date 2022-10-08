@@ -5,7 +5,7 @@ ping -q -w 1 -c 1 google.com > /dev/null && echo "internet ok" || exit
 mkdir -p $HOME/.cache/notflix
 
 menu="fzf"
-baseurl="https://1337x.wtf"
+baseurl="https://1337x.to"
 cachedir="$HOME/.cache/notflix"
 
 
