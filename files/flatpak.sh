@@ -43,6 +43,7 @@ flatpak install --assumeyes --noninteractive --user flathub com.github.finefindu
 #https://github.com/fushinari/Wordbook
 #https://gitlab.com/rmnvgr/zap
 #https://gitlab.gnome.org/GNOME/fractal
+#flatpak install flathub com.dec05eba.gpu_screen_recorder <- check out this shit if works on every gpu
 
 #games
 flatpak install --assumeyes --noninteractive --user flathub sh.ppy.osu
