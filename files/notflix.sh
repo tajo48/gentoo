@@ -32,6 +32,7 @@ sed 's/<[^>]*>//g' > $cachedir/titles.bw
 
 result_count=$(wc -l $cachedir/titles.bw | awk '{print $1}')
 if [ "$result_count" -lt 1 ]; then
+    echo "no results"
     exit 0
 fi
 
@@ -63,13 +64,17 @@ LINE=$(paste -d\   $cachedir/size.bw $cachedir/seedleech.bw $cachedir/titles.bw 
 awk '{$1=$1; print}')
 
 
+if [ "$LINE"  = "" ]; then
+    exit 1 
+fi
+
+
 url=$(head -n $LINE $cachedir/links.bw | tail -n +$LINE)
 fullURL="${baseurl}${url}/"
 
 # Requesting page for magnet link
 curl -s $fullURL > $cachedir/tmp.html
 magnet=$(grep -Po "magnet:\?xt=urn:btih:[a-zA-Z0-9]*" $cachedir/tmp.html | head -n 1)
-
 
 
 echo $magnet | xclip
