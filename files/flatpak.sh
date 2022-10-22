@@ -44,7 +44,7 @@ flatpak install --assumeyes --noninteractive --user flathub com.github.finefindu
 #https://gitlab.com/rmnvgr/zap
 #https://gitlab.gnome.org/GNOME/fractal
 #flatpak install flathub com.dec05eba.gpu_screen_recorder <- check out if this shit works on every gpu (no it doesn't)
-
+#https://flathub.org/apps/details/nl.g4d.Girens
 #games
 flatpak install --assumeyes --noninteractive --user flathub sh.ppy.osu
 flatpak install --assumeyes --noninteractive launcher.moe com.gitlab.KRypt0n_.an-anime-game-launcher
