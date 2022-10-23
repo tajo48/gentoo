@@ -150,7 +150,7 @@ rm -rf /home/tajo48/ARCH/.git
 
 #wal for dwm,st and dmenu with zsh install
 su tajo48 << 'NO'
-wal -i /home/tajo48/ARCH/photos
+wal -i /home/tajo48/ARCH/photos/wallpaper.jpg
 sh -c "$(curl -k -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 git clone https://github.com/zsh-users/zsh-autosuggestions /home/tajo48/.oh-my-zsh/custom/plugins/zsh-autosuggestions
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git /home/tajo48/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
