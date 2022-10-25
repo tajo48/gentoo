@@ -51,7 +51,7 @@ flatpak install --assumeyes --noninteractive launcher.moe com.gitlab.KRypt0n_.an
 flatpak install --assumeyes --noninteractive --user flathub com.heroicgameslauncher.hgl
 #flatpak install --assumeyes --noninteractive --user flathub io.github.achetagames.epic_asset_manager <-crash table flip
 flatpak install --assumeyes --noninteractive --user flathub com.github.Anuken.Mindustry
-
+#flatpak install --assumeyes --noninteractive --user flathub io.github.Foldex.AdwSteamGtk
 
 #config
 sudo flatpak override com.usebottles.bottles --filesystem=xdg-data/applications
