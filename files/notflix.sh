@@ -79,8 +79,8 @@ magnet=$(grep -Po "magnet:\?xt=urn:btih:[a-zA-Z0-9]*" $cachedir/tmp.html | head 
 
 echo $magnet | xclip
 
-chosen=$(echo -e "Stream\nDownload" | $menu)
+chosen=$(echo -e "Stream\nEcho" | $menu)
 case "$chosen" in
     Stream) webtorrent "$magnet" --vlc --playlist;;
-    Download) webtorrent download -o ~/Downloads "$magnet";;
+    Echo) echo "$magnet";;
 esac
