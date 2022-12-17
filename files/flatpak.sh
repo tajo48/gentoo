@@ -56,6 +56,7 @@ flatpak install --assumeyes --noninteractive --user flathub com.github.finefindu
 
 #studio
 flatpak install --assumeyes --noninteractive --user flathub net.sapples.LiveCaptions
+
 #games
 flatpak install --assumeyes --noninteractive --user flathub sh.ppy.osu
 flatpak install --assumeyes --noninteractive launcher.moe com.gitlab.KRypt0n_.an-anime-game-launcher
