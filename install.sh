@@ -87,10 +87,8 @@ fi
 #set up time
 timedatectl set-ntp true
 
-#initate pacman keyring
-pacman-key --init
-pacman-key --populate archlinux
-pacman-key --refresh-keys
+#kek
+archlinux-keyring-wkd-sync
 
 #pacstrap
 pacstrap /mnt base linux pacman sudo linux-firmware dosfstools
