@@ -88,9 +88,9 @@ fi
 timedatectl set-ntp true
 
 #initate pacman keyring
-#pacman-key --init
-#pacman-key --populate archlinux
-#pacman-key --refresh-keys
+pacman-key --init
+pacman-key --populate archlinux
+pacman-key --refresh-keys
 
 #pacstrap
 pacstrap /mnt base linux pacman sudo linux-firmware dosfstools wget
