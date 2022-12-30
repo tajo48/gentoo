@@ -93,7 +93,7 @@ pacman-key --populate archlinux
 pacman-key --refresh-keys
 
 #pacstrap
-pacstrap /mnt base linux pacman sudo linux-firmware dosfstools wget
+pacstrap /mnt base linux pacman sudo linux-firmware dosfstools
 
 #fstab
 genfstab -U /mnt > /mnt/etc/fstab
