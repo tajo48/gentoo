@@ -17,8 +17,8 @@ function git_branch_name()
     then
         :
     else
-        #echo '('$branch')' 
-	echo "%F{$foreground}[%F{$color4}$branch%F{$foreground}]─"
+        #echo '('$branch')'
+        echo "%F{$foreground}[%F{$color4}$branch%F{$foreground}]─"
     fi
 }
 
@@ -39,7 +39,7 @@ setopt prompt_subst
 #gnome fix
 dbus-update-activation-environment --systemd DBUS_SESSION_BUS_ADDRESS DISPLAY XAUTHORITY
 
-# alias v="nvim"
+alias v="nvim"
 alias hosts="sh /home/tajo48/ARCH/files/hosts.sh"
 alias spacesniffer="ncdu"
 alias p="ping -q -w 1 -c 1 google.com > /dev/null && echo "ok" || echo "no""

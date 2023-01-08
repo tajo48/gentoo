@@ -64,7 +64,7 @@ flatpak install --assumeyes --noninteractive flathub com.github.finefindus.eyedr
 #studio tools
 flatpak install --assumeyes --noninteractive flathub net.sapples.LiveCaptions
 flatpak install --assumeyes --noninteractive flathub com.obsproject.Studio
-#flatpak install --assumeyes --noninteractive flathub fr.romainvigier.zap # soundboard
+flatpak install --assumeyes --noninteractive flathub fr.romainvigier.zap # soundboard
 
 #games
 flatpak install --assumeyes --noninteractive flathub sh.ppy.osu
