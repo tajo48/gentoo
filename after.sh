@@ -1,7 +1,7 @@
 #! /bin/bash
 
 #programs variable
-programs="ttf-nerd-fonts-symbols-2048-em-mono geoclue unrar nautilus-image-converter sushi perl-image-exiftool bluez-utils sysprof fwupd gnome-bluetooth-3.0 gocryptfs cryfs python-pip exfat-utils gvim neovim steam-native-runtime steam jq pacman-contrib flatpak xf86-input-wacom gnome ncdu gnome-keyring libsecret libgnome-keyring networkmanager lib32-nvidia-utils pulseaudio pulseaudio-alsa fzf dunst streamlink nvidia-settings pavucontrol nvidia libnewt arch-install-scripts linux-headers dkms iwd ranger lm_sensors npm mpv qbittorrent ttf-joypixels ttf-jetbrains-mono ttf-liberation grub efibootmgr xf86-video-vesa xf86-video-ati xf86-video-intel xf86-video-fbdev firefox zsh feh virtualbox-guest-utils python-pynvim nodejs yarn torbrowser-launcher alsa-utils netctl mtools dialog wpa_supplicant dhcpcd git neofetch mc xclip clipmenu rtorrent openssh tmux arandr btop calc virtualbox virtualbox-host-modules-arch vlc htop tar p7zip xcompmgr audacity cmus nautilus slock make alsa-firmware wget xorg xorg-server xorg-xinit curl libxft fakeroot binutils patch pkgconf base-devel python-pywal alsa"
+programs="lldb tf-nerd-fonts-symbols-2048-em-mono geoclue unrar nautilus-image-converter sushi perl-image-exiftool bluez-utils sysprof fwupd gnome-bluetooth-3.0 gocryptfs cryfs python-pip exfat-utils gvim neovim steam-native-runtime steam jq pacman-contrib flatpak xf86-input-wacom gnome ncdu gnome-keyring libsecret libgnome-keyring networkmanager lib32-nvidia-utils pulseaudio pulseaudio-alsa fzf dunst streamlink nvidia-settings pavucontrol nvidia libnewt arch-install-scripts linux-headers dkms iwd ranger lm_sensors npm mpv qbittorrent ttf-joypixels ttf-jetbrains-mono ttf-liberation grub efibootmgr xf86-video-vesa xf86-video-ati xf86-video-intel xf86-video-fbdev firefox zsh feh virtualbox-guest-utils python-pynvim nodejs yarn torbrowser-launcher alsa-utils netctl mtools dialog wpa_supplicant dhcpcd git neofetch mc xclip clipmenu rtorrent openssh tmux arandr btop calc virtualbox virtualbox-host-modules-arch vlc htop tar p7zip xcompmgr audacity cmus nautilus slock make alsa-firmware wget xorg xorg-server xorg-xinit curl libxft fakeroot binutils patch pkgconf base-devel python-pywal alsa"
 
 #script that downloads and installs programs from /git
 #update makepkg
@@ -167,7 +167,7 @@ NO
 #dotfiles
 cp /home/tajo48/ARCH/files/zshrc /home/tajo48/.zshrc
 cp /home/tajo48/ARCH/files/xinitrc /home/tajo48/.xinitrc
-
+cp /home/tajo48/ARCH/files/dap.lua /home/tajo48/.config/nvim/lua/configs/dap.lua
 #set zsh as default shell
 chsh -s /bin/zsh tajo48
 

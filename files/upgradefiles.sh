@@ -19,6 +19,7 @@ fi
 rm -rf /home/tajo48/.xinitrc /home/tajo48/.zshrc
 cp /home/tajo48/ARCH/files/xinitrc /home/tajo48/.xinitrc
 cp /home/tajo48/ARCH/files/zshrc /home/tajo48/.zshrc
+cp /home/tajo48/ARCH/files/dap.lua /home/tajo48/.config/nvim/lua/configs/dap.lua
 
 if [ -f "/home/tajo48/Git/ARCH/install.sh" ]; then
     cd /home/tajo48/Git/ARCH
