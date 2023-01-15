@@ -12,7 +12,8 @@ flatpak install --assumeyes --noninteractive flathub com.github.tenderowl.frog
 
 #security and backup
 flatpak install --assumeyes --noninteractive flathub com.belmoussaoui.Authenticator
-flatpak install --assumeyes --noninteractive flathub com.gitlab.guillermop.MasterKey
+flatpak install --assumeyes --noninteractive flathub com.gitlab.guillermop.MasterKey # keygen1
+flatpak install --assumeyes --noninteractive flathub com.github.alexkdeveloper.forgetpass # keygen2
 flatpak install --assumeyes --noninteractive flathub io.github.mpobaschnig.Vaults
 flatpak install --assumeyes --noninteractive flathub org.gnome.World.PikaBackup
 # https://gitlab.gnome.org/sophie-h/key-rack # wait for flathub release (no chance)
