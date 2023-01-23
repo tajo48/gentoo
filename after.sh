@@ -15,6 +15,7 @@ programs="adobe-source-han-sans-jp-fonts adobe-source-han-serif-jp-fonts lldb tt
 #drivers check
 #delete dwm
 #apply sway
+#install openvr
 #https://fedoramagazine.org/randomize-mac-address-nm/
 
 #FINALLY
