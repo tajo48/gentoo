@@ -14,7 +14,8 @@ cd /home/tajo48
 git config --global credential.helper store
 git config --global user.email $email
 git config --global user.name $name
-ssh-keygen -t rsa -f ~/.ssh/id_rsa -b 4096 -C “tajo161626@gmail.com” -q -N "" -P ""
+ssh-keygen -t ed25519 -f ~/.ssh/id_rsa -b 4096 -C “$email” -q -N "" -P ""
+
 
 echo "ARCH-"$device"-$(date +"%F")" > /home/tajo48/.ssh/name
 echo "NAME:"
