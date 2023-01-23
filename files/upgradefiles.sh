@@ -38,7 +38,6 @@ if [ -f "/home/tajo48/Git/ARCH/install.sh" ]; then
         echo "ssh key not found"
         cd /home/tajo48/Git/
         rm -rf /home/tajo48/Git/ARCH
-        git clone git@github.com:tajo48/ARCH.git
         git clone https://github.com/tajo48/ARCH.git
     fi
     
