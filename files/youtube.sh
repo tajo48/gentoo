@@ -26,6 +26,6 @@ diff   --new-line-format="%L"  --old-line-format=""  --unchanged-line-format="" 
 cat /tmp/music | while read line || [[ -n $line ]];
 do
     echo $line
-    yt-dlp $line -x --embed-thumbnail --embed-metadata --restrict-filenames --convert-thumbnails webp --prefer-free-formats --audio-format opus
+    yt-dlp $line -x --audio-quality 10  --embed-thumbnail --embed-metadata --restrict-filenames --convert-thumbnails webp --prefer-free-formats --audio-format opus
 done
 rm -rf /tmp/ytmusic /tmp/music
