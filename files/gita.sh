@@ -1,5 +1,5 @@
 #! /bin/bash
-read -p 'Commit tile: ' device
+read -p 'Commit tile: ' update 
 git add -A
-git commit -m 'update'
+git commit -m "$update"
 git push
