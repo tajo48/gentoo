@@ -39,6 +39,7 @@ setopt prompt_subst
 #gnome fix
 dbus-update-activation-environment --systemd DBUS_SESSION_BUS_ADDRESS DISPLAY XAUTHORITY
 
+alias vim="nvim"
 alias v="nvim"
 alias hosts="sh /home/tajo48/ARCH/files/hosts.sh"
 alias spacesniffer="ncdu"
