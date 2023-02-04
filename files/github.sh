@@ -12,6 +12,7 @@ device=$(echo $device | sed 's/[^[:alpha:]]//g' | tr '[:upper:]' '[:lower:]' | s
 ping -q -w 1 -c 1 google.com > /dev/null && echo "internet ok" || exit
 cd /home/tajo48
 git config --global credential.helper store
+git config --global core.editor "nvim"
 git config --global user.email $email
 git config --global user.name $name
 ssh-keygen -t ed25519 -f ~/.ssh/id_rsa -b 4096 -C “$email” -q -N "" -P ""
