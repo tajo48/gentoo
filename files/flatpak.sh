@@ -11,6 +11,7 @@ flatpak install --assumeyes --noninteractive flathub org.onlyoffice.desktopedito
 flatpak install --assumeyes --noninteractive flathub com.github.tenderowl.frog
 
 #security and backup
+#flatpak install --assumeyes --noninteractive flathub com.hunterwittenborn.Celeste #nextcloud
 flatpak install --assumeyes --noninteractive flathub com.belmoussaoui.Authenticator
 flatpak install --assumeyes --noninteractive flathub com.gitlab.guillermop.MasterKey # keygen1
 flatpak install --assumeyes --noninteractive flathub com.github.alexkdeveloper.forgetpass # keygen2
