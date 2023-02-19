@@ -74,7 +74,7 @@ flatpak install --assumeyes --noninteractive launcher.moe com.gitlab.KRypt0n_.an
 flatpak install --assumeyes --noninteractive flathub com.heroicgameslauncher.hgl
 flatpak install --assumeyes --noninteractive flathub org.prismlauncher.PrismLauncher
 flatpak install --assumeyes --noninteractive flathub com.github.Anuken.Mindustry
-flatpak install --assumeyes --noninteractive flathub 
+#flatpak install --assumeyes --noninteractive flathub #maybe steam
 #flatpak install --assumeyes --noninteractive flathub io.github.Foldex.AdwSteamGtk #steam GTK UI
 
 #config
