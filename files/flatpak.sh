@@ -74,8 +74,24 @@ flatpak install --assumeyes --noninteractive launcher.moe com.gitlab.KRypt0n_.an
 flatpak install --assumeyes --noninteractive flathub com.heroicgameslauncher.hgl
 flatpak install --assumeyes --noninteractive flathub org.prismlauncher.PrismLauncher
 flatpak install --assumeyes --noninteractive flathub com.github.Anuken.Mindustry
+flatpak install --assumeyes --noninteractive flathub 
 #flatpak install --assumeyes --noninteractive flathub io.github.Foldex.AdwSteamGtk #steam GTK UI
 
 #config
 sudo flatpak override com.usebottles.bottles --filesystem=xdg-data/applications
 sudo flatpak override com.usebottles.bottles --filesystem=~/.local/share/Steam
+
+
+
+#discord rpc
+if [ -d "$HOME/.config/user-tmpfiles.d" ]; then
+    echo "Discord RPC link exists, exiting without error."
+    exit 0
+fi
+
+
+mkdir -p ~/.config/user-tmpfiles.d
+sudo su  << 'NO'
+echo 'L %t/discord-ipc-0 - - - - app/com.discordapp.Discord/discord-ipc-0' > ~/.config/user-tmpfiles.d/discord-rpc.conf
+NO
+systemctl --user enable --now systemd-tmpfiles-setup.service  
