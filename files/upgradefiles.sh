@@ -1,10 +1,14 @@
 #!/bin/bash
+ping -q -w 1 -c 1 startpage.com > /dev/null && echo "internet ok" || exit
 cd /home/tajo48/
 mkdir -p /home/tajo48/ /home/tajo48/ARCH/
 touch /home/tajo48/.xinitrc /home/tajo48/.zshrc
 sudo rm -r /home/tajo48/ARCH
 
-ping -q -w 1 -c 1 google.com > /dev/null && echo "internet ok" || exit
+
+
+
+
 rm -rf /home/tajo48/ARCH
 if test -f "/home/tajo48/.ssh/id_rsa.pub"; then
     echo "ssh key exists"
@@ -53,6 +57,13 @@ else
         git clone https://github.com/tajo48/ARCH.git
     fi
     
+fi
+
+if [ -d "$HOME/.config/nvim" ]; then
+    echo "Nvim Installed"
+else
+git clone https://github.com/AstroNvim/AstroNvim /home/tajo48/.config/nvim
+cp /home/tajo48/ARCH/files/dap.lua /home/tajo48/.config/nvim/lua/configs/dap.lua
 fi
 
 rm -rf /home/tajo48/ARCH/.git
