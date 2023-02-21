@@ -29,7 +29,7 @@ then
         sudo ln -s $(pwd)/Engine/Binaries/Linux/UnrealEditor /usr/local/bin/UnrealEditor
         echo "make done (4/4 steps completed)"
     else
-        if [ ! -f .ue4dependencies ]; then
+	    if [ ! -f .uedependencies ] && [ ! -f .ue4dependencies ]; then
             sh Setup.sh
             echo "Setup done (2/4 steps completed)"
         else
