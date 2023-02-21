@@ -62,8 +62,13 @@ fi
 if [ -d "$HOME/.config/nvim" ]; then
     echo "Nvim Installed"
 else
+rm -rf ~/.config/nvim
+rm -rf ~/.cache/nvim
+rm -rf ~/.local/share/nvim
 git clone https://github.com/AstroNvim/AstroNvim /home/tajo48/.config/nvim
 cp /home/tajo48/ARCH/files/dap.lua /home/tajo48/.config/nvim/lua/configs/dap.lua
+sed -i 's/-- Optimiser/-- nvim-discord\n  ["andweeb\/presence.nvim"] = {},\n\n  -- Optimiser/g' /home/tajo48/.config/nvim/lua/core/plugins.lua
+git clone https://github.com/github/copilot.vim.git /home/tajo48/.config/nvim/pack/github/start/copilot.vim
 fi
 
 rm -rf /home/tajo48/ARCH/.git
