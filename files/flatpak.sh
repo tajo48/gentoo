@@ -39,11 +39,12 @@ flatpak install --assumeyes --noninteractive flathub com.github.GradienceTeam.Gr
 #flatpak install --assumeyes --noninteractive flathub de.haeckerfelix.Fragments #qbitorrent but with bugs and bad ui
 #flatpak install --assumeyes --noninteractive flathub pm.mirko.Atoms # Linux bottles 
 #flatpak install --assumeyes --noninteractive flathub app.drey.EarTag # not that useful after all
-#flatpak install --assumeyes --noninteractive flathub com.dec05eba.gpu_screen_recorder
+#flatpak install --assumeyes --noninteractive flathub com.dec05eba.gpu_screen_recorder #nvapi u baka
 #flatpak install --assumeyes --noninteractive flathub com.feaneron.Boatswain #buy Stream Deck
 #work
 flatpak install --assumeyes --noninteractive flathub org.nickvision.money #Manage your personal finances
-#flatpak install --assumeyes --noninteractive flathub com.lakoliu.Furtherance #work like solanum
+#flatpak install --assumeyes --noninteractive flathub app.drey.Damask #Wallpaper engine
+#flatpak install --assumeyes --noninteractive flathub com.lakoliu.Furtherance #works like solanum
 
 #school
 flatpak install --assumeyes --noninteractive flathub com.github.alexhuntley.Plots
