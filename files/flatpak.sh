@@ -32,12 +32,13 @@ flatpak install --assumeyes --noninteractive flathub com.mattjakeman.ExtensionMa
 flatpak install --assumeyes --noninteractive flathub app.drey.Warp
 #flatpak install --assumeyes --noninteractive flathub org.gnome.Firmware #useless
 flatpak install --assumeyes --noninteractive flathub com.belmoussaoui.Decoder
+flatpak install --assumeyes --noninteractive flathub io.github.seadve.Mousai
 flatpak install --assumeyes --noninteractive flathub com.github.tchx84.Flatseal
 flatpak install --assumeyes --noninteractive flathub com.usebottles.bottles #wine on steroids
 flatpak install --assumeyes --noninteractive flathub com.github.ADBeveridge.Raider #File Shredder
 flatpak install --assumeyes --noninteractive flathub com.github.GradienceTeam.Gradience #MAKE USE OF CLI TOOL
 #flatpak install --assumeyes --noninteractive flathub de.haeckerfelix.Fragments #qbitorrent but with bugs and bad ui
-#flatpak install --assumeyes --noninteractive flathub pm.mirko.Atoms # Linux bottles 
+flatpak install --assumeyes --noninteractive flathub pm.mirko.Atoms # Linux bottles 
 #flatpak install --assumeyes --noninteractive flathub app.drey.EarTag # not that useful after all
 #flatpak install --assumeyes --noninteractive flathub com.dec05eba.gpu_screen_recorder #nvapi u baka
 #flatpak install --assumeyes --noninteractive flathub com.feaneron.Boatswain #buy Stream Deck
@@ -58,7 +59,7 @@ flatpak install --assumeyes --noninteractive flathub com.github.johnfactotum.Qui
 flatpak install --assumeyes --noninteractive flathub org.gabmus.whatip
 flatpak install --assumeyes --noninteractive flathub com.github.finefindus.eyedropper
 #flatpak install --assumeyes --noninteractive flathub org.gnome.Glade # gtk
-#flatpak install --assumeyes --noninteractive flathub-beta com.github.marhkb.Pods
+#flatpak install --assumeyes --noninteractive flathub-beta com.github.marhkb.Pods #Docker moment #never_again
 #flatpak install --assumeyes --noninteractive flathub io.github.achetagames.epic_asset_manager #crash (╯°□°)╯︵ ┻━┻
 #flatpak install --assumeyes --noninteractive flathub org.gabmus.gfeeds # 2/10 mid rss reader
 #flatpak install --assumeyes --noninteractive flathub org.gnome.Fractal # gtk matrix
