@@ -21,6 +21,7 @@ flatpak install --assumeyes --noninteractive flathub app.drey.KeyRack
 
 #entertainment
 flatpak install --assumeyes --noninteractive flathub io.bassi.Amberol
+#flatpak install --assumeyes --noninteractive flathub dev.geopjr.Tuba #gtk mastodon
 flatpak install --assumeyes --noninteractive flathub info.febvre.Komikku
 
 #discipline and health
