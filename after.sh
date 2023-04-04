@@ -1,7 +1,7 @@
 #! /bin/bash
 
 #programs variable
-programs="gst-plugin-pipewire onefetch cmake adobe-source-han-sans-jp-fonts adobe-source-han-serif-jp-fonts lldb ttf-nerd-fonts-symbols-2048-em-mono ttf-nerd-fonts-symbols-common geoclue unrar nautilus-image-converter sushi perl-image-exiftool bluez-utils sysprof fwupd gnome-bluetooth-3.0 gocryptfs cryfs python-pip exfat-utils gvim neovim steam-native-runtime steam jq pacman-contrib flatpak xf86-input-wacom gnome ncdu gnome-keyring libsecret libgnome-keyring networkmanager lib32-nvidia-utils pulseaudio pulseaudio-alsa fzf dunst streamlink nvidia-settings pavucontrol nvidia libnewt arch-install-scripts linux-headers dkms iwd ranger lm_sensors npm mpv qbittorrent ttf-joypixels ttf-jetbrains-mono ttf-liberation grub efibootmgr xf86-video-vesa xf86-video-ati xf86-video-intel xf86-video-fbdev firefox zsh feh virtualbox-guest-utils python-pynvim nodejs yarn torbrowser-launcher alsa-utils netctl mtools dialog wpa_supplicant dhcpcd git neofetch mc xclip clipmenu rtorrent openssh tmux arandr btop calc virtualbox virtualbox-host-modules-arch vlc htop tar p7zip xcompmgr audacity cmus nautilus slock make alsa-firmware wget xorg xorg-server xorg-xinit curl libxft fakeroot binutils patch pkgconf base-devel python-pywal alsa"
+programs="gst-plugin-pipewire onefetch cmake adobe-source-han-sans-jp-fonts adobe-source-han-serif-jp-fonts lldb ttf-nerd-fonts-symbols-2048-em-mono ttf-nerd-fonts-symbols-common geoclue unrar nautilus-image-converter sushi perl-image-exiftool bluez-utils sysprof fwupd gnome-bluetooth-3.0 gocryptfs cryfs python-pip exfat-utils gvim neovim steam-native-runtime steam jq pacman-contrib flatpak xf86-input-wacom gnome ncdu gnome-keyring libsecret libgnome-keyring networkmanager lib32-nvidia-utils fzf dunst streamlink nvidia-settings pavucontrol nvidia libnewt arch-install-scripts linux-headers dkms iwd ranger lm_sensors npm mpv qbittorrent ttf-joypixels ttf-jetbrains-mono ttf-liberation grub efibootmgr xf86-video-vesa xf86-video-ati xf86-video-intel xf86-video-fbdev firefox zsh feh virtualbox-guest-utils python-pynvim nodejs yarn torbrowser-launcher alsa-utils netctl mtools dialog wpa_supplicant dhcpcd git neofetch mc xclip clipmenu rtorrent openssh tmux arandr btop calc virtualbox virtualbox-host-modules-arch vlc htop tar p7zip xcompmgr audacity cmus nautilus slock make alsa-firmware wget xorg xorg-server xorg-xinit curl libxft fakeroot binutils patch pkgconf base-devel python-pywal alsa"
 
 #make gdm default
 #implement LUKS
@@ -17,12 +17,6 @@ programs="gst-plugin-pipewire onefetch cmake adobe-source-han-sans-jp-fonts adob
 #drivers check
 #install openvr
 #nvim copilot? / alternative
-
-
-#sudo pacman -S pipewire pipewire-alsa pipewire-pulse pipewire-jack
-#systemctl --user enable --now pipewire.socket
-#systemctl --user enable --now pipewire-pulse.socket
-#systemctl --user enable --now wireplumber.service
 
 #initate pacman keyring
 # pacman-key --init
@@ -43,6 +37,7 @@ pacman -Syy --noconfirm
 
 #pacman install from programs variable
 pacman -S --noconfirm $programs
+pacman -S --noconfirm pipewire pipewire-alsa pipewire-pulse pipewire-jack
 pacman -R --noconfirm amdvlk
 
 
@@ -156,6 +151,11 @@ sh -c "$(curl -k -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/insta
 git clone https://github.com/zsh-users/zsh-autosuggestions /home/tajo48/.oh-my-zsh/custom/plugins/zsh-autosuggestions
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git /home/tajo48/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
 git clone https://github.com/AstroNvim/AstroNvim /home/tajo48/.config/nvim
+
+
+systemctl --user enable --now pipewire.socket
+systemctl --user enable --now pipewire-pulse.socket
+systemctl --user enable --now wireplumber.service
 
 NO
 
