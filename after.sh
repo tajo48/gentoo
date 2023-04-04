@@ -18,6 +18,12 @@ programs="gst-plugin-pipewire onefetch cmake adobe-source-han-sans-jp-fonts adob
 #install openvr
 #nvim copilot? / alternative
 
+
+#sudo pacman -S pipewire pipewire-alsa pipewire-pulse pipewire-jack
+#systemctl --user enable --now pipewire.socket
+#systemctl --user enable --now pipewire-pulse.socket
+#systemctl --user enable --now wireplumber.service
+
 #initate pacman keyring
 # pacman-key --init
 # pacman-key --populate archlinux
