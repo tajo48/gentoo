@@ -85,6 +85,11 @@ sudo flatpak override com.usebottles.bottles --filesystem=xdg-data/applications
 sudo flatpak override com.usebottles.bottles --filesystem=~/.local/share/Steam
 
 
+# new music player
+# flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+# flatpak install flathub io.github.nate_xyz.Resonance
+
+
 
 #discord rpc
 if [ -d "$HOME/.config/user-tmpfiles.d" ]; then
