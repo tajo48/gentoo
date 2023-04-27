@@ -192,6 +192,9 @@ NO
 #echo "obs --startreplaybuffer" > /usr/local/bin/obsqq
 #chmod +x /usr/local/bin/obsqq
 
+#vm change #DELETE FOR TROUBLESHOOTING 
+echo "vm.maxmapcount=2147483642" >> /etc/sysctl.d/90-override.conf
+
 #chown
 chown tajo48 -R /home/tajo48/
 
