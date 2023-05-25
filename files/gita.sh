@@ -6,8 +6,7 @@ remote=$(git remote)'\nall'
 chosenRemote=$(echo -e "$remote" | fzf)
 
 #commit
-git add -A
-git commit -m "$updateMessage"
+git commit -am "$updateMessage"
 
 #push
 if [ "$chosenRemote" == "all" ];
