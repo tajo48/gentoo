@@ -37,7 +37,7 @@ pacman -Syy --noconfirm
 
 #pacman install from programs variable
 pacman -S --noconfirm $programs
-pacman -R --noconfirm amdvlk
+pacman -S --noconfirm $(pacman -Sg nerd-fonts)
 
 
 usbdrive="..."
