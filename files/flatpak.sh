@@ -8,6 +8,7 @@ flatpak install --assumeyes --noninteractive flathub org.gimp.GIMP
 flatpak install --assumeyes --noninteractive flathub io.gitlab.adhami3310.Footage
 flatpak install --assumeyes --noninteractive flathub com.discordapp.Discord
 flatpak install --assumeyes --noninteractive flathub org.blender.Blender
+flatpak install --assumeyes --noninteractive flathub com.github.libresprite.LibreSprite
 flatpak install --assumeyes --noninteractive flathub org.onlyoffice.desktopeditors
 flatpak install --assumeyes --noninteractive flathub com.github.tenderowl.frog
 flatpak install --assumeyes --noninteractive flathub io.github.nokse22.minitext
@@ -24,7 +25,7 @@ flatpak install --assumeyes --noninteractive flathub io.github.mpobaschnig.Vault
 
 #entertainment
 flatpak install --assumeyes --noninteractive flathub io.bassi.Amberol
-#flatpak install --assumeyes --noninteractive flathub dev.geopjr.Tuba #gtk mastodon
+flatpak install --assumeyes --noninteractive flathub dev.geopjr.Tuba #gtk mastodon
 flatpak install --assumeyes --noninteractive flathub info.febvre.Komikku
 
 #discipline and health
