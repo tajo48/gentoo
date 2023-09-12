@@ -1,7 +1,7 @@
 #!/bin/bash
 sudo flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
-# sudo flatpak remote-add --if-not-exists launcher.moe https://gol.launcher.moe/gol.launcher.moe.flatpakrepo # Genshin
 sudo flatpak remote-add --if-not-exists flathub-beta https://flathub.org/beta-repo/flathub-beta.flatpakrepo
+# sudo flatpak remote-add --if-not-exists launcher.moe https://gol.launcher.moe/gol.launcher.moe.flatpakrepo # Genshin
 
 #tools
 flatpak install --assumeyes --noninteractive flathub org.gimp.GIMP
@@ -15,11 +15,11 @@ flatpak install --assumeyes --noninteractive flathub io.github.nokse22.minitext
 flatpak install --assumeyes --noninteractive flathub org.gnome.Maps
 
 #security and backup
-#flatpak install --assumeyes --noninteractive flathub com.hunterwittenborn.Celeste # nextcloud
 flatpak install --assumeyes --noninteractive flathub com.belmoussaoui.Authenticator # 2fa
+flatpak install --assumeyes --noninteractive flathub io.github.mpobaschnig.Vaults
+#flatpak install --assumeyes --noninteractive flathub com.hunterwittenborn.Celeste # nextcloud
 # flatpak install --assumeyes --noninteractive flathub com.gitlab.guillermop.MasterKey # keygen1
 # flatpak install --assumeyes --noninteractive flathub com.github.alexkdeveloper.forgetpass # keygen2
-flatpak install --assumeyes --noninteractive flathub io.github.mpobaschnig.Vaults
 # flatpak install --assumeyes --noninteractive flathub org.gnome.World.PikaBackup #backup 1
 #flatpak install --assumeyes --noninteractive flathub org.gnome.DejaDup #backup 2
 # flatpak install --assumeyes --noninteractive flathub app.drey.KeyRack # keys from apps
@@ -36,29 +36,30 @@ flatpak install --assumeyes --noninteractive flathub com.rafaelmardojai.Blanket
 #flatpak install --assumeyes --noninteractive flathub dev.Cogitri.Health # Wait for it to be standalone + it would be cool to have vr activity support
 
 #OS tools
-# flatpak install --assumeyes --noninteractive flathub com.mattjakeman.ExtensionManager # gnome extension manager
-flatpak install --assumeyes --noninteractive flathub app.drey.Warp # file transfer
 flatpak install --assumeyes --noninteractive flathub io.github.giantpinkrobots.flatsweep
-#flatpak install --assumeyes --noninteractive flathub org.gnome.Firmware # useless
-flatpak install --assumeyes --noninteractive flathub com.belmoussaoui.Decoder
-# flatpak install --assumeyes --noninteractive flathub io.github.seadve.Mousai # cool but meh
 flatpak install --assumeyes --noninteractive flathub com.github.tchx84.Flatseal # sandboxing?
-flatpak install --assumeyes --noninteractive flathub com.usebottles.bottles # wine on steroids
-flatpak install --assumeyes --noninteractive flathub com.github.ADBeveridge.Raider # File Shredder
 flatpak install --assumeyes --noninteractive flathub com.github.GradienceTeam.Gradience # MAKE USE OF CLI TOOL
-flatpak install --assumeyes --noninteractive flathub de.haeckerfelix.Fragments #Torrents
 flatpak install --assumeyes --noninteractive flathub pm.mirko.Atoms # Linux bottles
-flatpak install --assumeyes --noninteractive flathub net.werwolv.ImHex # hex editor
+#flatpak install --assumeyes --noninteractive flathub org.gnome.Firmware # useless
 #flatpak install --assumeyes --noninteractive flathub dev.slimevr.SlimeVR # VR
-#flatpak install --assumeyes --noninteractive flathub app.drey.EarTag # not that useful after all
 #flatpak install --assumeyes --noninteractive flathub com.dec05eba.gpu_screen_recorder #nvapi u baka
 #flatpak install --assumeyes --noninteractive flathub com.feaneron.Boatswain #buy Stream Deck
+# flatpak install --assumeyes --noninteractive flathub com.mattjakeman.ExtensionManager # gnome extension manager
+
+#tools
+flatpak install --assumeyes --noninteractive flathub app.drey.Warp # file transfer
+flatpak install --assumeyes --noninteractive flathub com.belmoussaoui.Decoder
+flatpak install --assumeyes --noninteractive flathub com.usebottles.bottles # wine on steroids
+flatpak install --assumeyes --noninteractive flathub com.github.ADBeveridge.Raider # File Shredder
+flatpak install --assumeyes --noninteractive flathub de.haeckerfelix.Fragments #Torrents
+flatpak install --assumeyes --noninteractive flathub net.werwolv.ImHex # hex editor
+#flatpak install --assumeyes --noninteractive flathub app.drey.EarTag # not that useful after all
+# flatpak install --assumeyes --noninteractive flathub io.github.seadve.Mousai # cool but meh
 
 #work
 flatpak install --assumeyes --noninteractive flathub org.nickvision.money #Manage your personal finances
-#flatpak install --assumeyes --noninteractive flathub app.drey.Damask #Wallpaper engine
-#flatpak install --assumeyes --noninteractive flathub com.lakoliu.Furtherance #works like solanum
 flatpak install --assumeyes --noninteractive flathub ir.imansalmani.IPlan #TODO
+flatpak install --assumeyes --noninteractive flathub app.drey.Damask #Wallpaper engine
 
 #school
 flatpak install --assumeyes --noninteractive flathub org.gnome.Solanum #pomodoro
@@ -87,38 +88,18 @@ flatpak install --assumeyes --noninteractive flathub fr.romainvigier.zap # Sound
 #games
 flatpak install --assumeyes --noninteractive flathub com.tic80.TIC_80
 flatpak install --assumeyes --noninteractive flathub sh.ppy.osu
-# flatpak install --assumeyes --noninteractive launcher.moe com.gitlab.KRypt0n_.an-anime-game-launcher # Genshin
-# flatpak install --assumeyes --noninteractive flathub com.heroicgameslauncher.hgl # Gog & epic
 flatpak install --assumeyes --noninteractive flathub org.prismlauncher.PrismLauncher
 flatpak install --assumeyes --noninteractive flathub com.github.Anuken.Mindustry
 flatpak install --assumeyes --noninteractive flathub install flathub io.github.nokse22.trivia-quiz
 flatpak install --assumeyes --noninteractive flathub net.veloren.airshipper
 flatpak install --assumeyes --noninteractive flathub net.openra.OpenRA
 flatpak install --assumeyes --noninteractive flathub com.zquestclassic.ZQuest
+# flatpak install --assumeyes --noninteractive flathub com.heroicgameslauncher.hgl # Gog & epic
 #flatpak install --assumeyes --noninteractive flathub org.srb2.SRB2Persona #meme
 #flatpak install --assumeyes --noninteractive flathub #maybe steam
 #flatpak install --assumeyes --noninteractive flathub io.github.Foldex.AdwSteamGtk #steam GTK UI
+# flatpak install --assumeyes --noninteractive launcher.moe com.gitlab.KRypt0n_.an-anime-game-launcher # Genshin
 
 #config
 sudo flatpak override com.usebottles.bottles --filesystem=xdg-data/applications
 sudo flatpak override com.usebottles.bottles --filesystem=~/.local/share/Steam
-
-
-# new music player
-# flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
-# flatpak install flathub io.github.nate_xyz.Resonance
-
-
-
-#discord rpc
-if [ -d "$HOME/.config/user-tmpfiles.d" ]; then
-    echo "Discord RPC link exists, exiting without error."
-    exit 0
-fi
-
-
-mkdir -p ~/.config/user-tmpfiles.d
-sudo su  << 'NO'
-echo 'L %t/discord-ipc-0 - - - - app/com.discordapp.Discord/discord-ipc-0' > ~/.config/user-tmpfiles.d/discord-rpc.conf
-NO
-systemctl --user enable --now systemd-tmpfiles-setup.service  
