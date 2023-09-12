@@ -28,6 +28,8 @@ flatpak install --assumeyes --noninteractive flathub io.github.mpobaschnig.Vault
 flatpak install --assumeyes --noninteractive flathub io.bassi.Amberol
 flatpak install --assumeyes --noninteractive flathub dev.geopjr.Tuba #gtk mastodon
 flatpak install --assumeyes --noninteractive flathub info.febvre.Komikku
+flatpak install --assumeyes --noninteractive flathub de.haeckerfelix.Shortwave
+flatpak install --assumeyes --noninteractive flathub com.pojtinger.felicitas.Multiplex
 
 #discipline and health
 flatpak install --assumeyes --noninteractive flathub com.rafaelmardojai.Blanket
@@ -45,7 +47,8 @@ flatpak install --assumeyes --noninteractive flathub com.usebottles.bottles # wi
 flatpak install --assumeyes --noninteractive flathub com.github.ADBeveridge.Raider # File Shredder
 flatpak install --assumeyes --noninteractive flathub com.github.GradienceTeam.Gradience # MAKE USE OF CLI TOOL
 flatpak install --assumeyes --noninteractive flathub de.haeckerfelix.Fragments #Torrents
-flatpak install --assumeyes --noninteractive flathub pm.mirko.Atoms # Linux bottles 
+flatpak install --assumeyes --noninteractive flathub pm.mirko.Atoms # Linux bottles
+#flatpak install --assumeyes --noninteractive flathub dev.slimevr.SlimeVR # VR
 #flatpak install --assumeyes --noninteractive flathub app.drey.EarTag # not that useful after all
 #flatpak install --assumeyes --noninteractive flathub com.dec05eba.gpu_screen_recorder #nvapi u baka
 #flatpak install --assumeyes --noninteractive flathub com.feaneron.Boatswain #buy Stream Deck
@@ -89,6 +92,9 @@ flatpak install --assumeyes --noninteractive flathub org.prismlauncher.PrismLaun
 flatpak install --assumeyes --noninteractive flathub com.github.Anuken.Mindustry
 flatpak install --assumeyes --noninteractive flathub install flathub io.github.nokse22.trivia-quiz
 flatpak install --assumeyes --noninteractive flathub net.veloren.airshipper
+flatpak install --assumeyes --noninteractive flathub net.openra.OpenRA
+flatpak install --assumeyes --noninteractive flathub com.zquestclassic.ZQuest
+#flatpak install --assumeyes --noninteractive flathub org.srb2.SRB2Persona #meme
 #flatpak install --assumeyes --noninteractive flathub #maybe steam
 #flatpak install --assumeyes --noninteractive flathub io.github.Foldex.AdwSteamGtk #steam GTK UI
 
