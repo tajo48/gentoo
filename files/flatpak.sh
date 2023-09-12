@@ -1,6 +1,6 @@
 #!/bin/bash
 sudo flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
-# sudo flatpak remote-add --if-not-exists launcher.moe https://gol.launcher.moe/gol.launcher.moe.flatpakrepo
+# sudo flatpak remote-add --if-not-exists launcher.moe https://gol.launcher.moe/gol.launcher.moe.flatpakrepo # Genshin
 sudo flatpak remote-add --if-not-exists flathub-beta https://flathub.org/beta-repo/flathub-beta.flatpakrepo
 
 #tools
@@ -12,6 +12,7 @@ flatpak install --assumeyes --noninteractive flathub com.github.libresprite.Libr
 flatpak install --assumeyes --noninteractive flathub org.onlyoffice.desktopeditors
 flatpak install --assumeyes --noninteractive flathub com.github.tenderowl.frog
 flatpak install --assumeyes --noninteractive flathub io.github.nokse22.minitext
+flatpak install --assumeyes --noninteractive flathub org.gnome.Maps
 
 #security and backup
 #flatpak install --assumeyes --noninteractive flathub com.hunterwittenborn.Celeste # nextcloud
@@ -77,7 +78,7 @@ flatpak install --assumeyes --noninteractive flathub org.gnome.design.Contrast
 flatpak install --assumeyes --noninteractive flathub net.sapples.LiveCaptions
 flatpak install --assumeyes --noninteractive flathub com.obsproject.Studio
 flatpak install --assumeyes --noninteractive flathub org.gnome.SoundRecorder
-flatpak install --assumeyes --noninteractive flathub fr.romainvigier.zap # soundboard
+flatpak install --assumeyes --noninteractive flathub fr.romainvigier.zap # Soundboard
 
 #games
 flatpak install --assumeyes --noninteractive flathub com.tic80.TIC_80
@@ -87,6 +88,7 @@ flatpak install --assumeyes --noninteractive flathub sh.ppy.osu
 flatpak install --assumeyes --noninteractive flathub org.prismlauncher.PrismLauncher
 flatpak install --assumeyes --noninteractive flathub com.github.Anuken.Mindustry
 flatpak install --assumeyes --noninteractive flathub install flathub io.github.nokse22.trivia-quiz
+flatpak install --assumeyes --noninteractive flathub net.veloren.airshipper
 #flatpak install --assumeyes --noninteractive flathub #maybe steam
 #flatpak install --assumeyes --noninteractive flathub io.github.Foldex.AdwSteamGtk #steam GTK UI
 
