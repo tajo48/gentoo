@@ -48,6 +48,7 @@ flatpak install --assumeyes --noninteractive flathub com.github.ADBeveridge.Raid
 flatpak install --assumeyes --noninteractive flathub com.github.GradienceTeam.Gradience # MAKE USE OF CLI TOOL
 flatpak install --assumeyes --noninteractive flathub de.haeckerfelix.Fragments #Torrents
 flatpak install --assumeyes --noninteractive flathub pm.mirko.Atoms # Linux bottles
+flatpak install --assumeyes --noninteractive flathub net.werwolv.ImHex # hex editor
 #flatpak install --assumeyes --noninteractive flathub dev.slimevr.SlimeVR # VR
 #flatpak install --assumeyes --noninteractive flathub app.drey.EarTag # not that useful after all
 #flatpak install --assumeyes --noninteractive flathub com.dec05eba.gpu_screen_recorder #nvapi u baka
