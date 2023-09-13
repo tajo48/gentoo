@@ -3,7 +3,7 @@ sudo flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub
 sudo flatpak remote-add --if-not-exists flathub-beta https://flathub.org/beta-repo/flathub-beta.flatpakrepo
 # sudo flatpak remote-add --if-not-exists launcher.moe https://gol.launcher.moe/gol.launcher.moe.flatpakrepo # Genshin
 
-#tools
+#office tools
 flatpak install --assumeyes --noninteractive flathub org.gimp.GIMP
 flatpak install --assumeyes --noninteractive flathub io.gitlab.adhami3310.Footage
 flatpak install --assumeyes --noninteractive flathub com.discordapp.Discord
@@ -13,6 +13,7 @@ flatpak install --assumeyes --noninteractive flathub org.onlyoffice.desktopedito
 flatpak install --assumeyes --noninteractive flathub com.github.tenderowl.frog
 flatpak install --assumeyes --noninteractive flathub io.github.nokse22.minitext
 flatpak install --assumeyes --noninteractive flathub org.gnome.Maps
+flatpak install --assumeyes --noninteractive flathub org.kicad.KiCad
 
 #security and backup
 flatpak install --assumeyes --noninteractive flathub com.belmoussaoui.Authenticator # 2fa
