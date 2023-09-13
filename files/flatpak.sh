@@ -92,8 +92,8 @@ flatpak install --assumeyes --noninteractive flathub org.prismlauncher.PrismLaun
 flatpak install --assumeyes --noninteractive flathub com.github.Anuken.Mindustry
 flatpak install --assumeyes --noninteractive flathub install flathub io.github.nokse22.trivia-quiz
 flatpak install --assumeyes --noninteractive flathub net.veloren.airshipper
-flatpak install --assumeyes --noninteractive flathub net.openra.OpenRA
-flatpak install --assumeyes --noninteractive flathub com.zquestclassic.ZQuest
+#flatpak install --assumeyes --noninteractive flathub net.openra.OpenRA
+#flatpak install --assumeyes --noninteractive flathub com.zquestclassic.ZQuest 
 # flatpak install --assumeyes --noninteractive flathub com.heroicgameslauncher.hgl # Gog & epic
 #flatpak install --assumeyes --noninteractive flathub org.srb2.SRB2Persona #meme
 #flatpak install --assumeyes --noninteractive flathub #maybe steam
