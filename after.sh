@@ -167,7 +167,10 @@ NO
 #dotfiles
 cp /home/tajo48/ARCH/files/zshrc /home/tajo48/.zshrc
 cp /home/tajo48/ARCH/files/xinitrc /home/tajo48/.xinitrc
+
 cp /home/tajo48/ARCH/files/dap.lua /home/tajo48/.config/nvim/lua/configs/dap.lua
+echo "vim.opt.shell = 'zsh'" >> /home/tajo48/.config/nvim/lua/astronvim/autocmds.lua
+
 #set zsh as default shell
 chsh -s /bin/zsh tajo48
 
