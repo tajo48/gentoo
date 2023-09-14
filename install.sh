@@ -1,4 +1,11 @@
 #! /bin/bash
+
+echo "Deprecated"
+
+exit 0
+
+
+
 ping -q -w 1 -c 1 google.com > /dev/null && echo "internet ok" || exit
 
 if [ -z $1 ]; then
