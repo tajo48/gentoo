@@ -41,6 +41,7 @@ flatpak install --assumeyes --noninteractive flathub io.github.giantpinkrobots.f
 flatpak install --assumeyes --noninteractive flathub com.github.tchx84.Flatseal # sandboxing?
 flatpak install --assumeyes --noninteractive flathub com.github.GradienceTeam.Gradience # MAKE USE OF CLI TOOL
 flatpak install --assumeyes --noninteractive flathub pm.mirko.Atoms # Linux bottles
+flatpak install --assumeyes --noninteractive flathub it.mijorus.gearlever
 #flatpak install --assumeyes --noninteractive flathub org.gnome.Firmware # useless
 #flatpak install --assumeyes --noninteractive flathub dev.slimevr.SlimeVR # VR
 #flatpak install --assumeyes --noninteractive flathub com.dec05eba.gpu_screen_recorder #nvapi u baka
