@@ -92,7 +92,7 @@ flatpak install --assumeyes --noninteractive flathub com.tic80.TIC_80
 flatpak install --assumeyes --noninteractive flathub sh.ppy.osu
 flatpak install --assumeyes --noninteractive flathub org.prismlauncher.PrismLauncher
 flatpak install --assumeyes --noninteractive flathub com.github.Anuken.Mindustry
-flatpak install --assumeyes --noninteractive flathub install flathub io.github.nokse22.trivia-quiz
+flatpak install --assumeyes --noninteractive flathub io.github.nokse22.trivia-quiz
 flatpak install --assumeyes --noninteractive flathub net.veloren.airshipper
 #flatpak install --assumeyes --noninteractive flathub net.openra.OpenRA
 #flatpak install --assumeyes --noninteractive flathub com.zquestclassic.ZQuest 
