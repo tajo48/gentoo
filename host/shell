@@ -1,1 +1,0 @@
-alias amnesia-fix-permissions="sudo chown -R amnesia:amnesia /home/amnesia/"

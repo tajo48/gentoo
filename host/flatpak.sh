@@ -111,3 +111,8 @@ flatpak install --assumeyes --noninteractive --user launcher.moe moe.launcher.an
 #config
 sudo flatpak override com.usebottles.bottles --filesystem=xdg-data/applications
 sudo flatpak override com.usebottles.bottles --filesystem=~/.local/share/Steam
+
+#Discord fix
+for i in {0..9}; do
+	test -S $XDG_RUNTIME_DIR/discord-ipc-$i || ln -sf {app/com.discordapp.Discord,$XDG_RUNTIME_DIR}/discord-ipc-$i
+done

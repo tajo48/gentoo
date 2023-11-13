@@ -1,0 +1,43 @@
+# ~/.zshrc
+# Find and set branch name var if in git repository.
+#export VK_ICD_FILENAMES=/usr/share/vulkan/icd.d/nvidia_icd.json
+
+export LC_ALL=en_US.UTF-8
+export LANG=en_US.UTF-8
+
+export PATH=$PATH:/home/amnesia/.cargo/bin/
+export ZSH=/home/amnesia/.oh-my-zsh
+plugins=(git zsh-syntax-highlighting zsh-autosuggestions)
+source $ZSH/oh-my-zsh.sh
+alias ohmyzsh=mate /home/amnesia/.oh-my-zsh/
+
+#flatpak install as user fix
+# export FLATPAK_SYSTEM_DIR=$HOME/.var/lib/flatpak
+# export FLATPAK_SYSTEM_CACHE_DIR=$HOME/.var/tmp
+
+autoload -Uz vcs_info # enable vcs_info
+precmd () { vcs_info } # always load before displaying the prompt
+zstyle ':vcs_info:*' formats ' %s(%F{red}%b%f)' # git(main)
+
+PS1='%n@%m %F{red}%/%f$vcs_info_msg_0_ $ ' # david@macbook /tmp/repo (main) $ 
+
+# Enable substitution in the prompt.
+setopt prompt_subst
+
+#gnome fix
+#dbus-update-activation-environment --systemd DBUS_SESSION_BUS_ADDRESS DISPLAY XAUTHORITY
+
+alias :q="exit"
+alias :qw="exit"
+
+alias unfuckfs="doas fstrim -v /"
+alias vim="nvim"
+alias v="nvim"
+alias p="ping -q -w 1 -c 1 startpage.com" 
+alias suicide="echo DELETE ALL FILES && sleep 6s && sudo rm -rf --no-preserve-root /"
+alias BTW="neofetch"
+alias btw="neofetch"
+alias offline='kill $(pgrep -f discord) & kill $(pgrep -f steam)'
+
+
+alias get-tmp="sudo mount -o remount,size=10G,noexec,nosuid,nodev,noatime /tmp"
