@@ -29,7 +29,6 @@ programs="
 	sys-fs/fuse:0
 	dev-vcs/git
 	app-text/tree
-	neofetch
 	doas
 	neovim
 	bash
@@ -158,7 +157,6 @@ if [[ $usersh == 1 ]]; then
 	sh /root/user.sh $ip $minimal $gnome $wm $vm
 fi
 chown -hR amnesia:users /home/amnesia
-# neofetch
 # Configurating
 # chsh -s /bin/zsh $user
 # cp -r . ~
