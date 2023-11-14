@@ -83,7 +83,7 @@ ln -sf /usr/share/zoneinfo/Europe/London /etc/localtime
 emerge --config sys-libs/timezone-data
 echo -e "en_US.UTF-8 UTF-8" >>/etc/locale.gen
 locale-gen
-|eselect locale set en_US.utf8
+eselect locale set en_US.utf8
 source /etc/profile #BC eselect said so
 
 # Gentoo
@@ -106,7 +106,7 @@ if [[ $gnome == 1 ]]; then
 	emerge --quiet-build perl app-doc/doxygen
 
 	#fix perl common sense and doxygen in llvm build
-	emerge --quiet-build --autounmask=y --autounmask-unrestricted-atoms=y --autounmask-continue=y --autounmask-backtrack=y --backtrack=1000 --autounmask-use=y gnome-base/gnome flatpak
+	emerge --quiet-build --autounmask=y --autounmask-unrestricted-atoms=y --autounmask-continue=y --autounmask-backtrack=y --backtrack=1000 --autounmask-use=y gnome-base/gnome-light gnome-software flatpak
 	gnome-shell --version
 
 	rc-update add elogind boot

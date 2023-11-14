@@ -7,6 +7,7 @@ return {
   -- { import = "astrocommunity." },
   { import = "astrocommunity.pack.html-css" },
   { import = "astrocommunity.pack.bash" },
+  { import = "astrocommunity.media.presence-nvim" },
   { import = "astrocommunity.colorscheme.catppuccin" },
   { -- further customize the options set by the community
     "catppuccin",
