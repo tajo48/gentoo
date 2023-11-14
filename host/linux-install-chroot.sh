@@ -86,7 +86,7 @@ eselect locale set en_US.utf8
 source /etc/profile #BC eselect said so
 
 # Gentoo
-emerge ---quiet-build -update --deep --newuse --complete-graph @world
+emerge --quiet-build -update --deep --newuse --complete-graph @world
 clang -v
 
 #fix circular dependency
