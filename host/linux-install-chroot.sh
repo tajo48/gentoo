@@ -6,6 +6,14 @@ else
 	echo "Running as root"
 fi
 
+# if pwd is not / then exit with error
+if [[ $PWD != "/" ]]; then
+	echo "chroot failed, not in /"
+	exit 1
+else
+	echo "Running from /"
+fi
+
 #TODO dialout group and dialout add to user
 #User
 
@@ -86,9 +94,9 @@ eselect locale set en_US.utf8
 source /etc/profile #BC eselect said so
 
 # Gentoo
-emerge --quiet-build -update --deep --newuse --complete-graph @world
+emerge --quiet-build --update --deep --newuse --backtrack=99 --complete-graph @world
 clang -v
-
+read -p "test :3"
 #fix circular dependency
 USE="minimal" emerge --oneshot --quiet-build libsndfile
 emerge --newuse --quiet-build media-libs/libsndfile

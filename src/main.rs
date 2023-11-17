@@ -1,13 +1,34 @@
+use dialoguer::Confirm;
 use regex::Regex;
 use std::{
+    io,
     fs,
     io::{prelude::*, BufReader},
     net::{TcpListener, TcpStream},
     path::Path,
 };
-fn main() {
-    let listener = TcpListener::bind("127.0.0.1:7878").unwrap();
 
+fn main() {
+    let mut ip = String::new();
+    let confirmation = Confirm::new()
+        .with_prompt("Do you want to use the default ip?")
+        .interact()
+        .unwrap();
+
+    if confirmation {
+        println!("Using default ip");
+        ip = "127.0.0.1".to_string();
+        ip = format!("{}:7878", ip);
+    } else {
+        println!("What's the ip?");
+        io::stdin()
+            .read_line(&mut ip)
+            .expect("Failed to read line");
+        ip = ip.trim().to_string();
+        ip = format!("{}:7878", ip);
+    }
+    
+    let listener = TcpListener::bind(ip).unwrap();
     for stream in listener.incoming() {
         let stream = stream.unwrap();
 

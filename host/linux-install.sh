@@ -53,6 +53,7 @@ for arg in "$@"; do
 		;;
 	-i | --ip)
 		read -p "IP: " ip
+		#TODO handle it better
 		;;
 	-m | --minimal)
 		minimal=1
@@ -152,7 +153,7 @@ SWAP=$(echo "$RAM * $r" | bc)
 echo "Your setting are:"
 echo "Drive:            $disk "
 echo "Trim:             $(if [ "$trim" -eq 1 ]; then echo "true"; else echo "false"; fi)"
-echo "IP:               $ip"
+echo "IP and port:      $ip:7878 and curl check: $(curl -s $ip:7878/makeitrain404)"
 echo "chronyd:          $(if [ "$chronyd" -eq 1 ]; then echo "true"; else echo "false"; fi)"
 echo "Virtual machine:  $(if [ "$vm" -eq 1 ]; then echo "true"; else echo "false"; fi)"
 echo ""
@@ -183,7 +184,7 @@ distroName="amnesia"
 blkdiscard -f /dev/${disk}
 wipefs -a /dev/${disk}
 sgdisk -Zo -n 2:0:+512M -t 2:EF00 -n 1:0:0 -t 1:8300 /dev/${disk}
-mkfs.ext4 /dev/${disk}1
+mkfs.ext4 -F /dev/${disk}1
 mkfs.fat -F 32 /dev/${disk}2
 fatlabel /dev/${disk}2 BOOT #NO OUTPUT
 mkdir -p /mnt/${distroName}
