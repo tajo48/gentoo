@@ -58,7 +58,7 @@ fn handle_connection(mut stream: TcpStream) {
             if path == "./host/" {
                 ("HTTP/1.1 200 OK", "./host/linux-install.sh")
             } else {
-                ("HTTP/1.1 404 NOT FOUND", "./host/404.sh")
+                ("HTTP/1.1 404 NOT FOUND", "./host/404")
             }
         };
 
