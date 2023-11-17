@@ -96,7 +96,6 @@ source /etc/profile #BC eselect said so
 # Gentoo
 emerge --quiet-build --update --deep --newuse --backtrack=99 --complete-graph @world
 clang -v
-read -p "test :3"
 #fix circular dependency
 USE="minimal" emerge --oneshot --quiet-build libsndfile
 emerge --newuse --quiet-build media-libs/libsndfile
