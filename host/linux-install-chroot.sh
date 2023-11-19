@@ -95,7 +95,7 @@ source /etc/profile #BC eselect said so
 
 # Gentoo
 emerge --quiet-build --update --deep --newuse --backtrack=99 --complete-graph @world
-clang -v
+clang -v || exit 1
 #fix circular dependency
 USE="minimal" emerge --oneshot --quiet-build libsndfile
 emerge --newuse --quiet-build media-libs/libsndfile
@@ -113,8 +113,7 @@ if [[ $gnome == 1 ]]; then
 
 	#fix perl common sense and doxygen in llvm build
 	emerge --quiet-build --autounmask=y --autounmask-unrestricted-atoms=y --autounmask-continue=y --autounmask-backtrack=y --backtrack=1000 --autounmask-use=y gnome-base/gnome-light gnome-software flatpak
-	gnome-shell --version
-
+	gnome-shell --version || exit 1
 	rc-update add elogind boot
 	emerge --quiet-build --noreplace gui-libs/display-manager-init
 	echo "DISPLAYMANAGER=\"gdm\"" >>/etc/conf.d/display-manager
