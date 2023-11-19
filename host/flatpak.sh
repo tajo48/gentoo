@@ -55,7 +55,8 @@ flatpak install --assumeyes --noninteractive --user flathub io.github.flattool.W
 # flatpak install --assumeyes --noninteractive --user flathub com.mattjakeman.ExtensionManager # gnome extension manager
 
 #tools
-flatpak install --assumeyes --noninteractive --user flathub app.drey.Warp # file transfer
+flatpak install --assumeyes --noninteractive --user flathub app.drey.Warp                           # file transfer
+flatpak install --assumeyes --noninteractive --user flathub de.haeckerfelix.AudioSharing.flatpakref # AudioSharing
 flatpak install --assumeyes --noninteractive --user flathub com.belmoussaoui.Decoder
 flatpak install --assumeyes --noninteractive --user flathub com.usebottles.bottles        # wine on steroids
 flatpak install --assumeyes --noninteractive --user flathub com.github.ADBeveridge.Raider # File Shredder
@@ -78,6 +79,7 @@ flatpak install --assumeyes --noninteractive --user flathub com.logseq.Logseq   
 
 #dev tools
 flatpak install --assumeyes --noninteractive --user flathub org.gabmus.whatip
+flatpak install --assumeyes --noninteractive --user flathub io.github.bytezz.IPLookup
 flatpak install --assumeyes --noninteractive --user flathub com.github.finefindus.eyedropper
 flatpak install --assumeyes --noninteractive --user flathub xyz.tytanium.DoorKnocker
 flatpak install --assumeyes --noninteractive --user flathub org.gnome.design.Contrast
