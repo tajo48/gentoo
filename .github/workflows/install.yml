@@ -19,8 +19,8 @@ jobs:
     
     - name: CollectOsData
       run: |
-        sudo apt install fastfetch 
-        fastfetch
+        sudo apt install neofetch 
+        neofetch
     - name: CollectDiscInfo
       run: lsblk -la
 
