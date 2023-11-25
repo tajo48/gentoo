@@ -38,5 +38,4 @@ jobs:
     
     - name: Server start
       run: |
-        cargo run -- --no-confirm &&
-        curl localhost:7878 
+        cargo run -- --no-confirm & sleep 10s && curl localhost:7878

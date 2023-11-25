@@ -35,6 +35,7 @@ fn main() {
     }
     
     let listener = TcpListener::bind(ip).unwrap();
+    
     for stream in listener.incoming() {
         let stream = stream.unwrap();
 
