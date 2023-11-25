@@ -35,6 +35,7 @@ flatpak install --assumeyes --noninteractive --user flathub info.febvre.Komikku
 flatpak install --assumeyes --noninteractive --user flathub de.haeckerfelix.Shortwave
 flatpak install --assumeyes --noninteractive --user flathub com.pojtinger.felicitas.Multiplex
 flatpak install --assumeyes --noninteractive --user flathub me.iepure.Ticketbooth
+flatpak install --assumeyes --noninteractive --user flathub com.github.johnfactotum.Foliate
 
 #discipline and health
 flatpak install --assumeyes --noninteractive --user flathub com.rafaelmardojai.Blanket

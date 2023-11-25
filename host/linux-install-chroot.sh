@@ -40,6 +40,7 @@ programs="
 	doas
 	neovim
 	bash
+	fastfetch
 	grub
 	networkmanager
 	gentoo-kernel-bin
@@ -163,6 +164,7 @@ if [[ $usersh == 1 ]]; then
 	sh /root/user.sh $ip $minimal $gnome $wm $vm
 fi
 chown -hR amnesia:users /home/amnesia
+fastfetch
 # Configurating
 # chsh -s /bin/zsh $user
 # cp -r . ~

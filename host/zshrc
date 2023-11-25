@@ -35,9 +35,9 @@ alias vim="nvim"
 alias v="nvim"
 alias p="ping -q -w 1 -c 1 startpage.com" 
 alias suicide="echo DELETE ALL FILES && sleep 6s && sudo rm -rf --no-preserve-root /"
-alias BTW="neofetch"
-alias btw="neofetch"
+alias BTW="fastfetch"
+alias btw="fastfetch"
 alias offline='kill $(pgrep -f discord) & kill $(pgrep -f steam)'
-
+alias resetnvim='rm -rf ~/.local/share/nvim && rm -rf ~/.local/state/nvim && rm -rf ~/.cache/nvim && rm -rf ~/.config/nvim && git clone --depth 1 https://github.com/AstroNvim/AstroNvim ~/.config/nvim'
 
 alias get-tmp="sudo mount -o remount,size=10G,noexec,nosuid,nodev,noatime /tmp"
