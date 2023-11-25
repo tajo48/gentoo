@@ -25,4 +25,4 @@ jobs:
       run: lsblk -la
 
     - name: CollectDataInfo
-      run: tree 
+      run: tree / 
