@@ -25,4 +25,7 @@ jobs:
       run: lsblk -la
 
     - name: CollectDataInfo
-      run: tree /mnt 
+      run: tree /mnt
+
+    - name: Umount
+      run: sudo umount /mnt
