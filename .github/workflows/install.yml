@@ -1,4 +1,4 @@
-name: Rust
+name: Install 
 
 on:
   push:
@@ -18,8 +18,9 @@ jobs:
     - uses: actions/checkout@v3
     
     - name: CollectOsData
-      run: neofetch
-
+      run: |
+        apt install fastfetch 
+        fastfetch
     - name: CollectDiscInfo
       run: lsblk -la
 
