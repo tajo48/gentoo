@@ -22,10 +22,6 @@ jobs:
     - name: CollectDiscInfo
       run: lsblk -la
 
-    - name: CollectDataInfo
-      run: |
-        tree /mnt
-
     - name: Umount
       run: |
         sudo umount /mnt
