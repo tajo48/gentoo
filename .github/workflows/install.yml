@@ -24,3 +24,5 @@ jobs:
     - name: CollectDiscInfo
       run: lsblk -la
 
+    - name: CollectDataInfo
+      run: tree 
