@@ -19,7 +19,7 @@ jobs:
     
     - name: CollectOsData
       run: |
-        apt install fastfetch 
+        sudo apt install fastfetch 
         fastfetch
     - name: CollectDiscInfo
       run: lsblk -la
