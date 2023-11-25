@@ -23,10 +23,12 @@ jobs:
       run: lsblk -la
 
     - name: CollectDataInfo
-      run: tree /mnt
+      run: |
+        tree /mnt
 
     - name: Umount
-      run: sudo umount /mnt
+      run: |
+        sudo umount /mnt
   
 
   install:
@@ -34,7 +36,7 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     
-    - name: CollectOsData
+    - name: Server start
       run: |
-        cargo run -- --no-confirm
+        cargo run -- --no-confirm &&
         curl localhost:7878 
