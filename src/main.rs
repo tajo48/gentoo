@@ -1,6 +1,7 @@
 use dialoguer::Confirm;
 use regex::Regex;
 use std::{
+    env,
     io,
     fs,
     io::{prelude::*, BufReader},
@@ -8,12 +9,17 @@ use std::{
     path::Path,
 };
 
+
 fn main() {
     let mut ip = String::new();
-    let confirmation = Confirm::new()
+    let confirmation :bool = if !env::args().any(|arg| arg == "--no-confirm") {
+        Confirm::new()
         .with_prompt("Do you want to use the default ip?")
         .interact()
-        .unwrap();
+        .unwrap()
+    } else {
+        true
+    };
 
     if confirmation {
         println!("Using default ip");

@@ -1,4 +1,4 @@
-name: Install 
+name: Shell 
 
 on:
   push:
@@ -10,10 +10,8 @@ env:
   CARGO_TERM_COLOR: always
 
 jobs:
-  build:
-
+  os:
     runs-on: ubuntu-latest
-
     steps:
     - uses: actions/checkout@v3
     
@@ -29,3 +27,14 @@ jobs:
 
     - name: Umount
       run: sudo umount /mnt
+  
+
+  install:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    
+    - name: CollectOsData
+      run: |
+        cargo run -- --no-confirm
+        curl localhost:7878 
