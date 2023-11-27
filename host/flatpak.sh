@@ -80,6 +80,7 @@ flatpak install --assumeyes --noninteractive --user flathub com.logseq.Logseq   
 
 #dev tools
 flatpak install --assumeyes --noninteractive --user flathub org.gabmus.whatip
+flatpak install --assumeyes --noninteractive --user flathub me.iepure.devtoolbox
 flatpak install --assumeyes --noninteractive --user flathub io.github.bytezz.IPLookup
 flatpak install --assumeyes --noninteractive --user flathub com.github.finefindus.eyedropper
 flatpak install --assumeyes --noninteractive --user flathub xyz.tytanium.DoorKnocker
