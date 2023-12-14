@@ -96,13 +96,12 @@ source /etc/profile #BC eselect said so
 
 # Gentoo
 emerge --quiet-build --update --deep --newuse --backtrack=99 --complete-graph @world
-clang -v || exit 1
 #fix circular dependency
 USE="minimal" emerge --oneshot --quiet-build libsndfile
 emerge --newuse --quiet-build media-libs/libsndfile
 
 emerge --autounmask=y --quiet-build --autounmask-continue=y $programs
-nvim -v
+nvim -v || exit 1
 emerge --depclean --quiet-build
 
 if [[ $gnome == 1 ]]; then
