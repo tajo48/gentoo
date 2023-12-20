@@ -167,5 +167,5 @@ fastfetch
 # Configurating
 # chsh -s /bin/zsh $user
 # cp -r . ~
-
+# add  cp ~/Desktop/Projekty/gentoo/host/community.lua ~/.config/nvim/lua/plugins/community.lua
 # End
