@@ -54,6 +54,8 @@ programs="
 	sys-fs/genfstab
 	cryfs
 	app-portage/mirrorselect
+	ripgrep
+	emacs
 "
 #chrony for time sync
 

@@ -54,15 +54,16 @@ flatpak install --assumeyes --noninteractive --user flathub com.rafaelmardojai.B
 #flatpak install --assumeyes --noninteractive --user flathub dev.Cogitri.Health # Wait for it to be standalone + it would be cool to have vr activity support
 
 #OS tools
-flatpak install --assumeyes --noninteractive --user flathub it.mijorus.whisper                  #ARM native
-flatpak install --assumeyes --noninteractive --user flathub io.github.giantpinkrobots.flatsweep #ARM native
-flatpak install --assumeyes --noninteractive --user flathub com.github.tchx84.Flatseal          #ARM native
-flatpak install --assumeyes --noninteractive --user flathub com.github.GradienceTeam.Gradience  #ARM native
-flatpak install --assumeyes --noninteractive --user flathub pm.mirko.Atoms                      #ARM native
-flatpak install --assumeyes --noninteractive --user flathub it.mijorus.gearlever                #ARM native
-flatpak install --assumeyes --noninteractive --user flathub io.frama.tractor.carburetor         #ARM native
-flatpak install --assumeyes --noninteractive --user flathub io.github.flattool.Warehouse        #ARM native
-flatpak install --assumeyes --noninteractive --user flathub org.pipewire.Helvum                 #ARM native
+flatpak install --assumeyes --noninteractive --user flathub it.mijorus.whisper                              #ARM native
+flatpak install --assumeyes --noninteractive --user flathub io.github.giantpinkrobots.flatsweep             #ARM native
+flatpak install --assumeyes --noninteractive --user flathub com.github.tchx84.Flatseal                      #ARM native
+flatpak install --assumeyes --noninteractive --user flathub com.github.GradienceTeam.Gradience              #ARM native
+flatpak install --assumeyes --noninteractive --user flathub pm.mirko.Atoms                                  #ARM native
+flatpak install --assumeyes --noninteractive --user flathub it.mijorus.gearlever                            #ARM native
+flatpak install --assumeyes --noninteractive --user flathub io.frama.tractor.carburetor                     #ARM native
+flatpak install --assumeyes --noninteractive --user flathub io.github.flattool.Warehouse                    #ARM native
+flatpak install --assumeyes --noninteractive --user flathub org.pipewire.Helvum                             #ARM native
+flatpak install --assumeyes --noninteractive --user flathub page.codeberg.libre_menu_editor.LibreMenuEditor #ARM native
 #flatpak install --assumeyes --noninteractive --user flathub org.gnome.Firmware # useless
 #flatpak install --assumeyes --noninteractive --user flathub dev.slimevr.SlimeVR # VR
 #flatpak install --assumeyes --noninteractive --user flathub com.dec05eba.gpu_screen_recorder #nvapi u baka
@@ -71,6 +72,8 @@ flatpak install --assumeyes --noninteractive --user flathub org.pipewire.Helvum 
 
 #tools
 flatpak install --assumeyes --noninteractive --user flathub app.drey.Warp                         #ARM native
+flatpak install --assumeyes --noninteractive --user flathub page.codeberg.Imaginer.Imaginer       #ARM native
+flatpak install --assumeyes --noninteractive --user flathub io.github.Bavarder.Bavarder           #ARM native
 flatpak install --assumeyes --noninteractive --user flathub com.belmoussaoui.Decoder              #ARM native
 flatpak install --assumeyes --noninteractive --user flathub com.usebottles.bottles                #NO ARM
 flatpak install --assumeyes --noninteractive --user flathub com.github.ADBeveridge.Raider         #ARM native
