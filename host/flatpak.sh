@@ -15,7 +15,7 @@ flatpak install --assumeyes --noninteractive --user flathub dev.mufeed.Wordbook 
 #2d 3d and game dev
 flatpak install --assumeyes --noninteractive --user flathub com.prusa3d.PrusaSlicer             #ARM native
 flatpak install --assumeyes --noninteractive --user flathub org.kicad.KiCad                     #ARM native
-flatpak install --assumeyes --noninteractive --user flathub com.github.libresprite.LibreSpritei #ARM native
+flatpak install --assumeyes --noninteractive --user flathub com.github.libresprite.LibreSprite  #ARM native
 flatpak install --assumeyes --noninteractive --user flathub org.gimp.GIMP                       #ARM native
 flatpak install --assumeyes --noninteractive --user flathub org.godotengine.Godot               #ARM native
 flatpak install --assumeyes --noninteractive --user flathub org.blender.Blender                 #NO ARM
