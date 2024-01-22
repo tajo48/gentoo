@@ -3,7 +3,7 @@ flatpak remote-add --if-not-exists --user flathub https://flathub.org/repo/flath
 flatpak remote-add --if-not-exists --user launcher.moe https://gol.launcher.moe/gol.launcher.moe.flatpakrepo
 
 #office tools
-flatpak install --assumeyes --noninteractive --user flathub org.upscayl.Upscayli           #NO ARM
+flatpak install --assumeyes --noninteractive --user flathub org.upscayl.Upscayl            #NO ARM
 flatpak install --assumeyes --noninteractive --user flathub io.gitlab.adhami3310.Footage   #ARM native
 flatpak install --assumeyes --noninteractive --user flathub org.onlyoffice.desktopeditorsi #NO ARM
 flatpak install --assumeyes --noninteractive --user flathub com.github.tenderowl.frog      #ARM native
