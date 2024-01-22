@@ -56,6 +56,7 @@ programs="
 	app-portage/mirrorselect
 	ripgrep
 	emacs
+ 	ufw
 "
 #chrony for time sync
 
@@ -124,6 +125,7 @@ fi
 
 # Turn on services
 rc-update add NetworkManager
+rc-update add ufw default
 # rc-update add iptables default
 # rc-update add ip6tables default
 
