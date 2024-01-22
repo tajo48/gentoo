@@ -167,9 +167,11 @@ if [[ $usersh == 1 ]]; then
 	sh /root/user.sh $ip $minimal $gnome $wm $vm
 fi
 
-#fix max user files
+#TODO fix max user files fs.file-max
 #$(ulimit -n)*$(ulimit -u)
 # sysctl -w fs.file-max=100000
+
+#TODO vm.max_map_count
 
 chown -hR amnesia:users /home/amnesia
 fastfetch
