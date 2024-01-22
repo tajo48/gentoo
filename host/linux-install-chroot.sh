@@ -164,6 +164,11 @@ if [[ $usersh == 1 ]]; then
 	curl -s "${ip}:7878/user.sh" >/root/user.sh
 	sh /root/user.sh $ip $minimal $gnome $wm $vm
 fi
+
+#fix max user files
+#$(ulimit -n)*$(ulimit -u)
+# sysctl -w fs.file-max=100000
+
 chown -hR amnesia:users /home/amnesia
 fastfetch
 # Configurating
