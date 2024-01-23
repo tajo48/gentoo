@@ -38,8 +38,7 @@ programs="
 	dev-vcs/git
 	app-text/tree
 	doas
-	neovim
-	bash
+ 	bash
 	fastfetch
 	grub
 	networkmanager
