@@ -103,7 +103,7 @@ USE="minimal" emerge --oneshot --quiet-build libsndfile
 emerge --newuse --quiet-build media-libs/libsndfile
 
 emerge --autounmask=y --quiet-build --autounmask-continue=y $programs
-nvim -v || exit 1
+git -v || exit 1
 emerge --depclean --quiet-build
 
 if [[ $gnome == 1 ]]; then
