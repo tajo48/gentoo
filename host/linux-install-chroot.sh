@@ -146,7 +146,7 @@ echo "0.0.0.0 www.youtube.com" >>/etc/hosts
 
 #doas
 ln -s $(which doas) /usr/bin/sudo
-ln -s $(which nvim) /usr/bin/vim
+
 echo "permit persist :wheel" >/etc/doas.conf
 chown -c root:root /etc/doas.conf
 chmod -c 0400 /etc/doas.conf
