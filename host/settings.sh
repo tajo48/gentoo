@@ -1,22 +1,16 @@
 #! /bin/bash
-# gsettings set org.gnome.desktop.input-sources sources "[('xkb', 'pl')]"
-# gsettings set org.gnome.desktop.background picture-uri ARCH/photos/wallpaper.jpg
-# gsettings set org.gnome.desktop.background picture-uri-dark ARCH/photos/wallpaper.jpg
 
 #reset theme so wallpaper will update
 gsettings set org.gnome.desktop.interface color-scheme default
 gsettings set org.gnome.desktop.interface color-scheme prefer-dark
 
-gsettings set org.gnome.desktop.interface enable-animations false
+
 gsettings set org.gnome.shell.app-switcher current-workspace-only true
 
 gsettings set org.gnome.settings-daemon.plugins.color night-light-enabled true
 gsettings set org.gnome.settings-daemon.plugins.color night-light-schedule-automatic true
 gsettings set org.gnome.settings-daemon.plugins.color night-light-temperature 2700
 
-gsettings set org.gnome.nautilus.preferences always-use-location-entry true
-
-#gsettings set org.gnome.shell favorite-apps "[ 'firefox.desktop', 'visual-studio-code.desktop', 'discord.desktop', 'blender.desktop', 'org.gnome.Nautilus.desktop', 'org.gnome.Terminal.desktop']"
 
 for i in $(seq 1 9); do gsettings set org.gnome.shell.keybindings switch-to-application-${i} '[]'; done
 gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-1 "['<Super>1']"
@@ -40,15 +34,7 @@ gsettings set org.gnome.desktop.wm.keybindings move-to-workspace-8 "['<Shift><Su
 gsettings set org.gnome.desktop.wm.keybindings move-to-workspace-9 "['<Shift><Super>9']"
 
 gsettings set org.gnome.shell.keybindings show-screenshot-ui "['<Shift><Super>s']"
-
-# gsettings set org.gnome.desktop.wm.keybindings toggle-fullscreen "['<Super>f']"
-# gsettings set org.gnome.desktop.wm.keybindings close "['<Shift><Super>c']"
 gsettings set org.gnome.settings-daemon.plugins.media-keys screensaver "['<Shift><Super>q']"
-gsettings set org.gnome.shell.keybindings show-screen-recording-ui "['<Shift><Super>r']"
+#TODO fix gsettings set org.gnome.shell.keybindings show-screen-recording-ui "['<Shift><Super>r']"
 
 gsettings set org.gnome.desktop.session idle-delay 0
-gsettings set org.gnome.FileRoller.Listing show-path false
-gsettings set org.gnome.settings-daemon.plugins.power power-button-action 'interactive'
-gsettings set org.gnome.settings-daemon.plugins.power sleep-inactive-ac-type 'nothing'
-
-gsettings set org.gnome.desktop.search-providers disabled "['org.gnome.Epiphany.desktop']"
