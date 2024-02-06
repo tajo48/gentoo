@@ -15,6 +15,7 @@ else
 fi
 
 #TODO dialout group and dialout add to user
+#TODO https://wiki.gentoo.org/wiki/GNU_Emacs#OpenRC
 #User
 
 # linux-install-chroot.sh
