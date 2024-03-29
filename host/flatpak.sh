@@ -58,6 +58,7 @@ flatpak install --assumeyes --noninteractive --user flathub it.mijorus.whisper  
 flatpak install --assumeyes --noninteractive --user flathub io.github.giantpinkrobots.flatsweep             #ARM native
 flatpak install --assumeyes --noninteractive --user flathub com.github.tchx84.Flatseal                      #ARM native
 flatpak install --assumeyes --noninteractive --user flathub com.github.GradienceTeam.Gradience              #ARM native
+flatpak install --assumeyes --noninteractive --user flathub net.nokyan.Resources                            #ARM native
 flatpak install --assumeyes --noninteractive --user flathub pm.mirko.Atoms                                  #ARM native
 flatpak install --assumeyes --noninteractive --user flathub it.mijorus.gearlever                            #ARM native
 flatpak install --assumeyes --noninteractive --user flathub io.frama.tractor.carburetor                     #ARM native
