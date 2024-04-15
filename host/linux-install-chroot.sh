@@ -20,7 +20,7 @@ fi
 
 # linux-install-chroot.sh
 # Script forked from xar55
-# Iproved by: tajo48
+# Improved by: tajo48
 # Ver: 1.3.0
 
 # zip
