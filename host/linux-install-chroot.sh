@@ -19,7 +19,8 @@ fi
 #User
 
 # linux-install-chroot.sh
-# Script by xar
+# Script forked from xar55
+# Iproved by: tajo48
 # Ver: 1.3.0
 
 # zip

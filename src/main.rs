@@ -58,6 +58,15 @@ fn handle_connection(mut stream: TcpStream) {
     println!("{}", re_get.is_match(request_line.as_str()));
     println!("regex result = '{}'", result_two);
     println!("path ={}", path);
+
+    //dont let /../ to be used to access files outside of the host folder
+    // issue found by xar55
+    if path.contains("/../") {
+        println!("path contains /../");
+        stream.write_all("HTTP/1.1 404 NOT FOUND\r\n\r\n".as_bytes()).unwrap();
+        return;
+    }
+
     let (status_line, filename) =
         if re_get.is_match(request_line.as_str()) && Path::new(path).is_file() {
             ("HTTP/1.1 200 OK", path)
