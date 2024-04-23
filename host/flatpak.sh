@@ -111,6 +111,7 @@ flatpak install --assumeyes --noninteractive --user flathub xyz.tytanium.DoorKno
 #flatpak install --assumeyes --noninteractive --user flathub org.gnome.Fractal # gtk matrix
 
 #studio tools
+flatpak install --assumeyes --noninteractive --user flathub io.github.seadve.Kooha #ARM native
 flatpak install --assumeyes --noninteractive --user flathub net.sapples.LiveCaptions #ARM native
 flatpak install --assumeyes --noninteractive --user flathub com.obsproject.Studio    #NO ARM
 flatpak install --assumeyes --noninteractive --user flathub org.gnome.SoundRecorder  #ARM native
