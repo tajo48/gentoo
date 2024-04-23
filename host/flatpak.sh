@@ -54,6 +54,7 @@ flatpak install --assumeyes --noninteractive --user flathub com.rafaelmardojai.B
 #flatpak install --assumeyes --noninteractive --user flathub dev.Cogitri.Health # Wait for it to be standalone + it would be cool to have vr activity support
 
 #OS tools
+flatpak install --assumeyes --noninteractive --user flathub org.gnome.SimpleScan                            #IDK
 flatpak install --assumeyes --noninteractive --user flathub it.mijorus.whisper                              #ARM native
 flatpak install --assumeyes --noninteractive --user flathub io.github.giantpinkrobots.flatsweep             #ARM native
 flatpak install --assumeyes --noninteractive --user flathub com.github.tchx84.Flatseal                      #ARM native
