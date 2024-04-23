@@ -58,6 +58,8 @@ programs="
 	ripgrep
 	emacs
  	ufw
+	cups
+	cups-meta
 "
 #chrony for time sync
 
@@ -127,6 +129,7 @@ fi
 # Turn on services
 rc-update add NetworkManager
 rc-update add ufw default
+rc-update add cupsd default
 # rc-update add iptables default
 # rc-update add ip6tables default
 
@@ -137,7 +140,7 @@ grub-mkconfig -o /boot/grub/grub.cfg
 
 #User settings
 # add dialout
-useradd -m -g users -G wheel,audio,video amnesia
+useradd -m -g users -G wheel,audio,lp,video amnesia
 sed -i '/enforce/s/everyone/users/' /etc/security/passwdqc.conf
 echo -en "kek\nkek" | passwd amnesia
 echo -en "kek\nkek" | passwd root
