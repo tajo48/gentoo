@@ -133,6 +133,7 @@ if [[ $gnome == 1 ]]; then
 fi
 
 # Turn on services
+rc-update add wpa_supplicant default
 rc-update add bluetooth defaul
 rc-update add power-profiles-daemon default
 rc-update add NetworkManager
