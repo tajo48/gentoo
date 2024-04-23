@@ -58,8 +58,14 @@ programs="
 	ripgrep
 	emacs
  	ufw
+	dev-lang/rust
 	cups
 	cups-meta
+	media-libs/openh264
+	net-dns/avahi
+	net-wireless/bluez
+	sys-power/power-profiles-daemon
+	net-wireless/wpa_supplicant
 "
 #chrony for time sync
 
@@ -127,8 +133,11 @@ if [[ $gnome == 1 ]]; then
 fi
 
 # Turn on services
+rc-update add bluetooth defaul
+rc-update add power-profiles-daemon default
 rc-update add NetworkManager
 rc-update add ufw default
+rc-update add avahi-daemon default
 rc-update add cupsd default
 # rc-update add iptables default
 # rc-update add ip6tables default
@@ -176,7 +185,9 @@ fi
 # sysctl -w fs.file-max=100000
 
 #TODO vm.max_map_count
-
+mkdir -p /home/amnesia/.local/share/dbus-1
+mkdir -p /home/amnesia/.local/share/flatpak/exports/share/dbus-1/services
+ln -s /home/amnesia/.local/share/flatpak/exports/share/dbus-1/services /home/amnesia/.local/share/dbus-1/
 chown -hR amnesia:users /home/amnesia
 fastfetch
 # Configurating

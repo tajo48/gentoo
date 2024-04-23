@@ -218,7 +218,8 @@ fi
 #Repos.conf
 mkdir -p /mnt/${distroName}/etc/portage/repos.conf
 cp /mnt/${distroName}/usr/share/portage/config/repos.conf /mnt/${distroName}/etc/portage/repos.conf/gentoo.conf
-
+mkdir -p /mnt/${distroName}/etc/portage/package.accept_keywords
+echo "dev-lang/rust ~amd64" >> /mnt/${distroName}/etc/portage/package.accept_keywords/rust
 #zzz_autounmask
 for d in /mnt/${distroName}/etc/portage/package.*; do touch $d/zz_autounmask; done
 

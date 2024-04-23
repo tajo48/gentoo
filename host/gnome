@@ -1,5 +1,10 @@
-gnome-base/gnome-light -gnome-online-accounts 
+gnome-base/gnome-light -gnome-online-accounts
 gnome-extra/gnome-software flatpak
 media-video/pipewire extra ffmpeg flatpak gsettings jack-sdk pipewire-alsa sound-server
 gnome-base/gnome-extra-apps -tracker -games
 gnome-base/nautilus -previewer
+
+media-video/pipewire ffmpeg v4l flatpak gsettings gstreamer
+
+net-wireless/wpa_supplicant p2p
+sys-apps/xdg-desktop-portal flatpak geolocation
