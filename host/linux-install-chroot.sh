@@ -155,8 +155,8 @@ sed -i '/enforce/s/everyone/users/' /etc/security/passwdqc.conf
 echo -en "kek\nkek" | passwd amnesia
 echo -en "kek\nkek" | passwd root
 echo "amnesia" >>/etc/hostname
-curl -s "https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/fakenews-gambling-porn-social/hosts" >>/etc/hosts
-echo "0.0.0.0 www.youtube.com" >>/etc/hosts
+#curl -s "https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/fakenews-gambling-porn-social/hosts" >>/etc/hosts
+#echo "0.0.0.0 www.youtube.com" >>/etc/hosts
 # sed -i '/PermitRootLogin p/s/^#//;s/prohibit-password/yes/' /etc/ssh/sshd_config
 
 #doas
