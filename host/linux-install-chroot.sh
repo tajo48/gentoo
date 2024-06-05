@@ -35,6 +35,7 @@ fi
 # zsh
 # linux-headers
 programs="
+	kochi-substitute
 	app-eselect/eselect-repository
 	sys-fs/fuse:0
 	dev-vcs/git
