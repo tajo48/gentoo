@@ -35,7 +35,6 @@ fi
 # zsh
 # linux-headers
 programs="
-	power-profiles-daemon
 	app-eselect/eselect-repository
 	sys-fs/fuse:0
 	dev-vcs/git
@@ -141,7 +140,6 @@ rc-update add NetworkManager
 rc-update add ufw default
 rc-update add avahi-daemon default
 rc-update add cupsd default
-rc-update add power-profiles-daemon default
 # rc-update add iptables default
 # rc-update add ip6tables default
 
