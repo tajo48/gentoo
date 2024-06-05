@@ -88,8 +88,8 @@ if [[ $minimal == 1 ]]; then
 	echo "selected profile 1"
 	eselect profile set 1
 elif [[ $gnome == 1 ]]; then
-	echo "selected profile default/linux/amd64/23.0/split-usr/desktop/gnome"
-	eselect profile set default/linux/amd64/23.0/split-usr/desktop/gnome
+	echo "selected profile default/linux/amd64/23.0/desktop/gnome"
+	eselect profile set default/linux/amd64/23.0/desktop/gnome
 else
 	echo "selected profile 5"
 	eselect profile set 5
