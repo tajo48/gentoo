@@ -88,7 +88,7 @@ if command -v chronyd &>/dev/null; then
 	chronyd=1
 	chronyd -q
 fi
-stage3=$(curl https://gentoo.osuosl.org/releases/amd64/autobuilds/\?C\=N\;O\=A | grep -o '<td>.*href="[^"]*"' | head -6 | tail -n 1 | sed 's/<td><a href="//; s/\/"//')
+stage3=$(curl -s https://www.gentoo.org/downloads/ | grep -oP '(?<=<a href=")https://distfiles.gentoo.org/releases/amd64/autobuilds/[^-]+/stage3-amd64-openrc-[^-]+.tar.xz(?=" data-relurl)' | head -n 1)
 clear
 
 #Portage set to 1 + handle for minimal != gnome | hyrpland
@@ -199,9 +199,10 @@ mkswap /mnt/${distroName}/swapfile
 swapon /mnt/${distroName}/swapfile
 
 cd /mnt/${distroName} || exit 1
-wget "https://distfiles.gentoo.org/releases/amd64/autobuilds/${stage3}/stage3-amd64-openrc-${stage3}.tar.xz"
-tar xpvf /mnt/${distroName}/stage3-amd64-openrc-${stage3}.tar.xz --xattrs-include='*.*' --numeric-owner
-rm /mnt/${distroName}/stage3-amd64-openrc-${stage3}.tar.xz
+wget $stage3
+stage3=$(echo ${stage3} | awk -F/ '{print $NF}')
+tar xpvf /mnt/${distroName}/${stage3} --xattrs-include='*.*' --numeric-owner
+rm /mnt/${distroName}/${stage3}
 
 #Make.conf
 curl ${ip}:7878/make.conf >/mnt/${distroName}/etc/portage/make.conf
