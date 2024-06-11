@@ -199,7 +199,7 @@ mkswap /mnt/${distroName}/swapfile
 swapon /mnt/${distroName}/swapfile
 
 cd /mnt/${distroName} || exit 1
-wget "https://gentoo.osuosl.org/releases/amd64/autobuilds/${stage3}/stage3-amd64-openrc-${stage3}.tar.xz"
+wget "https://distfiles.gentoo.org/releases/amd64/autobuilds/${stage3}/stage3-amd64-openrc-${stage3}.tar.xz"
 tar xpvf /mnt/${distroName}/stage3-amd64-openrc-${stage3}.tar.xz --xattrs-include='*.*' --numeric-owner
 rm /mnt/${distroName}/stage3-amd64-openrc-${stage3}.tar.xz
 
