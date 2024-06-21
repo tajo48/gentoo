@@ -6,5 +6,7 @@ gnome-base/nautilus -previewer
 
 media-video/pipewire ffmpeg v4l flatpak gsettings gstreamer
 
+app-editors/emacs json dynamic-loading
+
 net-wireless/wpa_supplicant p2p 
 sys-apps/xdg-desktop-portal flatpak geolocation
