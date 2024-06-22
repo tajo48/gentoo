@@ -47,6 +47,7 @@ programs="
 	networkmanager
 	gentoo-kernel-bin
 	linux-firmware
+	acpid
 	chrony
 	efibootmgr
 	ffmpeg
@@ -136,6 +137,7 @@ fi
 # Turn on services
 rc-update add wpa_supplicant default
 rc-update add bluetooth defaul
+rc-update add acpid default
 rc-update add power-profiles-daemon default
 rc-update add NetworkManager
 rc-update add ufw default
