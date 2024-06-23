@@ -3,9 +3,11 @@ flatpak remote-add --if-not-exists --user flathub https://flathub.org/repo/flath
 flatpak remote-add --if-not-exists --user launcher.moe https://gol.launcher.moe/gol.launcher.moe.flatpakrepo
 
 #office tools
+flatpak install --assumeyes --noninteractive --user flathub org.gnome.Papers
 flatpak install --assumeyes --noninteractive --user flathub org.upscayl.Upscayl            #NO ARM
 flatpak install --assumeyes --noninteractive --user flathub io.gitlab.adhami3310.Footage   #ARM native
 flatpak install --assumeyes --noninteractive --user flathub org.onlyoffice.desktopeditors  #NO ARM
+flatpak install --assumeyes --noninteractive --user flathub org.gnome.gitlab.somas.Apostrophe org.gnome.gitlab.somas.Apostrophe.Plugin.TexLive
 flatpak install --assumeyes --noninteractive --user flathub com.github.tenderowl.frog      #ARM native
 flatpak install --assumeyes --noninteractive --user flathub io.github.nokse22.minitext     #ARM native
 flatpak install --assumeyes --noninteractive --user flathub org.gnome.Calculator           #ARM native
@@ -28,6 +30,7 @@ flatpak install --assumeyes --noninteractive --user flathub org.gnome.Fractal   
 #Travelling
 flatpak install --assumeyes --noninteractive --user flathub org.gnome.Maps     #ARM native
 flatpak install --assumeyes --noninteractive --user me.sanchezrodriguez.passes #ARM native
+flatpak install --assumeyes --noninteractive --user flathub de.schmidhuberj.DieBahn
 
 #security and backup
 #flatpak install --assumeyes --noninteractive --user flathub com.belmoussaoui.Authenticator # 2fa
@@ -54,11 +57,17 @@ flatpak install --assumeyes --noninteractive --user flathub com.rafaelmardojai.B
 #flatpak install --assumeyes --noninteractive --user flathub dev.Cogitri.Health # Wait for it to be standalone + it would be cool to have vr activity support
 
 #OS tools
+flatpak install --assumeyes --noninteractive --user flathub com.mattjakeman.ExtensionManager
+flatpak install --assumeyes --noninteractive --user flathub com.github.wwmm.easyeffects
+flatpak install --assumeyes --noninteractive --user flathub org.gnome.NetworkDisplays
 flatpak install --assumeyes --noninteractive --user flathub com.jeffser.Alpaca				    #ARM native
 flatpak install --assumeyes --noninteractive --user flathub org.gnome.SimpleScan                            #IDK
 flatpak install --assumeyes --noninteractive --user flathub it.mijorus.whisper                              #ARM native
 flatpak install --assumeyes --noninteractive --user flathub io.github.giantpinkrobots.flatsweep             #ARM native
+flatpak install --assumeyes --noninteractive --user flathub io.github.fsobolev.TimeSwitch
 flatpak install --assumeyes --noninteractive --user flathub com.github.tchx84.Flatseal                      #ARM native
+flatpak install --assumeyes --noninteractive --user flathub org.gnome.baobab
+flatpak install --assumeyes --noninteractive --user flathub org.gnome.Loupe
 flatpak install --assumeyes --noninteractive --user flathub com.github.GradienceTeam.Gradience              #ARM native
 flatpak install --assumeyes --noninteractive --user flathub net.nokyan.Resources                            #ARM native
 flatpak install --assumeyes --noninteractive --user flathub pm.mirko.Atoms                                  #ARM native
@@ -74,6 +83,7 @@ flatpak install --assumeyes --noninteractive --user flathub page.codeberg.libre_
 # flatpak install --assumeyes --noninteractive --user flathub com.mattjakeman.ExtensionManager # gnome extension manager
 
 #tools
+flatpak install --assumeyes --noninteractive --user flathub org.gnome.clocks org.gnome.Contacts org.gnome.Calendar
 flatpak install --assumeyes --noninteractive --user flathub app.drey.Warp                         #ARM native
 flatpak install --assumeyes --noninteractive --user flathub page.codeberg.Imaginer.Imaginer       #ARM native
 flatpak install --assumeyes --noninteractive --user flathub io.github.Bavarder.Bavarder           #ARM native
@@ -119,6 +129,7 @@ flatpak install --assumeyes --noninteractive --user flathub org.gnome.SoundRecor
 # flatpak install --assumeyes --noninteractive --user flathub fr.romainvigier.zap      #ARM native
 
 #games
+flatpak install --assumeyes --noninteractive --user flathub dev.bragefuglseth.Keypunch
 flatpak install --assumeyes --noninteractive --user flathub com.tic80.TIC_80                         #ARM native
 flatpak install --assumeyes --noninteractive --user flathub sh.ppy.osu                               #NO ARM
 flatpak install --assumeyes --noninteractive --user flathub org.prismlauncher.PrismLauncher          #ARM native
