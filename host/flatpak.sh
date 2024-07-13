@@ -44,6 +44,7 @@ flatpak install --assumeyes --noninteractive --user flathub io.github.mpobaschni
 # flatpak install --assumeyes --noninteractive --user flathub app.drey.KeyRack # keys from apps
 
 #entertainment
+flatpak install --assumeyes --noninteractive --user flathub com.github.geigi.cozy             #ARM native
 flatpak install --assumeyes --noninteractive --user flathub io.bassi.Amberol                  #ARM native
 flatpak install --assumeyes --noninteractive --user flathub info.febvre.Komikku               #ARM native
 flatpak install --assumeyes --noninteractive --user flathub de.haeckerfelix.Shortwave         #ARM native
