@@ -14,6 +14,12 @@ else
 	echo "Running from /"
 fi
 
+#TODO remove after gentoo stabilizes 115 spidermonkey
+mkdir /etc/portage/package.unmask
+echo "=dev-lang/spidermonkey-115.11.0" >> /etc/portage/package.unmask/spidermonkey
+echo "=dev-lang/spidermonkey-115.11.0 ~amd64" >> /etc/portage/package.accept_keywords/spidermonkey
+
+
 #TODO dialout group and dialout add to user
 #TODO https://wiki.gentoo.org/wiki/GNU_Emacs#OpenRC
 #User
