@@ -41,7 +41,8 @@ echo "=dev-lang/spidermonkey-115.11.0 ~amd64" >> /etc/portage/package.accept_key
 # zsh
 # linux-headers
 programs="
-	kochi-substitute
+	=dev-lang/spidermonkey-115.11.0
+    kochi-substitute
 	app-eselect/eselect-repository
 	sys-fs/fuse:0
 	dev-vcs/git
