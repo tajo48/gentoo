@@ -1,10 +1,10 @@
 #!/bin/bash
 flatpak remote-add --if-not-exists --user flathub https://flathub.org/repo/flathub.flatpakrepo
-flatpak remote-add --if-not-exists --user launcher.moe https://gol.launcher.moe/gol.launcher.moe.flatpakrepo
+# flatpak remote-add --if-not-exists --user launcher.moe https://gol.launcher.moe/gol.launcher.moe.flatpakrepo
 
 #office tools
 flatpak install --assumeyes --noninteractive --user flathub org.gnome.Papers
-flatpak install --assumeyes --noninteractive --user flathub org.upscayl.Upscayl            #NO ARM
+# flatpak install --assumeyes --noninteractive --user flathub org.upscayl.Upscayl            #NO ARM
 flatpak install --assumeyes --noninteractive --user flathub io.gitlab.adhami3310.Footage   #ARM native
 flatpak install --assumeyes --noninteractive --user flathub org.onlyoffice.desktopeditors  #NO ARM
 flatpak install --assumeyes --noninteractive --user flathub org.gnome.gitlab.somas.Apostrophe org.gnome.gitlab.somas.Apostrophe.Plugin.TexLive
@@ -24,7 +24,8 @@ flatpak install --assumeyes --noninteractive --user flathub org.blender.Blender 
 
 #communication and social media
 flatpak install --assumeyes --noninteractive --user flathub dev.geopjr.Tuba        #ARM native
-flatpak install --assumeyes --noninteractive --user flathub com.discordapp.Discord #NO ARM
+flatpak install --assumeyes --noninteractive --user flathub dev.vencord.Vesktop     #ARM native
+# flatpak install --assumeyes --noninteractive --user flathub com.discordapp.Discord #NO ARM
 flatpak install --assumeyes --noninteractive --user flathub org.gnome.Fractal      #ARM native
 
 #Travelling
@@ -49,7 +50,7 @@ flatpak install --assumeyes --noninteractive --user flathub io.bassi.Amberol    
 flatpak install --assumeyes --noninteractive --user flathub info.febvre.Komikku               #ARM native
 flatpak install --assumeyes --noninteractive --user flathub de.haeckerfelix.Shortwave         #ARM native
 flatpak install --assumeyes --noninteractive --user flathub com.pojtinger.felicitas.Multiplex #ARM native
-flatpak install --assumeyes --noninteractive --user flathub me.iepure.Ticketbooth             #ARM native
+# flatpak install --assumeyes --noninteractive --user flathub me.iepure.Ticketbooth             #ARM native
 flatpak install --assumeyes --noninteractive --user flathub com.github.johnfactotum.Foliate   #ARM native
 flatpak install --assumeyes --noninteractive --user flathub io.github.thaunknown.miru         #NO ARM
 
@@ -69,9 +70,9 @@ flatpak install --assumeyes --noninteractive --user flathub io.github.fsobolev.T
 flatpak install --assumeyes --noninteractive --user flathub com.github.tchx84.Flatseal                      #ARM native
 flatpak install --assumeyes --noninteractive --user flathub org.gnome.baobab
 flatpak install --assumeyes --noninteractive --user flathub org.gnome.Loupe
+flatpak install --assumeyes --noninteractive --user flathub org.gnome.Showtime                              #ARM native
 flatpak install --assumeyes --noninteractive --user flathub com.github.GradienceTeam.Gradience              #ARM native
 flatpak install --assumeyes --noninteractive --user flathub net.nokyan.Resources                            #ARM native
-flatpak install --assumeyes --noninteractive --user flathub pm.mirko.Atoms                                  #ARM native
 flatpak install --assumeyes --noninteractive --user flathub it.mijorus.gearlever                            #ARM native
 flatpak install --assumeyes --noninteractive --user flathub io.frama.tractor.carburetor                     #ARM native
 flatpak install --assumeyes --noninteractive --user flathub io.github.flattool.Warehouse                    #ARM native
@@ -87,7 +88,6 @@ flatpak install --assumeyes --noninteractive --user flathub page.codeberg.libre_
 flatpak install --assumeyes --noninteractive --user flathub org.gnome.clocks org.gnome.Contacts org.gnome.Calendar
 flatpak install --assumeyes --noninteractive --user flathub app.drey.Warp                         #ARM native
 flatpak install --assumeyes --noninteractive --user flathub page.codeberg.Imaginer.Imaginer       #ARM native
-flatpak install --assumeyes --noninteractive --user flathub io.github.Bavarder.Bavarder           #ARM native
 flatpak install --assumeyes --noninteractive --user flathub com.belmoussaoui.Decoder              #ARM native
 flatpak install --assumeyes --noninteractive --user flathub com.usebottles.bottles                #NO ARM
 flatpak install --assumeyes --noninteractive --user flathub com.github.ADBeveridge.Raider         #ARM native
@@ -135,10 +135,9 @@ flatpak install --assumeyes --noninteractive --user flathub com.tic80.TIC_80    
 flatpak install --assumeyes --noninteractive --user flathub sh.ppy.osu                               #NO ARM
 flatpak install --assumeyes --noninteractive --user flathub org.prismlauncher.PrismLauncher          #ARM native
 flatpak install --assumeyes --noninteractive --user flathub com.github.Anuken.Mindustry              #ARM native
-flatpak install --assumeyes --noninteractive --user flathub io.github.nokse22.trivia-quiz            #ARM native
 flatpak install --assumeyes --noninteractive --user flathub net.veloren.airshipper                   #ARM native
 flatpak install --assumeyes --noninteractive --user flathub com.pokemmo.PokeMMO                      #ARM native
-flatpak install --assumeyes --noninteractive --user launcher.moe moe.launcher.an-anime-game-launcher #NO ARM
+# flatpak install --assumeyes --noninteractive --user launcher.moe moe.launcher.an-anime-game-launcher #NO ARM
 #flatpak install --assumeyes --noninteractive --user flathub net.openra.OpenRA
 #flatpak install --assumeyes --noninteractive --user flathub com.zquestclassic.ZQuest
 # flatpak install --assumeyes --noninteractive --user flathub com.heroicgameslauncher.hgl # Gog & epic
@@ -150,7 +149,7 @@ flatpak install --assumeyes --noninteractive --user launcher.moe moe.launcher.an
 sudo flatpak override com.usebottles.bottles --filesystem=xdg-data/applications
 sudo flatpak override com.usebottles.bottles --filesystem=~/.local/share/Steam
 
-#Discord fix
-for i in {0..9}; do
-	test -S $XDG_RUNTIME_DIR/discord-ipc-$i || ln -sf {app/com.discordapp.Discord,$XDG_RUNTIME_DIR}/discord-ipc-$i
-done
+# #Discord fix
+# for i in {0..9}; do
+# 	test -S $XDG_RUNTIME_DIR/discord-ipc-$i || ln -sf {app/com.discordapp.Discord,$XDG_RUNTIME_DIR}/discord-ipc-$i
+# done

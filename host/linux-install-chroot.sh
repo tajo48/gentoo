@@ -65,8 +65,8 @@ programs="
 	cryfs
 	app-portage/mirrorselect
 	ripgrep
-	emacs
- 	ufw
+ 	vim
+	ufw
 	dev-lang/rust
 	cups
 	cups-meta
