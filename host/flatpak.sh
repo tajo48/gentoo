@@ -24,13 +24,15 @@ flatpak install --assumeyes --noninteractive --user flathub org.blender.Blender 
 
 #communication and social media
 flatpak install --assumeyes --noninteractive --user flathub dev.geopjr.Tuba        #ARM native
+flatpak install --assumeyes --noninteractive --user flathub so.libdb.dissent     #ARM native
 flatpak install --assumeyes --noninteractive --user flathub dev.vencord.Vesktop     #ARM native
 # flatpak install --assumeyes --noninteractive --user flathub com.discordapp.Discord #NO ARM
 flatpak install --assumeyes --noninteractive --user flathub org.gnome.Fractal      #ARM native
 
 #Travelling
+flatpak install --assumeyes --noninteractive --user flathub io.github.amit9838.mousam     #ARM native
 flatpak install --assumeyes --noninteractive --user flathub org.gnome.Maps     #ARM native
-flatpak install --assumeyes --noninteractive --user me.sanchezrodriguez.passes #ARM native
+flatpak install --assumeyes --noninteractive --user flathub me.sanchezrodriguez.passes #ARM native
 flatpak install --assumeyes --noninteractive --user flathub de.schmidhuberj.DieBahn
 
 #security and backup
@@ -110,6 +112,7 @@ flatpak install --assumeyes --noninteractive --user flathub com.github.flxzt.rno
 flatpak install --assumeyes --noninteractive --user flathub com.logseq.Logseq      #ARM native
 
 #dev tools
+flatpak install --assumeyes --noninteractive --user flathub dev.zed.Zed                      #ARM native
 flatpak install --assumeyes --noninteractive --user flathub org.gabmus.whatip                #ARM native
 flatpak install --assumeyes --noninteractive --user flathub me.iepure.devtoolbox             #ARM native
 flatpak install --assumeyes --noninteractive --user flathub io.github.bytezz.IPLookup        #ARM native
