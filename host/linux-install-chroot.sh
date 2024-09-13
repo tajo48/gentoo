@@ -37,8 +37,7 @@ mkdir /etc/portage/package.unmask
 # zsh
 # linux-headers
 programs="
-	=dev-lang/spidermonkey-115.11.0
-    	rustup
+	rustup
      	kochi-substitute
 	app-eselect/eselect-repository
 	sys-fs/fuse:0
