@@ -165,7 +165,7 @@ echo "Virtual machine:  $(if [ "$vm" -eq 1 ]; then echo "true"; else echo "false
 echo ""
 echo "Minimal:          $(if [ "$minimal" -eq 1 ]; then echo "true"; else echo "false"; fi)"
 echo "Gnome:            $(if [ "$gnome" -eq 1 ]; then echo "true"; else echo "false"; fi)"
-echo "KDE:            $(if [ "$kde" -eq 1 ]; then echo "true"; else echo "false"; fi)"
+echo "KDE:              $(if [ "$kde" -eq 1 ]; then echo "true"; else echo "false"; fi)"
 echo "Window manager:   $(if [ "$wm" -eq 1 ]; then echo "true"; else echo "false"; fi)"
 echo "User.sh:          $(if [ "$usersh" -eq 1 ]; then echo "true"; else echo "false"; fi)"
 echo ""
