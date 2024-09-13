@@ -24,7 +24,8 @@ fi
 
 #defaults
 minimal=0
-gnome=1
+gnome=0
+kde=0
 wm=0
 usersh=0
 
@@ -61,8 +62,9 @@ for arg in "$@"; do
 		;;
 	-g | --gnome)
 		gnome=1
+  		;;
 	-k | --kde)
-	    	kde=0
+	    	kde=1
 		;;
 	-w | --wm)
 		wm=1
