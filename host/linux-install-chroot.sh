@@ -117,7 +117,7 @@ eselect locale set en_US.utf8
 source /etc/profile #BC eselect said so
 
 # Gentoo
-emerge --quiet-build --update --deep --newuse --backtrack=99 --complete-graph @world
+emerge --quiet-build --update --deep --newuse --backtrack=99 --complete-graph --autounmask=y --autounmask-continue=y @world
 #fix circular dependency
 USE="minimal" emerge --oneshot --quiet-build libsndfile
 emerge --newuse --quiet-build media-libs/libsndfile
