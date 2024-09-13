@@ -1,0 +1,5 @@
+kde-plasma/plasma-meta bluetooth flatpak wacom thunderbolt
+
+media-video/pipewire v4l gstreamer extra ffmpeg flatpak gsettings jack-sdk pipewire-alsa sound-server
+net-wireless/wpa_supplicant p2p
+sys-apps/xdg-desktop-portal flatpak geolocation

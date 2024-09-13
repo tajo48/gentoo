@@ -45,6 +45,7 @@ for arg in "$@"; do
 		echo "  -i, --ip            Define IP"
 		echo "  -m, --minimal       Turns off all options except base system"
 		echo "  -g, --gnome         Enable Gnome"
+		echo "  -k, --kde           Enable KDE"
 		echo "  -w, --wm            Enable Window manager (hyrpland)"
 		echo "  -u, --unattended    Enable unattended mode"
 		echo "  -a, --attended      Disable uattended mode"
@@ -60,6 +61,8 @@ for arg in "$@"; do
 		;;
 	-g | --gnome)
 		gnome=1
+	-k | --kde)
+	    kde=0
 		;;
 	-w | --wm)
 		wm=1
@@ -97,6 +100,7 @@ clear
 
 if [[ $minimal == 1 ]]; then
 	gnome=0
+	kde=0
 	wm=0
 	usersh=0
 fi
@@ -159,6 +163,7 @@ echo "Virtual machine:  $(if [ "$vm" -eq 1 ]; then echo "true"; else echo "false
 echo ""
 echo "Minimal:          $(if [ "$minimal" -eq 1 ]; then echo "true"; else echo "false"; fi)"
 echo "Gnome:            $(if [ "$gnome" -eq 1 ]; then echo "true"; else echo "false"; fi)"
+echo "KDE:            $(if [ "$kde" -eq 1 ]; then echo "true"; else echo "false"; fi)"
 echo "Window manager:   $(if [ "$wm" -eq 1 ]; then echo "true"; else echo "false"; fi)"
 echo "User.sh:          $(if [ "$usersh" -eq 1 ]; then echo "true"; else echo "false"; fi)"
 echo ""
@@ -242,5 +247,5 @@ chmod 1777 /dev/shm /run/shm #this wont work on official iso
 curl -so /mnt/${distroName}/root/linux-install-chroot.sh ${ip}:7878/linux-install-chroot.sh
 chmod +x /mnt/${distroName}/root/linux-install-chroot.sh
 
-chroot_command="/mnt/${distroName}/ /root/linux-install-chroot.sh $ip $minimal $gnome $wm $vm $usersh"
+chroot_command="/mnt/${distroName}/ /root/linux-install-chroot.sh $ip $minimal $gnome $kde $wm $vm $usersh"
 chroot ${chroot_command}

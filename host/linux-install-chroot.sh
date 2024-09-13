@@ -14,11 +14,7 @@ else
 	echo "Running from /"
 fi
 
-#TODO remove after gentoo stabilizes 115 spidermonkey
 mkdir /etc/portage/package.unmask
-echo "=dev-lang/spidermonkey-115.11.0" >> /etc/portage/package.unmask/spidermonkey
-echo "=dev-lang/spidermonkey-115.11.0 ~amd64" >> /etc/portage/package.accept_keywords/spidermonkey
-
 
 #TODO dialout group and dialout add to user
 #TODO https://wiki.gentoo.org/wiki/GNU_Emacs#OpenRC
@@ -76,15 +72,17 @@ programs="
 	net-wireless/bluez
 	sys-power/power-profiles-daemon
 	net-wireless/wpa_supplicant
+	gentoolkit
 "
 #chrony for time sync
 
 ip=$1
 minimal=$2
 gnome=$3
-wm=$4
-vm=$5
-usersh=$6
+kde=$4
+wm=$5
+vm=$6
+usersh=$7
 # Base & Firmware (Gentoo)
 source "/etc/profile"
 emerge-webrsync
@@ -96,6 +94,9 @@ sleep 2s
 if [[ $minimal == 1 ]]; then
 	echo "selected profile 1"
 	eselect profile set 1
+elif [[ $kde == 1 ]]; then
+		echo "selected profile default/linux/amd64/23.0/desktop/plasma"
+		eselect profile set default/linux/amd64/23.0/desktop/plasma
 elif [[ $gnome == 1 ]]; then
 	echo "selected profile default/linux/amd64/23.0/desktop/gnome"
 	eselect profile set default/linux/amd64/23.0/desktop/gnome
@@ -142,6 +143,18 @@ if [[ $gnome == 1 ]]; then
 	rc-update add display-manager default
 fi
 
+if [[ $kde == 1 ]]; then
+
+	curl ${ip}:7878/kde >/etc/portage/package.use/kde
+
+
+	#fix perl common sense and doxygen in llvm build
+	emerge --quiet-build --autounmask=y --autounmask-unrestricted-atoms=y --autounmask-continue=y --autounmask-backtrack=y --backtrack=1000 --autounmask-use=y kde-plasma/discover kde-plasma/plasma-meta flatpak
+	rc-update add elogind boot
+	plasmashell -v || exit 1
+	echo -e '#!/bin/sh\ndbus-run-session startplasma-wayland' >	/home/tajo48/.profile
+fi
+
 # Turn on services
 #rc-update add wpa_supplicant default
 rc-update add bluetooth default
@@ -151,6 +164,7 @@ rc-update add NetworkManager
 rc-update add ufw default
 rc-update add avahi-daemon default
 rc-update add cupsd default
+rc-update add dbus default
 # rc-update add iptables default
 # rc-update add ip6tables default
 
