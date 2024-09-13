@@ -62,7 +62,7 @@ for arg in "$@"; do
 	-g | --gnome)
 		gnome=1
 	-k | --kde)
-	    kde=0
+	    	kde=0
 		;;
 	-w | --wm)
 		wm=1
