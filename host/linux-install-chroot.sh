@@ -37,6 +37,7 @@ mkdir /etc/portage/package.unmask
 # zsh
 # linux-headers
 programs="
+	gnome-disk-utility
 	rustup
      	kochi-substitute
 	app-eselect/eselect-repository
