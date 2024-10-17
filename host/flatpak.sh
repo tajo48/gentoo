@@ -72,7 +72,7 @@ flatpak install --assumeyes --noninteractive --user flathub io.github.fsobolev.T
 flatpak install --assumeyes --noninteractive --user flathub com.github.tchx84.Flatseal                      #ARM native
 flatpak install --assumeyes --noninteractive --user flathub org.gnome.baobab
 flatpak install --assumeyes --noninteractive --user flathub org.gnome.Loupe
-flatpak install --assumeyes --noninteractive --user flathub app.fotema.fotema
+flatpak install --assumeyes --noninteractive --user flathub app.fotema.Fotema
 flatpak install --assumeyes --noninteractive --user flathub org.gnome.Showtime                              #ARM native
 flatpak install --assumeyes --noninteractive --user flathub com.github.GradienceTeam.Gradience              #ARM native
 flatpak install --assumeyes --noninteractive --user flathub net.nokyan.Resources                            #ARM native
